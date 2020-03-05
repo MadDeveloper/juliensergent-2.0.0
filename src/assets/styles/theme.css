@@ -1,0 +1,9 @@
+:root {
+  /* Colors */
+  --text-color: #273238;
+  --link-color: #6b1fff;
+
+  /* Typography */
+  --text-font-size: 16px;
+  --title-font-size: 30px;
+}

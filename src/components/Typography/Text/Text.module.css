@@ -1,0 +1,11 @@
+.root {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: var(--text-font-size);
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.root.bold {
+  font-weight: 700;
+}

@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import { Typography } from "./components/Typography"
 
-function App() {
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main
+      style={{
+        display: "flex",
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center"
+      }}
+    >
+      <section style={{ width: 400, maxWidth: "100%", margin: "auto" }}>
+        <Typography.Title>Julien Sergent</Typography.Title>
+        <Typography.Paragraph>
+          <Typography.Text>
+            Hello, I am Julien Sergent, also known as maddeveloper.
+            <br />
+            I am a JavaScript developer, for 10 years now. Since I started to
+            develop, I have always been interested by the code design, purity,
+            well-written code, and new ways to solve abstract problems.
+            <br />I will try to transmit you this, and let you enter in my
+            world, my vision behind lines code.
+          </Typography.Text>
+        </Typography.Paragraph>
+        <Typography.Paragraph>
+          <Typography.Text>
+            Actually, this site is in construction, please come later in order
+            to see it finished.
+          </Typography.Text>
+        </Typography.Paragraph>
+        <Typography.Paragraph>
+          <Typography.Text>Thank you.</Typography.Text>
+        </Typography.Paragraph>
+      </section>
+    </main>
+  )
 }
-
-export default App;
