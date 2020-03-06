@@ -1,7 +1,10 @@
 import React from "react"
 import { Typography } from "./components/Typography"
+import { useThemeObserver } from "./lib/theme"
 
 export function App() {
+  useThemeObserver()
+
   return (
     <main
       style={{
@@ -15,7 +18,7 @@ export function App() {
         <Typography.Title>Julien Sergent</Typography.Title>
         <Typography.Paragraph>
           <Typography.Text>
-            Hello, I am Julien Sergent, also known as maddeveloper.
+            Hi, I am Julien Sergent, also known as maddeveloper.
             <br />
             I am a JavaScript developer, for 10 years now. Since I started to
             develop, I have always been interested by the code design, purity,

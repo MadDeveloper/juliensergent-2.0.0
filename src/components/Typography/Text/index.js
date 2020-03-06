@@ -4,13 +4,12 @@ import React from "react"
 import styles from "./Text.module.css"
 
 export function Text({ children, bold = false }) {
-  return <p className={cs(styles.root, { [styles.bold]: bold })}>{children}</p>
+  return (
+    <span className={cs(styles.root, { [styles.bold]: bold })}>{children}</span>
+  )
 }
 
 Text.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.arrayOf(PropTypes.string)
-  ]),
+  children: PropTypes.any,
   bold: PropTypes.bool
 }

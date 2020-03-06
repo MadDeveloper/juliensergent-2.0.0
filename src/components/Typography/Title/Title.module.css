@@ -1,7 +1,6 @@
 .root {
-  font-family: inherit;
-  font-weight: 800;
+  font-weight: 900;
   font-size: var(--title-font-size);
   line-height: 1.125;
-  color: var(--text-color);
+  color: var(--text-color-normal);
 }

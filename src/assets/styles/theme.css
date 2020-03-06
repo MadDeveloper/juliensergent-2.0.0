@@ -1,9 +1,13 @@
-:root {
+html {
   /* Colors */
-  --text-color: #273238;
+  --text-color-normal: #273238;
   --link-color: #6b1fff;
 
   /* Typography */
   --text-font-size: 16px;
   --title-font-size: 30px;
+}
+
+html[data-theme="dark"] {
+  --text-color-normal: hsl(210, 10%, 62%);
 }
