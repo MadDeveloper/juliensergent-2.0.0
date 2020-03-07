@@ -1,14 +1,17 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import { BrowserRouter } from "react-router-dom"
 import { App } from "./App"
 import "./index.css"
 import * as serviceWorker from "./serviceWorker"
 import { StoreProvider } from "./store"
 
 ReactDOM.render(
-  <StoreProvider>
-    <App />
-  </StoreProvider>,
+  <BrowserRouter>
+    <StoreProvider>
+      <App />
+    </StoreProvider>
+  </BrowserRouter>,
   document.getElementById("root")
 )
 

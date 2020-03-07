@@ -1,0 +1,6 @@
+.root {
+  font-weight: 700;
+  font-size: var(--subtitle-font-size);
+  line-height: 1.25;
+  color: var(--text-color-normal);
+}

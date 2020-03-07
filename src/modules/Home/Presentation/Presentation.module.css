@@ -1,0 +1,44 @@
+.root {
+  display: flex;
+}
+
+.name {
+  font-size: 60px;
+}
+
+.description {
+  margin-top: 30px;
+}
+
+.description .element {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--link-color);
+}
+
+.showMore {
+  margin-top: 50px;
+}
+
+.showMore .emoji {
+  display: inline-block;
+  margin-right: 7px;
+  font-size: 20px;
+}
+
+.showMore .link {
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.photo {
+  background-image: url(../../../assets/images/julien.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 50px;
+  align-self: center;
+}

@@ -1,17 +1,17 @@
 import cs from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
-import styles from "./Title.module.css"
+import styles from "./Subtitle.module.css"
 
-export function Title({ className = "", style = {}, children }) {
+export function Subtitle({ className = "", style = {}, children }) {
   return (
-    <h1 className={cs(styles.root, className)} style={style}>
+    <h2 className={cs(styles.root, className)} style={style}>
       {children}
-    </h1>
+    </h2>
   )
 }
 
-Title.propTypes = {
+Subtitle.propTypes = {
   className: PropTypes.string,
   style: PropTypes.object,
   children: PropTypes.any

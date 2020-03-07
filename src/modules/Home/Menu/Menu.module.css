@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  font-size: 16;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: var(--text-color-normal);
+  margin-right: 60px;
+}
+
+.link:last-child {
+  margin-right: 0;
+}
