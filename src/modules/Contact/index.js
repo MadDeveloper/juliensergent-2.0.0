@@ -49,7 +49,7 @@ export function Contact() {
           <a
             href="https://github.com/MadDeveloper"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <img src={githubIcon} className={styles.icon} alt="" />
             <span>MadDeveloper</span>
@@ -59,7 +59,7 @@ export function Contact() {
           <a
             href="https://www.linkedin.com/in/julien-sergent/"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <img src={linkedinIcon} className={styles.icon} alt="" />
             <span>julien-sergent</span>
@@ -69,7 +69,7 @@ export function Contact() {
           <a
             href="https://twitter.com/_maddeveloper"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <img src={twitterIcon} className={styles.icon} alt="" />
             <span>_maddeveloper</span>

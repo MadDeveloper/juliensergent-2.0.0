@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 import React from "react"
 import styles from "./Content.module.css"
 
-export function Content({ compact = false, children }) {
+export function Content({ compact = false, className = "", children }) {
   return (
-    <div className={cs(styles.root, { [styles.compact]: compact })}>
+    <div className={cs(styles.root, className, { [styles.compact]: compact })}>
       {children}
     </div>
   )
@@ -13,5 +13,6 @@ export function Content({ compact = false, children }) {
 
 Content.propTypes = {
   compact: PropTypes.bool,
+  className: PropTypes.string,
   children: PropTypes.any
 }
