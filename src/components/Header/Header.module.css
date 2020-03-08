@@ -9,15 +9,29 @@
   justify-content: space-between;
 }
 
+.header .nameLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header .nameLink:hover {
   text-decoration: none;
+}
+
+.header .photo {
+  background-image: url(../../assets/images/julien.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .header .name {
   font-size: 20px;
   font-weight: 700;
-}
-
-.header .nav {
-  display: flex;
 }

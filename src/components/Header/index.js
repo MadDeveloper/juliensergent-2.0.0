@@ -11,16 +11,12 @@ export function Header() {
       <Layout.Content>
         <header className={styles.header}>
           <Link to="/" className={styles.nameLink}>
+            <div className={styles.photo} />
             <Typography.Title className={styles.name}>
               Julien Sergent
             </Typography.Title>
           </Link>
-          <nav className={styles.nav}>
-            <Menu to="/blog">Blog</Menu>
-            <Menu to="/projects">Projects</Menu>
-            <Menu to="/me">Resume</Menu>
-            <Menu to="/contact">Contact</Menu>
-          </nav>
+          <Menu />
         </header>
       </Layout.Content>
     </div>

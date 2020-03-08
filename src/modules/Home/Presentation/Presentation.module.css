@@ -12,13 +12,17 @@
 }
 
 .description .element {
-  font-size: 40px;
-  font-weight: 900;
+  /* font-size: 40px; */
+  font-weight: 700;
+  /* color: var(--text-color-normal); */
+}
+
+.description .element .highlight {
   color: var(--link-color);
 }
 
 .showMore {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .showMore .emoji {
@@ -30,7 +34,7 @@
 .showMore .link {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .photo {
