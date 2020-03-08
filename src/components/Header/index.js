@@ -7,18 +7,20 @@ import { Menu } from "./Menu"
 
 export function Header() {
   return (
-    <div className={styles.root}>
-      <Layout.Content>
-        <header className={styles.header}>
-          <Link to="/" className={styles.nameLink}>
-            <div className={styles.photo} />
-            <Typography.Title className={styles.name}>
-              Julien Sergent
-            </Typography.Title>
-          </Link>
-          <Menu />
-        </header>
-      </Layout.Content>
-    </div>
+    <Layout.Main>
+      <div className={styles.root}>
+        <Layout.Content>
+          <header className={styles.header}>
+            <Link to="/" className={styles.nameLink}>
+              <div className={styles.photo} />
+              <Typography.Title className={styles.name}>
+                Julien Sergent
+              </Typography.Title>
+            </Link>
+            <Menu />
+          </header>
+        </Layout.Content>
+      </div>
+    </Layout.Main>
   )
 }

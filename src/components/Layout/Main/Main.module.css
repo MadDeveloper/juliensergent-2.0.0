@@ -1,5 +1,12 @@
 .root {
   display: block;
   width: 100%;
-  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .root {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

@@ -23,7 +23,7 @@ export function Presentation() {
             👉
           </span>
           <Link to="/resume" className={styles.link}>
-            I want to know more
+            Tell me more
           </Link>
         </div>
       </div>

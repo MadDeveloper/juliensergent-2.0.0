@@ -4,8 +4,10 @@ import styles from "./App.module.css"
 import { Header } from "./components/Header"
 import { config } from "./config"
 import { useThemeObserver } from "./lib/theme"
+import { Blog } from "./modules/Blog"
 import { Contact } from "./modules/Contact"
 import { Home } from "./modules/Home"
+import { Projects } from "./modules/Projects"
 import { Resume } from "./modules/Resume"
 
 export function App() {
@@ -20,6 +22,12 @@ export function App() {
       <Switch>
         <Route exact path={config.routes.home}>
           <Home />
+        </Route>
+        <Route path={config.routes.blog}>
+          <Blog />
+        </Route>
+        <Route path={config.routes.projects}>
+          <Projects />
         </Route>
         <Route path={config.routes.resume}>
           <Resume />

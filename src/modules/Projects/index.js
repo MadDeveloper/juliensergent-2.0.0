@@ -2,10 +2,10 @@ import React from "react"
 import { Layout } from "../../components/Layout"
 import { Typography } from "../../components/Typography"
 
-export function Resume() {
+export function Projects() {
   return (
     <Layout.MainContent>
-      <Typography.Title heading>Here is my background</Typography.Title>
+      <Typography.Title heading>Time to be be crazy</Typography.Title>
     </Layout.MainContent>
   )
 }
