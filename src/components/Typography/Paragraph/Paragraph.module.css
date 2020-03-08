@@ -1,3 +1,7 @@
 .root {
   margin-top: 20px;
 }
+
+.root.heading {
+  margin-top: 0;
+}

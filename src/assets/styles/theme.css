@@ -1,6 +1,9 @@
 :root {
   /* Colors */
   --primary-color: #6b1fff;
+  --faded-primary-color: rgba(107, 31, 255, 0.1);
+  --active-primary-color: #4d05e8;
+  --faded-active-primary-color: rgba(77, 5, 232, 0.1);
   --text-color-normal: #273238;
   --title-color: #273238;
   --link-color: #6b1fff;
@@ -17,6 +20,10 @@
 
   /* Sizes */
   --layout-content-max-width: 720px;
+  --layout-content-compact-max-width: 420px;
+
+  /* Misc */
+  --default-border-radius: 4px;
 }
 
 :root[data-theme="dark"] {

@@ -1,14 +1,25 @@
-import cs from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
-import { Link } from "react-router-dom"
+import { useHistory } from "react-router-dom"
+import { Button } from "../../../Button"
 import styles from "./MenuItem.module.css"
 
 export function MenuItem({ to = "", active = false, children }) {
+  const history = useHistory()
+
+  function navigate() {
+    history.push(to)
+  }
+
   return (
-    <Link to={to} className={cs(styles.root, { [styles.active]: active })}>
+    <Button
+      className={styles.root}
+      active={active}
+      secondary={!active}
+      onClick={navigate}
+    >
       {children}
-    </Link>
+    </Button>
   )
 }
 

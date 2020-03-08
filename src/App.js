@@ -4,6 +4,7 @@ import styles from "./App.module.css"
 import { Header } from "./components/Header"
 import { config } from "./config"
 import { useThemeObserver } from "./lib/theme"
+import { Contact } from "./modules/Contact"
 import { Home } from "./modules/Home"
 import { Resume } from "./modules/Resume"
 
@@ -22,6 +23,9 @@ export function App() {
         </Route>
         <Route path={config.routes.resume}>
           <Resume />
+        </Route>
+        <Route path={config.routes.contact}>
+          <Contact />
         </Route>
       </Switch>
     </main>

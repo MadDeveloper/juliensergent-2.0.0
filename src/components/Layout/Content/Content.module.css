@@ -4,3 +4,7 @@
   max-width: var(--layout-content-max-width);
   margin: 0 auto;
 }
+
+.root.compact {
+  max-width: var(--layout-content-compact-max-width);
+}

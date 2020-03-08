@@ -7,12 +7,12 @@ export function Presentation() {
   return (
     <div className={styles.root}>
       <div>
-        <Typography.Title className={styles.name}>
-          Hi, I am Julien.
+        <Typography.Title className={styles.name} heading>
+          Hi, I'm Julien.
         </Typography.Title>
         <div className={styles.description}>
           <Typography.Subtitle className={styles.element}>
-            I am a <span className={styles.highlight}>software engineer</span>,
+            I'm a <span className={styles.highlight}>software engineer</span>,
             <br />
             <span className={styles.highlight}>web artisan</span> and{" "}
             <span className={styles.highlight}>design maniac</span>.

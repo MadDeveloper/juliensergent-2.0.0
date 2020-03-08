@@ -1,0 +1,49 @@
+.root {
+  display: block;
+  position: relative;
+  font-size: 13px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  min-width: 200px;
+}
+
+.label {
+  user-select: none;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: inherit;
+  color: hsl(0, 0%, 45%);
+  background: #fff;
+  transition-property: top, font-size;
+  transition-duration: 0.2s;
+}
+
+.label.active {
+  top: 5px;
+  font-size: 11px;
+}
+
+.label.focus {
+  color: var(--primary-color);
+}
+
+.input {
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 17px 12px 4px 12px;
+  border-radius: var(--default-border-radius);
+  border: 2px solid hsl(0, 0%, 90%);
+  font-size: inherit;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.input.textarea {
+  resize: none;
+}
+
+.input:focus {
+  border-color: var(--primary-color);
+}
