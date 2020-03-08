@@ -1,7 +1,4 @@
 import React from "react"
-import githubIcon from "../../assets/icons/github.svg"
-import linkedinIcon from "../../assets/icons/linkedin.svg"
-import twitterIcon from "../../assets/icons/twitter.svg"
 import { Layout } from "../../components/Layout"
 import { Typography } from "../../components/Typography"
 import styles from "./Contact.module.css"
@@ -40,42 +37,35 @@ export function Contact() {
           </a>
           .
         </Typography.Text>
-      </Typography.Paragraph>
-      <Typography.Paragraph>
-        <Typography.Text>You can also find me around the web:</Typography.Text>
-      </Typography.Paragraph>
-      <ul className={styles.social}>
-        <li className={styles.item}>
+        <br />
+        <Typography.Text>
+          You can also find me around the web, on{" "}
           <a
             href="https://github.com/MadDeveloper"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={githubIcon} className={styles.icon} alt="" />
-            <span>MadDeveloper</span>
+            GitHub
           </a>
-        </li>
-        <li className={styles.item}>
-          <a
-            href="https://www.linkedin.com/in/julien-sergent/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={linkedinIcon} className={styles.icon} alt="" />
-            <span>julien-sergent</span>
-          </a>
-        </li>
-        <li className={styles.item}>
+          <span>, </span>
           <a
             href="https://twitter.com/_maddeveloper"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={twitterIcon} className={styles.icon} alt="" />
-            <span>_maddeveloper</span>
+            Twitter
           </a>
-        </li>
-      </ul>
+          <span> or </span>
+          <a
+            href="https://www.linkedin.com/in/julien-sergent/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          .
+        </Typography.Text>
+      </Typography.Paragraph>
     </Layout.MainContent>
   )
 }
