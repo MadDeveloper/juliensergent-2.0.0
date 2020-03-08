@@ -1,25 +1,22 @@
 .root {
-  padding: 20px;
+  padding: 20px 0;
   background-color: var(--header-background-color);
-}
-
-.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header .nameLink {
+.nameLink {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header .nameLink:hover {
+.nameLink:hover {
   text-decoration: none;
 }
 
-.header .photo {
+.photo {
   background-image: url(../../assets/images/julien.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +28,7 @@
   margin-right: 10px;
 }
 
-.header .name {
+.name {
   font-size: 20px;
   font-weight: 700;
   margin: 0;

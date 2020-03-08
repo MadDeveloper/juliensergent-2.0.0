@@ -1,9 +1,17 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { useHistory } from "react-router-dom"
+import { Button } from "../../../components/Button"
 import { Typography } from "../../../components/Typography"
+import { config } from "../../../config"
 import styles from "./Presentation.module.css"
 
 export function Presentation() {
+  const history = useHistory()
+
+  function navigateToResume() {
+    history.push(config.routes.resume)
+  }
+
   return (
     <div className={styles.root}>
       <div>
@@ -19,12 +27,7 @@ export function Presentation() {
           </Typography.Subtitle>
         </div>
         <div className={styles.showMore}>
-          <span role="img" aria-labelledby="Show More" className={styles.emoji}>
-            👉
-          </span>
-          <Link to="/resume" className={styles.link}>
-            Tell me more
-          </Link>
+          <Button onClick={navigateToResume}>+ Tell me more</Button>
         </div>
       </div>
       <div className={styles.photo} />
