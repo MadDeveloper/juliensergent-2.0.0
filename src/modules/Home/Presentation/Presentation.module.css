@@ -12,9 +12,7 @@
 }
 
 .description .element {
-  /* font-size: 40px; */
   font-weight: 700;
-  /* color: var(--text-color-normal); */
 }
 
 .description .element .highlight {
@@ -49,4 +47,46 @@
   margin-left: 50px;
   align-self: center;
   box-shadow: 0 0 15px hsl(0, 0%, 88%);
+}
+
+@media (max-width: 767px) {
+  .root {
+    margin: 0 10px;
+    flex-direction: column-reverse;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .description {
+    margin-top: 20px;
+  }
+
+  .description .element {
+    font-size: 20px;
+  }
+
+  .showMore {
+    margin-top: 30px;
+  }
+
+  .showMore .link {
+    font-size: 16px;
+  }
+
+  .name,
+  .description,
+  .showMore {
+    text-align: center;
+  }
+
+  .photo {
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+    min-height: 150px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }

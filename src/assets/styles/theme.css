@@ -1,4 +1,4 @@
-html {
+:root {
   /* Colors */
   --primary-color: #6b1fff;
   --text-color-normal: #273238;
@@ -6,7 +6,6 @@ html {
   --link-color: #6b1fff;
   --faded-link-color: rgba(107, 31, 255, 0.1);
   --active-link-color: #4d05e8;
-  /* --header-background-color: #fff; */
   --header-background-color: transparent;
   --header-menu-label-color: var(--text-color-normal);
 
@@ -20,6 +19,6 @@ html {
   --layout-content-max-width: 720px;
 }
 
-html[data-theme="dark"] {
+:root[data-theme="dark"] {
   --text-color-normal: hsl(210, 10%, 62%);
 }

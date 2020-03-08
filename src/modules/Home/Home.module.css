@@ -4,9 +4,16 @@
   height: 100%;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .menu {
-  position: absolute;
-  bottom: 130px;
+  position: relative;
+  top: 200px;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    top: 50px;
+  }
 }
