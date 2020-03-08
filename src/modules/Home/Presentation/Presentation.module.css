@@ -1,5 +1,6 @@
 .root {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .name {
@@ -28,7 +29,7 @@
 
 .showMore .link {
   font-size: 20px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -37,7 +38,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 200px;
+  min-width: 200px;
   height: 200px;
+  min-height: 200px;
   border-radius: 50%;
   margin-left: 50px;
   align-self: center;

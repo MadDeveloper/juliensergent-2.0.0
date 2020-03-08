@@ -1,0 +1,23 @@
+.root {
+  padding: 20px;
+  background-color: var(--header-background-color);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .nameLink:hover {
+  text-decoration: none;
+}
+
+.header .name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header .nav {
+  display: flex;
+}

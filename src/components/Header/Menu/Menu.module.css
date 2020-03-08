@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--text-font-size);
+  font-weight: 500;
+  color: var(--header-menu-label-color);
+}
+
+.label {
+}

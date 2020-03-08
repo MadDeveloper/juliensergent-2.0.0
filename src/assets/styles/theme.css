@@ -5,11 +5,17 @@ html {
   --title-color: #273238;
   --link-color: #6b1fff;
   --active-link-color: #4d05e8;
+  /* --header-background-color: #fff; */
+  --header-background-color: transparent;
+  --header-menu-label-color: var(--text-color-normal);
 
   /* Typography */
   --text-font-size: 16px;
   --title-font-size: 30px;
   --subtitle-font-size: 24px;
+
+  /* Sizes */
+  --layout-content-max-width: 720px;
 }
 
 html[data-theme="dark"] {
