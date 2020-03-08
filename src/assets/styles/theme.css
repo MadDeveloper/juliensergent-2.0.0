@@ -4,6 +4,7 @@ html {
   --text-color-normal: #273238;
   --title-color: #273238;
   --link-color: #6b1fff;
+  --faded-link-color: rgba(107, 31, 255, 0.1);
   --active-link-color: #4d05e8;
   /* --header-background-color: #fff; */
   --header-background-color: transparent;
@@ -13,6 +14,7 @@ html {
   --text-font-size: 16px;
   --title-font-size: 30px;
   --subtitle-font-size: 24px;
+  --header-menu-label-font-size: 16px;
 
   /* Sizes */
   --layout-content-max-width: 720px;
