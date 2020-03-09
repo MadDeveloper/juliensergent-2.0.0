@@ -3,10 +3,10 @@
   font-size: var(--text-font-size);
   font-weight: 500;
   padding: 9px 18px;
-  color: var(--primary-color);
+  color: var(--button-color);
   outline: none;
   border: none;
-  background-color: var(--faded-primary-color);
+  background-color: var(--button-background-color);
   border-radius: var(--default-border-radius);
   transition-property: border-color, background-color, color, transform;
   transition-duration: 0.2s;

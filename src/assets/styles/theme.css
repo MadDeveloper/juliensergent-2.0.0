@@ -3,17 +3,19 @@
   /* --app-background-color: #f7fbff; */
   --app-background-color: #fff;
   --primary-color: #6b1fff;
-  --faded-primary-color: rgba(107, 31, 255, 0.1);
+  --faded-primary-color: rgb(238, 233, 255);
   --active-primary-color: #4d05e8;
-  --faded-active-primary-color: rgba(77, 5, 232, 0.1);
   --text-color-normal: #273238;
   --text-color-secondary: #aaabac;
   --title-color: #273238;
   --link-color: #6b1fff;
-  --faded-link-color: rgba(107, 31, 255, 0.1);
+  --faded-link-color: var(--faded-primary-color);
   --active-link-color: #4d05e8;
   --header-background-color: transparent;
   --header-menu-label-color: var(--text-color-normal);
+
+  --button-color: var(--primary-color);
+  --button-background-color: var(--faded-primary-color);
 
   /* Typography */
   --text-font-size: 16px;
