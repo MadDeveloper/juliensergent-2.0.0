@@ -1,20 +1,6 @@
-.root {
-  margin-left: 10px;
-}
-
-.root:first-child {
-  margin-left: 0;
-}
-
 .root:hover,
 .root.active {
   background-color: var(--faded-link-color);
   color: var(--active-link-color);
   text-decoration: none;
-}
-
-@media (max-width: 575px) {
-  .root {
-    margin-left: 5px;
-  }
 }

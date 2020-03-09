@@ -19,33 +19,44 @@ export function Menu({ itemsHidden = [] }) {
   return (
     <nav className={styles.root}>
       {isVisibile(config.menu.blog) && (
-        <MenuItem to={config.routes.blog} active={isActive(config.routes.blog)}>
-          Blog
-        </MenuItem>
+        <div className={styles.item}>
+          <MenuItem
+            to={config.routes.blog}
+            active={isActive(config.routes.blog)}
+          >
+            Blog
+          </MenuItem>
+        </div>
       )}
       {isVisibile(config.menu.projects) && (
-        <MenuItem
-          to={config.routes.projects}
-          active={isActive(config.routes.projects)}
-        >
-          Projects
-        </MenuItem>
+        <div className={styles.item}>
+          <MenuItem
+            to={config.routes.projects}
+            active={isActive(config.routes.projects)}
+          >
+            Projects
+          </MenuItem>
+        </div>
       )}
       {isVisibile(config.menu.resume) && (
-        <MenuItem
-          to={config.routes.resume}
-          active={isActive(config.routes.resume)}
-        >
-          Resume
-        </MenuItem>
+        <div className={styles.item}>
+          <MenuItem
+            to={config.routes.resume}
+            active={isActive(config.routes.resume)}
+          >
+            Resume
+          </MenuItem>
+        </div>
       )}
       {isVisibile(config.menu.contact) && (
-        <MenuItem
-          to={config.routes.contact}
-          active={isActive(config.routes.contact)}
-        >
-          Contact
-        </MenuItem>
+        <div className={styles.item}>
+          <MenuItem
+            to={config.routes.contact}
+            active={isActive(config.routes.contact)}
+          >
+            Contact
+          </MenuItem>
+        </div>
       )}
     </nav>
   )
