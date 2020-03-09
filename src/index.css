@@ -7,6 +7,15 @@ body,
   background-color: var(--app-background-color);
 }
 
+html {
+  /* avoid scrollbar shift */
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+
+  /* alternative */
+  /* overflow-y: scroll; */
+}
+
 #root {
   display: flex;
   height: 100%;

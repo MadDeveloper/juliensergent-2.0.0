@@ -9,3 +9,7 @@
 .root.bold {
   font-weight: 700;
 }
+
+.root.secondary {
+  color: var(--text-color-secondary);
+}
