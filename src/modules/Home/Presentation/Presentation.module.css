@@ -4,7 +4,7 @@
 }
 
 .name {
-  font-size: 60px;
+  font-size: 80px;
 }
 
 .description {
@@ -13,6 +13,7 @@
 
 .description .element {
   font-weight: 700;
+  font-size: 35px;
 }
 
 .description .element .highlight {
@@ -23,16 +24,11 @@
   margin-top: 40px;
 }
 
-.showMore .emoji {
-  display: inline-block;
-  margin-right: 7px;
-  font-size: 20px;
-}
-
-.showMore .link {
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+.showMore .button {
+  /* border-color: transparent;
+  background-color: transparent;
+  color: transparent; */
+  font-size: 18px;
 }
 
 .photo {

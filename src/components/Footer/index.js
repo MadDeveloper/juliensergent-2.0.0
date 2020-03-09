@@ -7,14 +7,26 @@ import styles from "./Footer.module.css"
 export function Footer() {
   return (
     <footer className={styles.root}>
-      <a href="https://github.com/MadDeveloper" className={styles.social}>
+      <a
+        href="https://github.com/MadDeveloper"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.social}
+      >
         <img src={githubIcon} alt="github" className={styles.socialIcon} />
       </a>
-      <a href="https://twitter.com/_maddeveloper" className={styles.social}>
+      <a
+        href="https://twitter.com/_maddeveloper"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.social}
+      >
         <img src={twitterIcon} alt="twitter" className={styles.socialIcon} />
       </a>
       <a
         href="https://www.linkedin.com/in/julien-sergent"
+        target="_blank"
+        rel="noopener noreferrer"
         className={styles.social}
       >
         <img src={linkedinIcon} alt="linkedin" className={styles.socialIcon} />

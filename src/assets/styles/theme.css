@@ -1,5 +1,7 @@
 :root {
   /* Colors */
+  /* --app-background-color: #f7fbff; */
+  --app-background-color: #fff;
   --primary-color: #6b1fff;
   --faded-primary-color: rgba(107, 31, 255, 0.1);
   --active-primary-color: #4d05e8;

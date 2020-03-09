@@ -27,7 +27,9 @@ export function Presentation() {
           </Typography.Subtitle>
         </div>
         <div className={styles.showMore}>
-          <Button onClick={navigateToResume}>+ Tell me more</Button>
+          <Button onClick={navigateToResume} className={styles.button}>
+            + Tell me more
+          </Button>
         </div>
       </div>
       <div className={styles.photo} />
