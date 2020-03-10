@@ -3,12 +3,19 @@ import PropTypes from "prop-types"
 import React from "react"
 import styles from "./Text.module.css"
 
-export function Text({ children, bold = false, secondary = false }) {
+export function Text({
+  children,
+  bold = false,
+  small = false,
+  secondary = false,
+  className = ""
+}) {
   return (
     <span
-      className={cs(styles.root, {
+      className={cs(styles.root, className, {
         [styles.bold]: bold,
-        [styles.secondary]: secondary
+        [styles.secondary]: secondary,
+        [styles.small]: small
       })}
     >
       {children}
@@ -19,5 +26,7 @@ export function Text({ children, bold = false, secondary = false }) {
 Text.propTypes = {
   children: PropTypes.any,
   bold: PropTypes.bool,
-  secondary: PropTypes.bool
+  small: PropTypes.bool,
+  secondary: PropTypes.bool,
+  className: PropTypes.string
 }

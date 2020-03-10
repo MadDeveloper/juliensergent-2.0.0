@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { Typography } from "../../../../components/Typography"
-import { useImage } from "../../../../lib/assets"
+import { Typography } from "../../../components/Typography"
+import { useImage } from "../../../lib/assets"
 import styles from "./TechnologyIcon.module.css"
 
 export function TechnologyIcon({ name = "", path = "" }) {

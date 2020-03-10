@@ -10,6 +10,10 @@
   font-weight: 700;
 }
 
+.root.small {
+  font-size: var(--text-font-size-small);
+}
+
 .root.secondary {
   color: var(--text-color-secondary);
 }

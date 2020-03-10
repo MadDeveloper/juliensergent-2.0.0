@@ -24,3 +24,7 @@
   background-color: transparent;
   color: var(--text-color-normal);
 }
+
+.root.compact {
+  padding: 5px 10px;
+}

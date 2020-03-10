@@ -1,0 +1,33 @@
+.technicalEnvironment {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.infos {
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  display: inline-block;
+  margin-left: 10px;
+  color: var(--text-color-secondary);
+}
+
+.technicalEnvironment .technology {
+  margin-top: 20px;
+  flex-basis: 25%;
+}
+
+@media (max-width: 767px) {
+  .technicalEnvironment .technology {
+    flex-basis: 33.3333%;
+  }
+}
+
+@media (max-width: 575px) {
+  .technicalEnvironment .technology {
+    flex-basis: 50%;
+  }
+}
