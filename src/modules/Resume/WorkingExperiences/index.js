@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom"
 import { Button } from "../../../components/Button"
 import { Typography } from "../../../components/Typography"
 import { config } from "../../../config"
+import { TechnologyIcon } from "./TechnologyIcon"
 
 export function WorkingExperiences() {
   const history = useHistory()
@@ -14,17 +15,37 @@ export function WorkingExperiences() {
   return (
     <Fragment>
       <Typography.Title>Jobs</Typography.Title>
-      <Typography.Subtitle>Software engineer</Typography.Subtitle>
-      <Typography.Paragraph heading>
-        <Typography.Text secondary>sep. 2018 - today</Typography.Text>
-      </Typography.Paragraph>
-      <Typography.Paragraph>
-        <Typography.Text>
-          Development of applications integrated to the Carlipa's system.
-          Application are built with the React library and others tools like
-          Redux and Material-UI. Intensive usage of JavaScript.
-        </Typography.Text>
-      </Typography.Paragraph>
+      <div>
+        <Typography.Subtitle>Software engineer</Typography.Subtitle>
+        <Typography.Paragraph heading>
+          <Typography.Text secondary>sep. 2018 - today</Typography.Text>
+        </Typography.Paragraph>
+        <Typography.Paragraph>
+          <Typography.Text>
+            Development of applications integrated to the Carlipa's system.
+            Application are built with the React library and others tools like
+            Redux and Material-UI. Intensive usage of JavaScript.
+          </Typography.Text>
+        </Typography.Paragraph>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexWrap: "wrap",
+            marginTop: 20
+          }}
+        >
+          <div>
+            <TechnologyIcon name="Javascript" path="javascript.png" />
+          </div>
+          <div style={{ marginLeft: 40 }}>
+            <TechnologyIcon name="React" path="react.png" />
+          </div>
+          <div style={{ marginLeft: 40 }}>
+            <TechnologyIcon name="Docker" path="docker.png" />
+          </div>
+        </div>
+      </div>
 
       <Typography.Subtitle>JavaScript software engineer</Typography.Subtitle>
       <Typography.Paragraph heading>
