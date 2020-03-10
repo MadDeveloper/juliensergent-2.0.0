@@ -20,3 +20,8 @@ html {
   display: flex;
   height: 100%;
 }
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
