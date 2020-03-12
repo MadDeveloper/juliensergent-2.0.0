@@ -28,7 +28,7 @@ export function Presentation() {
         </div>
         <div className={styles.showMore}>
           <Button onClick={navigateToResume} className={styles.button}>
-            + Tell me more
+            Show resume
           </Button>
         </div>
       </div>
