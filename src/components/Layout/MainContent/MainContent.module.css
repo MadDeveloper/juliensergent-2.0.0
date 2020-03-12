@@ -1,4 +1,4 @@
 .root {
   min-height: calc(100vh - 262px);
-  padding-top: 40px;
+  padding-top: var(--header-content-spacing);
 }

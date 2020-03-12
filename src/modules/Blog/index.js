@@ -5,7 +5,7 @@ import { Typography } from "../../components/Typography"
 export function Blog() {
   return (
     <Layout.MainContent>
-      <Typography.Title heading>Let's read a bit</Typography.Title>
+      <Typography.PageTitle heading>Let's read a bit</Typography.PageTitle>
     </Layout.MainContent>
   )
 }

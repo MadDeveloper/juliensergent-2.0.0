@@ -1,0 +1,7 @@
+.root {
+  font-weight: 900;
+  font-size: var(--pagetitle-font-size);
+  line-height: 1;
+  color: var(--text-color-normal);
+  margin: 0 0 40px;
+}

@@ -20,6 +20,7 @@
   /* Typography */
   --text-font-size: 16px;
   --text-font-size-small: 14px;
+  --pagetitle-font-size: 36px;
   --title-font-size: 30px;
   --subtitle-font-size: 24px;
   --header-menu-label-font-size: 16px;
@@ -30,6 +31,8 @@
 
   /* Misc */
   --default-border-radius: 4px;
+  --header-content-spacing: 40px;
+  --small-screens-main-content-padding: 20px;
 }
 
 :root[data-theme="dark"] {

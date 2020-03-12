@@ -1,18 +1,11 @@
 import React from "react"
-import { useHistory } from "react-router-dom"
 import { Button } from "../../../components/Button"
+import { Layout } from "../../../components/Layout"
 import { Typography } from "../../../components/Typography"
-import { config } from "../../../config"
 import { TechnologyIcon } from "../TechnologyIcon"
-import styles from "./WorkingExperiences.module.css"
+import styles from "./Jobs.module.css"
 
-export function WorkingExperiences() {
-  const history = useHistory()
-
-  function navigateToProjects() {
-    history.push(config.routes.projects)
-  }
-
+export function Jobs() {
   function openLink(link = "") {
     window.open(link, "_blank")
   }
@@ -30,7 +23,7 @@ export function WorkingExperiences() {
   }
 
   return (
-    <section>
+    <Layout.Content>
       <Typography.Title>Jobs</Typography.Title>
       <article>
         <Typography.Subtitle>Software engineer</Typography.Subtitle>
@@ -307,46 +300,6 @@ export function WorkingExperiences() {
           </div>
         </div>
       </article>
-
-      <article>
-        <Typography.Title>Projects</Typography.Title>
-        <Typography.Paragraph>
-          <Typography.Text>
-            You can go to the{" "}
-            <Button onClick={navigateToProjects}>Projects</Button> menu if you
-            want to see all my personal projects.
-          </Typography.Text>
-        </Typography.Paragraph>
-      </article>
-
-      <article>
-        <Typography.Title>Education</Typography.Title>
-        <Typography.Subtitle>
-          Master project manager in software engineering
-        </Typography.Subtitle>
-        <Typography.Paragraph heading>
-          <Typography.Text secondary>2016 - 2018</Typography.Text>
-        </Typography.Paragraph>
-        <Typography.Subtitle>
-          Bachelor of Science in Information Technology
-        </Typography.Subtitle>
-        <Typography.Paragraph heading>
-          <Typography.Text secondary>2013 - 2016</Typography.Text>
-        </Typography.Paragraph>
-        <Typography.Subtitle>
-          High school diploma - Scientific Subjects
-        </Typography.Subtitle>
-        <Typography.Paragraph heading>
-          <Typography.Text secondary>2012 - 2013</Typography.Text>
-        </Typography.Paragraph>
-      </article>
-
-      <article>
-        <Typography.Title>Skills</Typography.Title>
-      </article>
-      <article>
-        <Typography.Title>Languages</Typography.Title>
-      </article>
-    </section>
+    </Layout.Content>
   )
 }

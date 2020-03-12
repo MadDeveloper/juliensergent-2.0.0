@@ -5,7 +5,7 @@ import { Typography } from "../../components/Typography"
 export function Projects() {
   return (
     <Layout.MainContent>
-      <Typography.Title heading>Time to be be crazy</Typography.Title>
+      <Typography.PageTitle>Time to be be crazy</Typography.PageTitle>
     </Layout.MainContent>
   )
 }

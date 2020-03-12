@@ -8,3 +8,7 @@
 .root.compact {
   max-width: var(--layout-content-compact-max-width);
 }
+
+.root.headerSpacing {
+  padding-top: var(--header-content-spacing);
+}

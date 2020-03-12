@@ -7,7 +7,7 @@ import { ContactForm } from "./ContactForm"
 export function Contact() {
   return (
     <Layout.MainContent>
-      <Typography.Title heading>How to contact me</Typography.Title>
+      <Typography.PageTitle heading>How to contact me</Typography.PageTitle>
       <Typography.Paragraph>
         <Typography.Text>You can use the form below:</Typography.Text>
       </Typography.Paragraph>

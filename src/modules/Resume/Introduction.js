@@ -1,9 +1,11 @@
-import React, { Fragment } from "react"
+import React from "react"
+import { Layout } from "../../components/Layout"
 import { Typography } from "../../components/Typography"
+import { TechnologyIcon } from "./TechnologyIcon"
 
 export function Introduction() {
   return (
-    <Fragment>
+    <Layout.Content>
       <Typography.Paragraph>
         <Typography.Text>
           Actually, I am a software engineer based in France.
@@ -18,6 +20,12 @@ export function Introduction() {
           frontend or backend developer, I can only be a fullstack developer.
         </Typography.Text>
       </Typography.Paragraph>
-    </Fragment>
+      <Typography.Subtitle>Favorite technologies</Typography.Subtitle>
+      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+        <TechnologyIcon name="Javascript" path="javascript.png" />
+        <TechnologyIcon name="Node.js" path="node.png" />
+        <TechnologyIcon name="React" path="react.png" />
+      </div>
+    </Layout.Content>
   )
 }
