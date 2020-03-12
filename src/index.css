@@ -1,24 +1,31 @@
 @import "./assets/styles/imports.css";
 
-html,
-body,
-#root {
-  min-height: 100vh;
-  background-color: var(--app-background-color);
-}
-
 html {
   /* avoid scrollbar shift */
+  height: 100%;
   overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
+  -webkit-overflow-scrolling: touch;
 
   /* alternative */
   /* overflow-y: scroll; */
 }
 
-#root {
+html,
+body {
+  min-height: 100%;
+  background-color: var(--app-background-color);
+}
+
+body {
   display: flex;
-  height: 100%;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 a:hover,
