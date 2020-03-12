@@ -1,11 +1,8 @@
 import React from "react"
-import { ReactComponent as CalendarIcon } from "../../../assets/icons/calendar.svg"
-import { ReactComponent as LinkIcon } from "../../../assets/icons/link.svg"
-import { ReactComponent as PinIcon } from "../../../assets/icons/pin.svg"
 import { Button } from "../../../components/Button"
-import { ExternalLink } from "../../../components/ExternalLink"
 import { Layout } from "../../../components/Layout"
 import { Typography } from "../../../components/Typography"
+import ExtraInfos from "../ExtraInfos"
 import { TechnologyIcon } from "../TechnologyIcon"
 import styles from "./Jobs.module.css"
 
@@ -38,25 +35,11 @@ export function Jobs() {
           </Button>
         </div>
 
-        <div className={styles.metadata}>
-          <div className={styles.item}>
-            <CalendarIcon title="date" className={styles.icon} />
-            <Typography.Text secondary>sep. 2018 - today</Typography.Text>
-          </div>
-          <div className={styles.item}>
-            <PinIcon title="location" className={styles.icon} />
-            <Typography.Text secondary>Toulouse</Typography.Text>
-          </div>
-          <div className={styles.item}>
-            <ExternalLink
-              to="https://carlipa.com"
-              className={styles.companyUrl}
-            >
-              <LinkIcon title="company website" className={styles.icon} />
-              https://carlipa.com
-            </ExternalLink>
-          </div>
-        </div>
+        <ExtraInfos
+          date="sep. 2018 - today"
+          location="Toulouse"
+          link="https://carlipa.com"
+        />
 
         <Typography.Paragraph>
           <Typography.Text>
@@ -66,7 +49,6 @@ export function Jobs() {
           </Typography.Text>
         </Typography.Paragraph>
         <Typography.Paragraph></Typography.Paragraph>
-
         <Typography.Paragraph>
           <Typography.Text bold>Technical environment</Typography.Text>
         </Typography.Paragraph>
@@ -98,25 +80,11 @@ export function Jobs() {
           </Button>
         </div>
 
-        <div className={styles.metadata}>
-          <div className={styles.item}>
-            <CalendarIcon title="date" className={styles.icon} />
-            <Typography.Text secondary>oct. 2017 - jul. 2018</Typography.Text>
-          </div>
-          <div className={styles.item}>
-            <PinIcon title="location" className={styles.icon} />
-            <Typography.Text secondary>Toulouse</Typography.Text>
-          </div>
-          <div className={styles.item}>
-            <ExternalLink
-              to="https://liberty-rider.com"
-              className={styles.companyUrl}
-            >
-              <LinkIcon title="company website" className={styles.icon} />
-              https://liberty-rider.com
-            </ExternalLink>
-          </div>
-        </div>
+        <ExtraInfos
+          date="oct. 2017 - jul. 2018"
+          location="Toulouse"
+          link="https://liberty-rider.com"
+        />
 
         <Typography.Paragraph>
           <Typography.Text>
@@ -173,25 +141,12 @@ export function Jobs() {
             </Button>
           </div>
 
-          <div className={styles.metadata}>
-            <div className={styles.item}>
-              <CalendarIcon title="date" className={styles.icon} />
-              <Typography.Text secondary>mar. 2017 - sep. 2017</Typography.Text>
-            </div>
-            <div className={styles.item}>
-              <PinIcon title="location" className={styles.icon} />
-              <Typography.Text secondary>Blagnac</Typography.Text>
-            </div>
-            <div className={styles.item}>
-              <ExternalLink
-                to="https://services.airbus.com"
-                className={styles.companyUrl}
-              >
-                <LinkIcon title="company website" className={styles.icon} />
-                https://services.airbus.com
-              </ExternalLink>
-            </div>
-          </div>
+          <ExtraInfos
+            date="mar. 2017 - sep. 2017"
+            location="Blagnac"
+            link="https://services.airbus.com"
+          />
+
           <Typography.Paragraph>
             <Typography.Text>
               Developer on the project Services by Airbus.
@@ -227,25 +182,11 @@ export function Jobs() {
             </Button>
           </div>
 
-          <div className={styles.metadata}>
-            <div className={styles.item}>
-              <CalendarIcon title="date" className={styles.icon} />
-              <Typography.Text secondary>nov. 2016 - feb. 2017</Typography.Text>
-            </div>
-            <div className={styles.item}>
-              <PinIcon title="location" className={styles.icon} />
-              <Typography.Text secondary>Toulouse</Typography.Text>
-            </div>
-            <div className={styles.item}>
-              <ExternalLink
-                to="https://mycfmportal.com"
-                className={styles.companyUrl}
-              >
-                <LinkIcon title="company website" className={styles.icon} />
-                https://mycfmportal.com
-              </ExternalLink>
-            </div>
-          </div>
+          <ExtraInfos
+            date="nov. 2016 - feb. 2017"
+            location="Toulouse"
+            link="https://mycfmportal.com"
+          />
 
           <Typography.Paragraph>
             <Typography.Text>
@@ -273,16 +214,7 @@ export function Jobs() {
           <Button compact>Twinipix</Button>
         </div>
 
-        <div className={styles.metadata}>
-          <div className={styles.item}>
-            <CalendarIcon title="date" className={styles.icon} />
-            <Typography.Text secondary>jul. 2016 - sep. 2016</Typography.Text>
-          </div>
-          <div className={styles.item}>
-            <PinIcon title="location" className={styles.icon} />
-            <Typography.Text secondary>Toulouse</Typography.Text>
-          </div>
-        </div>
+        <ExtraInfos date="jul. 2016 - sep. 2016" location="Toulouse" />
 
         <Typography.Paragraph>
           <Typography.Text>
@@ -317,16 +249,7 @@ export function Jobs() {
           <Button compact>Prep'App</Button>
         </div>
 
-        <div className={styles.metadata}>
-          <div className={styles.item}>
-            <CalendarIcon title="date" className={styles.icon} />
-            <Typography.Text secondary>nov. 2014 - jun 2016</Typography.Text>
-          </div>
-          <div className={styles.item}>
-            <PinIcon title="location" className={styles.icon} />
-            <Typography.Text secondary>Toulouse</Typography.Text>
-          </div>
-        </div>
+        <ExtraInfos date="nov. 2014 - jun. 2016" location="Toulouse" />
 
         <Typography.Paragraph>
           <Typography.Text>
