@@ -1,4 +1,16 @@
 .root {
-  min-height: calc(100vh - 262px);
+  min-height: calc(
+    100vh - 227px - var(--header-content-spacing)
+  ); /* 227px equals header height + footer height */
+  /*
+   * @todo: should be computed dynamically in JavaScript
+   * or this behaviour should be removed
+   */
   padding-top: var(--header-content-spacing);
+}
+
+@media (max-width: 575px) {
+  .root {
+    min-height: calc(100vh - 321px - var(--header-content-spacing));
+  }
 }
