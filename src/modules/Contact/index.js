@@ -1,4 +1,5 @@
 import React from "react"
+import { ExternalLink } from "../../components/ExternalLink"
 import { Layout } from "../../components/Layout"
 import { Typography } from "../../components/Typography"
 import styles from "./Contact.module.css"
@@ -17,37 +18,25 @@ export function Contact() {
       <Typography.Paragraph>
         <Typography.Text>
           Or you can contact me directly at{" "}
-          <a href="mailto:sergent.julien@icloud.com">
+          <ExternalLink to="mailto:sergent.julien@icloud.com">
             sergent.julien@icloud.com
-          </a>
+          </ExternalLink>
           .
         </Typography.Text>
         <br />
         <Typography.Text>
           You can also find me around the web, on{" "}
-          <a
-            href="https://github.com/MadDeveloper"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <ExternalLink to="https://github.com/MadDeveloper">
             GitHub
-          </a>
+          </ExternalLink>
           <span>, </span>
-          <a
-            href="https://twitter.com/_maddeveloper"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <ExternalLink to="https://twitter.com/_maddeveloper">
             Twitter
-          </a>
+          </ExternalLink>
           <span> or </span>
-          <a
-            href="https://www.linkedin.com/in/julien-sergent/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <ExternalLink to="https://www.linkedin.com/in/julien-sergent/">
             LinkedIn
-          </a>
+          </ExternalLink>
           .
         </Typography.Text>
       </Typography.Paragraph>

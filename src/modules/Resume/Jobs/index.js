@@ -1,5 +1,9 @@
 import React from "react"
+import { ReactComponent as CalendarIcon } from "../../../assets/icons/calendar.svg"
+import { ReactComponent as LinkIcon } from "../../../assets/icons/link.svg"
+import { ReactComponent as PinIcon } from "../../../assets/icons/pin.svg"
 import { Button } from "../../../components/Button"
+import { ExternalLink } from "../../../components/ExternalLink"
 import { Layout } from "../../../components/Layout"
 import { Typography } from "../../../components/Typography"
 import { TechnologyIcon } from "../TechnologyIcon"
@@ -28,13 +32,30 @@ export function Jobs() {
       <article>
         <Typography.Subtitle>Software engineer</Typography.Subtitle>
 
-        <div className={styles.infos}>
+        <div>
           <Button onClick={openCarlipa} compact>
             Carlipa
           </Button>
-          <Typography.Text className={styles.date}>
-            sep. 2018 - today
-          </Typography.Text>
+        </div>
+
+        <div className={styles.metadata}>
+          <div className={styles.item}>
+            <CalendarIcon title="date" className={styles.icon} />
+            <Typography.Text secondary>sep. 2018 - today</Typography.Text>
+          </div>
+          <div className={styles.item}>
+            <PinIcon title="location" className={styles.icon} />
+            <Typography.Text secondary>Toulouse</Typography.Text>
+          </div>
+          <div className={styles.item}>
+            <ExternalLink
+              to="https://carlipa.com"
+              className={styles.companyUrl}
+            >
+              <LinkIcon title="company website" className={styles.icon} />
+              https://carlipa.com
+            </ExternalLink>
+          </div>
         </div>
 
         <Typography.Paragraph>
@@ -44,15 +65,7 @@ export function Jobs() {
             Redux and Material-UI. Intensive usage of JavaScript.
           </Typography.Text>
         </Typography.Paragraph>
-        <Typography.Paragraph>
-          <a
-            href="https://carlipa.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://carlipa.com
-          </a>
-        </Typography.Paragraph>
+        <Typography.Paragraph></Typography.Paragraph>
 
         <Typography.Paragraph>
           <Typography.Text bold>Technical environment</Typography.Text>
@@ -77,15 +90,32 @@ export function Jobs() {
       </article>
 
       <article>
-        <Typography.Subtitle>JavaScript software engineer</Typography.Subtitle>
+        <Typography.Subtitle>Software engineer</Typography.Subtitle>
 
-        <div className={styles.infos}>
+        <div>
           <Button onClick={openLibertyRider} compact>
             Liberty Rider
           </Button>
-          <Typography.Text className={styles.date}>
-            oct. 2017 - juil. 2018
-          </Typography.Text>
+        </div>
+
+        <div className={styles.metadata}>
+          <div className={styles.item}>
+            <CalendarIcon title="date" className={styles.icon} />
+            <Typography.Text secondary>oct. 2017 - jul. 2018</Typography.Text>
+          </div>
+          <div className={styles.item}>
+            <PinIcon title="location" className={styles.icon} />
+            <Typography.Text secondary>Toulouse</Typography.Text>
+          </div>
+          <div className={styles.item}>
+            <ExternalLink
+              to="https://liberty-rider.com"
+              className={styles.companyUrl}
+            >
+              <LinkIcon title="company website" className={styles.icon} />
+              https://liberty-rider.com
+            </ExternalLink>
+          </div>
         </div>
 
         <Typography.Paragraph>
@@ -94,15 +124,6 @@ export function Jobs() {
             version. The build of the version requires the reconstruction of new
             APIs as well as to adapt some visuals.
           </Typography.Text>
-        </Typography.Paragraph>
-        <Typography.Paragraph>
-          <a
-            href="https://liberty-rider.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://liberty-rider.com
-          </a>
         </Typography.Paragraph>
 
         <Typography.Paragraph>
@@ -146,15 +167,31 @@ export function Jobs() {
         <div>
           <Typography.Subtitle>React developer</Typography.Subtitle>
 
-          <div className={styles.infos}>
+          <div>
             <Button onClick={openCapgemini} compact>
               Capgemini
             </Button>
-            <Typography.Text className={styles.date}>
-              mar. 2017 - sep. 2017
-            </Typography.Text>
           </div>
 
+          <div className={styles.metadata}>
+            <div className={styles.item}>
+              <CalendarIcon title="date" className={styles.icon} />
+              <Typography.Text secondary>mar. 2017 - sep. 2017</Typography.Text>
+            </div>
+            <div className={styles.item}>
+              <PinIcon title="location" className={styles.icon} />
+              <Typography.Text secondary>Blagnac</Typography.Text>
+            </div>
+            <div className={styles.item}>
+              <ExternalLink
+                to="https://services.airbus.com"
+                className={styles.companyUrl}
+              >
+                <LinkIcon title="company website" className={styles.icon} />
+                https://services.airbus.com
+              </ExternalLink>
+            </div>
+          </div>
           <Typography.Paragraph>
             <Typography.Text>
               Developer on the project Services by Airbus.
@@ -162,16 +199,6 @@ export function Jobs() {
               My mission is to work with a team of consultants, discuss and
               propose the appropriate solutions for the wanted functionalities.
             </Typography.Text>
-          </Typography.Paragraph>
-          <Typography.Paragraph>
-            <a
-              href="https://services.airbus.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://services.airbus.com
-            </a>
-            .
           </Typography.Paragraph>
 
           <Typography.Paragraph>
@@ -194,13 +221,30 @@ export function Jobs() {
         <div>
           <Typography.Subtitle>JavaScript developer</Typography.Subtitle>
 
-          <div className={styles.infos}>
+          <div>
             <Button onClick={openCapgemini} compact>
               Capgemini
             </Button>
-            <Typography.Text className={styles.date}>
-              nov. 2016 - fev. 2017
-            </Typography.Text>
+          </div>
+
+          <div className={styles.metadata}>
+            <div className={styles.item}>
+              <CalendarIcon title="date" className={styles.icon} />
+              <Typography.Text secondary>nov. 2016 - feb. 2017</Typography.Text>
+            </div>
+            <div className={styles.item}>
+              <PinIcon title="location" className={styles.icon} />
+              <Typography.Text secondary>Toulouse</Typography.Text>
+            </div>
+            <div className={styles.item}>
+              <ExternalLink
+                to="https://mycfmportal.com"
+                className={styles.companyUrl}
+              >
+                <LinkIcon title="company website" className={styles.icon} />
+                https://mycfmportal.com
+              </ExternalLink>
+            </div>
           </div>
 
           <Typography.Paragraph>
@@ -209,15 +253,6 @@ export function Jobs() {
               portal, collaborate with team around the world (India, U.S.,
               France) and provide solutions to customer requests.
             </Typography.Text>
-          </Typography.Paragraph>
-          <Typography.Paragraph>
-            <a
-              href="https://mycfmportal.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://mycfmportal.com
-            </a>
           </Typography.Paragraph>
 
           <Typography.Paragraph>
@@ -234,11 +269,19 @@ export function Jobs() {
       <article>
         <Typography.Subtitle>Angular developer</Typography.Subtitle>
 
-        <div className={styles.infos}>
+        <div>
           <Button compact>Twinipix</Button>
-          <Typography.Text className={styles.date}>
-            juil. 2016 - sep. 2016
-          </Typography.Text>
+        </div>
+
+        <div className={styles.metadata}>
+          <div className={styles.item}>
+            <CalendarIcon title="date" className={styles.icon} />
+            <Typography.Text secondary>jul. 2016 - sep. 2016</Typography.Text>
+          </div>
+          <div className={styles.item}>
+            <PinIcon title="location" className={styles.icon} />
+            <Typography.Text secondary>Toulouse</Typography.Text>
+          </div>
         </div>
 
         <Typography.Paragraph>
@@ -270,11 +313,19 @@ export function Jobs() {
       <article>
         <Typography.Subtitle>Co-founder</Typography.Subtitle>
 
-        <div className={styles.infos}>
+        <div>
           <Button compact>Prep'App</Button>
-          <Typography.Text className={styles.date}>
-            nov. 2014 - juin 2016
-          </Typography.Text>
+        </div>
+
+        <div className={styles.metadata}>
+          <div className={styles.item}>
+            <CalendarIcon title="date" className={styles.icon} />
+            <Typography.Text secondary>nov. 2014 - jun 2016</Typography.Text>
+          </div>
+          <div className={styles.item}>
+            <PinIcon title="location" className={styles.icon} />
+            <Typography.Text secondary>Toulouse</Typography.Text>
+          </div>
         </div>
 
         <Typography.Paragraph>

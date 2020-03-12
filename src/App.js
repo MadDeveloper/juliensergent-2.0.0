@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react"
+import React from "react"
 import { Route, Switch, useLocation } from "react-router-dom"
 import styles from "./App.module.css"
 import { Footer } from "./components/Footer"
@@ -18,11 +18,6 @@ export function App() {
   const showFooter = showHeader
 
   useThemeObserver()
-
-  useLayoutEffect(() => {
-    console.log(window.innerWidth, window.innerHeight)
-    console.log(document.body.offsetWidth, document.body.offsetHeight)
-  }, [])
 
   return (
     <main className={styles.root}>
