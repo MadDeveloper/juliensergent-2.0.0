@@ -1,26 +1,22 @@
-.technicalEnvironment {
+.root {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.company {
-  margin-top: 15px;
-}
-
-.technicalEnvironment .technology {
+.technology {
   margin-top: 20px;
   flex-basis: 25%;
 }
 
 @media (max-width: 767px) {
-  .technicalEnvironment .technology {
+  .technology {
     flex-basis: 33.3333%;
   }
 }
 
 @media (max-width: 575px) {
-  .technicalEnvironment .technology {
+  .technology {
     flex-basis: 50%;
   }
 }

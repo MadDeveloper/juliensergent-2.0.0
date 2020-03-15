@@ -7,7 +7,7 @@ import { ExternalLink } from "../../../components/ExternalLink"
 import { Typography } from "../../../components/Typography"
 import styles from "./ExtraInfos.module.css"
 
-export default function ExtraInfos({ date = "", location = "", link = "" }) {
+export function ExtraInfos({ date = "", location = "", link = "" }) {
   return (
     <div className={styles.root}>
       {date.length > 0 && (
