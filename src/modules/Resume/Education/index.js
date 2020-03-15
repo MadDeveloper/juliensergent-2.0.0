@@ -2,13 +2,14 @@ import React from "react"
 import { Layout } from "../../../components/Layout"
 import { Typography } from "../../../components/Typography"
 import { ExtraInfos } from "../ExtraInfos"
+import styles from "./Education.module.css"
 
 export default function Education() {
   return (
     <Layout.Content>
       <Typography.Title>Education</Typography.Title>
       <article>
-        <Typography.Subtitle>
+        <Typography.Subtitle className={styles.diploma}>
           Master's degree Project Leader in Software Engineering
         </Typography.Subtitle>
         <ExtraInfos
@@ -27,7 +28,7 @@ export default function Education() {
         </Typography.Paragraph>
       </article>
       <article>
-        <Typography.Subtitle>
+        <Typography.Subtitle className={styles.diploma}>
           Bachelor of Science in Information Technology
         </Typography.Subtitle>
         <ExtraInfos
@@ -50,7 +51,7 @@ export default function Education() {
         </Typography.Paragraph>
       </article>
       <article>
-        <Typography.Subtitle>
+        <Typography.Subtitle className={styles.diploma}>
           High school diploma - Scientific Subjects
         </Typography.Subtitle>
         <ExtraInfos date="2012 - 2013" location="Cahors" />

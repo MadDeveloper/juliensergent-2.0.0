@@ -58,7 +58,7 @@ export function Jobs() {
             { name: "Node.js", path: "node.png" },
             { name: "React", path: "react.png" },
             { name: "React Native", path: "react.png" },
-            { name: "Mongodb", path: "mongodb.png" },
+            { name: "MongoDB", path: "mongodb.png" },
             { name: "Docker", path: "docker.png" }
           ]}
         />
