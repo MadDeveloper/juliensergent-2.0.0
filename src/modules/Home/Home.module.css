@@ -34,11 +34,12 @@
 
 .presentation .description {
   margin-top: 30px;
-  transition: opacity 1s;
+  transform: scale(1);
+  transition: transform 0.5s;
 }
 
 .root.hidden .presentation .description {
-  opacity: 0;
+  transform: scale(0);
 }
 
 .presentation .description .element {
@@ -58,21 +59,48 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   animation: backgroundAnimation 15s ease infinite alternate-reverse;
 }
 
 .presentation .showMore {
+  text-align: left;
   margin-top: 40px;
-  transition: opacity 1s;
 }
 
-.root.hidden .presentation .showMore {
-  opacity: 0;
+.presentation .showMore .button {
+  transform: scale(1);
+  transition: transform 0.4s 0.3s ease-in;
+}
+
+.root.hidden .presentation .showMore .button {
+  transform: scale(0);
 }
 
 .presentation .showMore .button {
   font-size: 18px;
+}
+
+.presentation .replay {
+  text-align: right;
+  position: relative;
+  top: 40px;
+  overflow: hidden;
+}
+
+.presentation .replay .link {
+  display: block;
+  transform: translateY(0);
+  transition: transform 0.3s 0.6s ease-in, opacity ease 0.4s 0.6s;
+}
+
+.root.hidden .presentation .replay .link {
+  transform: translateY(-40px);
+  opacity: 0;
+}
+
+.presentation .replay .link:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /* media queries */
@@ -99,13 +127,10 @@
     margin-top: 30px;
   }
 
-  .presentation .showMore .link {
-    font-size: 16px;
-  }
-
   .presentation .name,
   .presentation .description,
-  .presentation .showMore {
+  .presentation .showMore,
+  .presentation .replay {
     text-align: center;
   }
 }

@@ -8,7 +8,8 @@ export function Text({
   bold = false,
   small = false,
   secondary = false,
-  className = ""
+  className = "",
+  ...props
 }) {
   return (
     <span
@@ -17,6 +18,7 @@ export function Text({
         [styles.secondary]: secondary,
         [styles.small]: small
       })}
+      {...props}
     >
       {children}
     </span>
