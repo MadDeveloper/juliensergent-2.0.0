@@ -5,6 +5,34 @@
 
 .name {
   font-size: 80px;
+  background: rgb(39, 50, 56);
+  background: linear-gradient(
+    91deg,
+    #273238,
+    #382079,
+    #4d05e8,
+    #2abb9b,
+    #36d7b7
+  );
+  background-size: 1000% 1000%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+
+  animation: nameBackgroundAnimation 45s ease infinite;
+}
+
+@keyframes nameBackgroundAnimation {
+  0% {
+    background-position: 0% 53%;
+  }
+  50% {
+    background-position: 100% 48%;
+  }
+  100% {
+    background-position: 0% 53%;
+  }
 }
 
 .description {
