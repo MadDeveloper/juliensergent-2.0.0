@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  align-items: center;
+}
+
+.social:not(:first-child) {
+  margin-left: 35px;
+}
+
+.socialIcon {
+  width: 25px;
+  height: 25px;
+}

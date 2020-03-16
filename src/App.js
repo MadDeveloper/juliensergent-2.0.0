@@ -1,5 +1,5 @@
 import React from "react"
-import { Route, Switch, useLocation } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 import styles from "./App.module.css"
 import { Footer } from "./components/Footer"
 import { Header } from "./components/Header"
@@ -13,21 +13,15 @@ import { Projects } from "./modules/Projects"
 import { Resume } from "./modules/Resume"
 
 export function App() {
-  const location = useLocation()
-  const showHeader = location.pathname !== config.routes.home
-  const showFooter = showHeader
-
   useThemeObserver()
 
   return (
     <main className={styles.root}>
-      {showHeader && (
-        <Layout.Main>
-          <Layout.Content>
-            <Header />
-          </Layout.Content>
-        </Layout.Main>
-      )}
+      <Layout.Main>
+        <Layout.Content>
+          <Header />
+        </Layout.Content>
+      </Layout.Main>
 
       <Switch>
         <Route exact path={config.routes.home}>
@@ -47,13 +41,11 @@ export function App() {
         </Route>
       </Switch>
 
-      {showFooter && (
-        <Layout.Main>
-          <Layout.Content>
-            <Footer />
-          </Layout.Content>
-        </Layout.Main>
-      )}
+      <Layout.Main>
+        <Layout.Content>
+          <Footer />
+        </Layout.Content>
+      </Layout.Main>
     </main>
   )
 }

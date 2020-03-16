@@ -1,13 +1,10 @@
 import cs from "classnames"
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { useHistory } from "react-router-dom"
 import { Button } from "../../components/Button"
-import { Menu } from "../../components/Header/Menu"
 import { Typography } from "../../components/Typography"
 import { config } from "../../config"
 import styles from "./Home.module.css"
-
-const menuItemsHidden = [config.menu.resume]
 
 export function Home() {
   const history = useHistory()
@@ -19,9 +16,24 @@ export function Home() {
     history.push(config.routes.resume)
   }
 
-  useEffect(() => {}, [])
+  useEffect(() => {
+    // header & footer animation are lazy written. Should be refactored.
+    const header = document.getElementsByTagName("header")[0]
+    const footer = document.getElementsByTagName("footer")[0]
 
-  useLayoutEffect(() => {
+    header.style.opacity = 0
+    footer.style.opacity = 0
+
+    setTimeout(() => {
+      header.style.transition = "opacity 1s"
+      footer.style.transition = "opacity 1s"
+
+      setTimeout(() => {
+        header.style.transition = "none"
+        footer.style.transition = "none"
+      }, 2000)
+    }, 100)
+
     function write(text = "") {
       $title.innerHTML = $title.innerHTML + text
     }
@@ -29,12 +41,14 @@ export function Home() {
     function postAnimation() {
       setShowCursor(false)
       setHidden(false)
+      header.style.opacity = 1
+      footer.style.opacity = 1
     }
 
     const { current: $title } = titleRef
     const text = `Hi, I'm Julien.`
-    const durations = [, , 600, , , , , , , , , , , , 1000]
-    const defaultDuration = 120
+    const durations = [, , 200, , , , , , , , , , , , 800]
+    const defaultDuration = 100
 
     text
       .split("")
@@ -68,19 +82,18 @@ export function Home() {
               I'm a <span className={styles.highlight}>software engineer</span>,
               <br />
               <span className={styles.highlight}>web artisan</span> and{" "}
-              <span className={styles.highlight}>design maniac</span>.
+              <span className={cs(styles.highlight, styles.design)}>
+                design maniac
+              </span>
+              .
             </Typography.Subtitle>
           </div>
-          <div className={styles.showMore}>
-            <Button onClick={navigateToResume} className={styles.button}>
-              Show resume
+          <div>
+            <Button className={styles.showMore} onClick={navigateToResume}>
+              View my resume
             </Button>
           </div>
         </div>
-        <div className={styles.photo} />
-      </div>
-      <div className={styles.menu}>
-        <Menu itemsHidden={menuItemsHidden} />
       </div>
     </div>
   )

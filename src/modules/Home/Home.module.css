@@ -1,20 +1,11 @@
 .root {
+  position: relative;
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   /* background-color: #f7fbff; */
-}
-
-.menu {
-  position: relative;
-  top: 200px;
-  transition: opacity 2s;
-}
-
-.root.hidden .menu {
-  opacity: 0;
 }
 
 .presentation {
@@ -34,59 +25,16 @@
   animation: cursorAnimation 1s linear infinite;
 }
 
-@keyframes cursorAnimation {
-  from {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 .presentation .name {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 80px;
-}
-
-.presentation .name.animated {
-  background: rgb(39, 50, 56);
-  background: linear-gradient(
-    91deg,
-    #273238,
-    #382079,
-    #4d05e8,
-    /* #2abb9b, */ #36d7b7
-  );
-  background-size: 800% 800%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-
-  animation: nameBackgroundAnimation 20s ease infinite;
-}
-
-@keyframes nameBackgroundAnimation {
-  0% {
-    background-position: 0% 53%;
-  }
-  50% {
-    background-position: 100% 48%;
-  }
-  100% {
-    background-position: 0% 53%;
-  }
 }
 
 .presentation .description {
   margin-top: 30px;
-  transition: opacity 2s;
+  transition: opacity 1s;
 }
 
 .root.hidden .presentation .description {
@@ -102,9 +50,21 @@
   color: var(--link-color);
 }
 
+.presentation .description .element .design {
+  display: inline-block;
+  background: rgb(39, 50, 56);
+  background: linear-gradient(90deg, #4d05e8, #6b1fff, #2abb9b, #36d7b7);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  animation: backgroundAnimation 15s ease infinite alternate-reverse;
+}
+
 .presentation .showMore {
   margin-top: 40px;
-  transition: opacity 2s;
+  transition: opacity 1s;
 }
 
 .root.hidden .presentation .showMore {
@@ -115,24 +75,7 @@
   font-size: 18px;
 }
 
-.presentation .photo {
-  background-image: url(../../assets/images/julien.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 200px;
-  min-width: 200px;
-  height: 200px;
-  min-height: 200px;
-  border-radius: 50%;
-  margin-left: 50px;
-  align-self: center;
-  box-shadow: 0 0 15px hsl(0, 0%, 88%);
-  transition: opacity 2s;
-}
-
-.root.hidden .presentation .photo {
-  opacity: 0;
-}
+/* media queries */
 
 @media (max-width: 767px) {
   .presentation {
@@ -165,17 +108,32 @@
   .presentation .showMore {
     text-align: center;
   }
+}
 
-  .presentation .photo {
-    width: 150px;
-    min-width: 150px;
-    height: 150px;
-    min-height: 150px;
-    margin-left: 0;
-    margin-bottom: 20px;
+/* animations */
+
+@keyframes cursorAnimation {
+  from {
+    opacity: 1;
   }
 
-  .menu {
-    top: 40px;
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 53%;
+  }
+  50% {
+    background-position: 100% 48%;
+  }
+  100% {
+    background-position: 0% 53%;
   }
 }
