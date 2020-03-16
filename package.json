@@ -35,7 +35,10 @@
     "extends": [
       "react-app",
       "plugin:prettier/recommended"
-    ]
+    ],
+    "rules": {
+      "no-sparse-arrays": "off"
+    }
   },
   "husky": {
     "hooks": {

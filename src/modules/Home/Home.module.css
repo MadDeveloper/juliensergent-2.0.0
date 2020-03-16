@@ -10,9 +10,171 @@
 .menu {
   position: relative;
   top: 200px;
+  transition: opacity 2s;
+}
+
+.root.hidden .menu {
+  opacity: 0;
+}
+
+.presentation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.presentation .cursor {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  /* margin-left: 5px; */
+  width: 2px;
+  height: 100%;
+  border-left: 2px solid var(--text-color-normal);
+  animation: cursorAnimation 1s linear infinite;
+}
+
+@keyframes cursorAnimation {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.presentation .name {
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+}
+
+.presentation .name.animated {
+  background: rgb(39, 50, 56);
+  background: linear-gradient(
+    91deg,
+    #273238,
+    #382079,
+    #4d05e8,
+    /* #2abb9b, */ #36d7b7
+  );
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+
+  animation: nameBackgroundAnimation 20s ease infinite;
+}
+
+@keyframes nameBackgroundAnimation {
+  0% {
+    background-position: 0% 53%;
+  }
+  50% {
+    background-position: 100% 48%;
+  }
+  100% {
+    background-position: 0% 53%;
+  }
+}
+
+.presentation .description {
+  margin-top: 30px;
+  transition: opacity 2s;
+}
+
+.root.hidden .presentation .description {
+  opacity: 0;
+}
+
+.presentation .description .element {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.presentation .description .element .highlight {
+  color: var(--link-color);
+}
+
+.presentation .showMore {
+  margin-top: 40px;
+  transition: opacity 2s;
+}
+
+.root.hidden .presentation .showMore {
+  opacity: 0;
+}
+
+.presentation .showMore .button {
+  font-size: 18px;
+}
+
+.presentation .photo {
+  background-image: url(../../assets/images/julien.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  min-width: 200px;
+  height: 200px;
+  min-height: 200px;
+  border-radius: 50%;
+  margin-left: 50px;
+  align-self: center;
+  box-shadow: 0 0 15px hsl(0, 0%, 88%);
+  transition: opacity 2s;
+}
+
+.root.hidden .presentation .photo {
+  opacity: 0;
 }
 
 @media (max-width: 767px) {
+  .presentation {
+    margin: 0 10px;
+    flex-direction: column-reverse;
+  }
+
+  .presentation .name {
+    font-size: 40px;
+  }
+
+  .presentation .description {
+    margin-top: 20px;
+  }
+
+  .presentation .description .element {
+    font-size: 20px;
+  }
+
+  .presentation .showMore {
+    margin-top: 30px;
+  }
+
+  .presentation .showMore .link {
+    font-size: 16px;
+  }
+
+  .presentation .name,
+  .presentation .description,
+  .presentation .showMore {
+    text-align: center;
+  }
+
+  .presentation .photo {
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+    min-height: 150px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
   .menu {
     top: 40px;
   }
