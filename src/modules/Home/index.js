@@ -38,7 +38,7 @@ export function Home() {
         }, 100)
 
         if (animationPlayed) {
-          setTimeout(resolve, 1000)
+          setTimeout(resolve, 1200)
         } else {
           resolve()
         }
@@ -61,8 +61,6 @@ export function Home() {
         sessionStorage.setItem("homepage.animation.played", "true")
         setAnimationPlayed(true)
         setTimeout(() => {
-          header.style.transition = "none"
-          footer.style.transition = "none"
           document.body.style.overflowY = "auto"
         }, 2000)
       }
