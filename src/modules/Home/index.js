@@ -45,33 +45,32 @@ export function Home() {
       })
     }
 
-    initAnimation().then(() => {
-      // header, footer & body animations are lazy written. Should be refactored.
-      function write(text = "") {
-        titleRef.current.innerHTML = titleRef.current.innerHTML + text
-      }
+    // header, footer & body animations are lazy written. Should be refactored.
+    function write(text = "") {
+      titleRef.current.innerHTML = titleRef.current.innerHTML + text
+    }
 
-      function postAnimation() {
-        setShowCursor(false)
-        setHidden(false)
-        header.style.transform = "translateY(0)"
-        header.style.opacity = 1
-        footer.style.transform = "translateY(0)"
-        footer.style.opacity = 1
-        sessionStorage.setItem("homepage.animation.played", "true")
-        setAnimationPlayed(true)
-        setTimeout(() => {
-          document.body.style.overflowY = "auto"
-        }, 2000)
-      }
+    function postAnimation() {
+      setAnimationPlayed(true)
+      setShowCursor(false)
+      setHidden(false)
+      header.style.transform = "translateY(0)"
+      header.style.opacity = 1
+      footer.style.transform = "translateY(0)"
+      footer.style.opacity = 1
+      sessionStorage.setItem("homepage.animation.played", "true")
+      setTimeout(() => {
+        document.body.style.overflowY = "auto"
+      }, 2000)
+    }
 
-      const text = `Hi, I'm Julien.`
-      const durations = [, , 200, , , , , , , , , , , , 800]
-      const defaultDuration = 100
+    const text = `Hi, I'm Julien.`
+    const durations = [, , 200, , , , , , , , , , , , 800]
+    const defaultDuration = 100
 
-      text
-        .split("")
-        .reduce(
+    initAnimation()
+      .then(() =>
+        text.split("").reduce(
           (promise, letter, index) =>
             promise.then(() => {
               write(letter)
@@ -82,8 +81,8 @@ export function Home() {
             }),
           Promise.resolve()
         )
-        .then(postAnimation)
-    })
+      )
+      .then(postAnimation)
   }, [animationPlayed])
 
   function navigateToResume() {
@@ -105,7 +104,11 @@ export function Home() {
             heading
           >
             <span ref={titleRef}>{animationPlayed && `Hi, I'm Julien.`}</span>
-            {showCursor && <span className={styles.cursor}>&nbsp;</span>}
+            <span
+              className={cs(styles.cursor, { [styles.hidden]: !showCursor })}
+            >
+              &nbsp;
+            </span>
           </Typography.PageTitle>
           <div className={styles.description}>
             <Typography.Subtitle className={styles.element}>
@@ -122,15 +125,6 @@ export function Home() {
             <Button className={styles.button} onClick={navigateToResume}>
               View my resume
             </Button>
-          </div>
-          <div className={styles.replay}>
-            <Typography.Text
-              className={styles.link}
-              secondary
-              onClick={triggerPageAnimation}
-            >
-              Replay page animation
-            </Typography.Text>
           </div>
         </div>
       </div>

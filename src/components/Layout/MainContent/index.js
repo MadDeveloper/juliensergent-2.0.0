@@ -6,8 +6,8 @@ import styles from "./MainContent.module.css"
 
 export function MainContent({ children }) {
   return (
-    <Main>
-      <Content className={styles.root}>{children}</Content>
+    <Main className={styles.root}>
+      <Content>{children}</Content>
     </Main>
   )
 }

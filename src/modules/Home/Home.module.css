@@ -18,11 +18,15 @@
   font-family: inherit;
   font-size: inherit;
   color: inherit;
-  /* margin-left: 5px; */
   width: 2px;
   height: 100%;
   border-left: 2px solid var(--text-color-normal);
   animation: cursorAnimation 1s linear infinite;
+}
+
+.presentation .cursor.hidden {
+  opacity: 0;
+  animation: none;
 }
 
 .presentation .name {
@@ -80,29 +84,6 @@
   font-size: 18px;
 }
 
-.presentation .replay {
-  text-align: right;
-  position: relative;
-  top: 40px;
-  overflow: hidden;
-}
-
-.presentation .replay .link {
-  display: block;
-  transform: translateY(0);
-  transition: transform 0.3s 0.6s ease-in, opacity ease 0.4s 0.6s;
-}
-
-.root.hidden .presentation .replay .link {
-  transform: translateY(-40px);
-  opacity: 0;
-}
-
-.presentation .replay .link:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 /* media queries */
 
 @media (max-width: 767px) {
@@ -129,8 +110,7 @@
 
   .presentation .name,
   .presentation .description,
-  .presentation .showMore,
-  .presentation .replay {
+  .presentation .showMore {
     text-align: center;
   }
 }
