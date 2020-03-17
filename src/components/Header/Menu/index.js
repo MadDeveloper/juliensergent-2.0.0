@@ -1,12 +1,16 @@
+import cs from "classnames"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"
+import { ReactComponent as CloseIcon } from "../../../assets/icons/close.svg"
+import { ReactComponent as MenuIcon } from "../../../assets/icons/menu.svg"
 import { config } from "../../../config"
 import styles from "./Menu.module.css"
 import { MenuItem } from "./MenuItem"
 
 export function Menu({ itemsHidden = [] }) {
   const location = useLocation()
+  const [opened, setOpened] = useState(false)
 
   function isVisibile(item = "") {
     return !itemsHidden.includes(item) && config.menu.items.includes(item)
@@ -16,8 +20,25 @@ export function Menu({ itemsHidden = [] }) {
     return location.pathname === route
   }
 
+  function open() {
+    setOpened(true)
+  }
+
+  function close() {
+    setOpened(false)
+  }
+
+  useEffect(() => {
+    close()
+  }, [location.pathname])
+
   return (
-    <nav className={styles.root}>
+    <nav className={cs(styles.root, { [styles.opened]: opened })}>
+      {opened ? (
+        <CloseIcon className={styles.closeIcon} onClick={close} />
+      ) : (
+        <MenuIcon className={styles.openIcon} onClick={open} />
+      )}
       {isVisibile(config.menu.blog) && (
         <div className={styles.item}>
           <MenuItem
