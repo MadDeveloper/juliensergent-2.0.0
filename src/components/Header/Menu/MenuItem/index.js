@@ -1,14 +1,14 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { useHistory } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { Button } from "../../../Button"
 import styles from "./MenuItem.module.css"
 
 export function MenuItem({ to = "", active = false, children }) {
-  const history = useHistory()
+  const navigate = useNavigate()
 
-  function navigate() {
-    history.push(to)
+  function navigateToMenuTarget() {
+    navigate(to)
   }
 
   return (
@@ -16,7 +16,7 @@ export function MenuItem({ to = "", active = false, children }) {
       className={styles.root}
       active={active}
       secondary={!active}
-      onClick={navigate}
+      onClick={navigateToMenuTarget}
     >
       {children}
     </Button>

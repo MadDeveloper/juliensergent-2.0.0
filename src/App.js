@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { Route, Switch, useLocation } from "react-router-dom"
+import { Route, Routes, useLocation } from "react-router-dom"
 import styles from "./App.module.css"
 import { Footer } from "./components/Footer"
 import { Header } from "./components/Header"
@@ -32,23 +32,13 @@ export function App() {
         </Layout.Content>
       </Layout.Main>
 
-      <Switch>
-        <Route exact path={config.routes.home}>
-          <Home />
-        </Route>
-        <Route path={config.routes.blog}>
-          <Blog />
-        </Route>
-        <Route path={config.routes.projects}>
-          <Projects />
-        </Route>
-        <Route path={config.routes.resume}>
-          <Resume />
-        </Route>
-        <Route path={config.routes.contact}>
-          <Contact />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path={config.routes.home} element={<Home />} />
+        <Route path={config.routes.blog} element={<Blog />} />
+        <Route path={config.routes.projects} element={<Projects />} />
+        <Route path={config.routes.resume} element={<Resume />} />
+        <Route path={config.routes.contact} element={<Contact />} />
+      </Routes>
 
       <Layout.Main>
         <Layout.Content>
