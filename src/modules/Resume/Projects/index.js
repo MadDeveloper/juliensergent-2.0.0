@@ -1,15 +1,15 @@
 import React from "react"
-import { useHistory } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { Button } from "../../../components/Button"
 import { Layout } from "../../../components/Layout"
 import { Typography } from "../../../components/Typography"
 import { config } from "../../../config"
 
 export function Projects() {
-  const history = useHistory()
+  const navigate = useNavigate()
 
   function navigateToProjects() {
-    history.push(config.routes.projects)
+    navigate(config.routes.projects)
   }
 
   return (

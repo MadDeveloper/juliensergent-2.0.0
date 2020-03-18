@@ -1,6 +1,6 @@
 import cs from "classnames"
 import React, { useCallback, useEffect, useRef, useState } from "react"
-import { useHistory } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { Button } from "../../components/Button"
 import { Typography } from "../../components/Typography"
 import { config } from "../../config"
@@ -8,7 +8,7 @@ import { isHomeAnimationPlayed, setHomeAnimationAsPlayed } from "../../lib/app"
 import styles from "./Home.module.css"
 
 export function Home() {
-  const history = useHistory()
+  const navigation = useNavigate()
   const [animationPlayed, setAnimationPlayed] = useState(
     isHomeAnimationPlayed()
   )
@@ -66,7 +66,8 @@ export function Home() {
     }
 
     const text = `Hi, I'm Julien.`
-    const durations = [, , 200, , , , , , , , , , , , 800]
+    // eslint-disable-next-line no-sparse-arrays
+    const durations = [, , 600, , , , , , , , , , , , 800]
     const defaultDuration = 100
 
     initAnimation()
@@ -87,7 +88,7 @@ export function Home() {
   }, [animationPlayed])
 
   function navigateToResume() {
-    history.push(config.routes.resume)
+    navigation(config.routes.resume)
   }
 
   useEffect(() => {
