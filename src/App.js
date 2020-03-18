@@ -10,6 +10,7 @@ import { useThemeObserver } from "./lib/theme"
 import { Blog } from "./modules/Blog"
 import { Contact } from "./modules/Contact"
 import { Home } from "./modules/Home"
+import { NotFound } from "./modules/NotFound"
 import { Projects } from "./modules/Projects"
 import { Resume } from "./modules/Resume"
 
@@ -38,6 +39,7 @@ export function App() {
         <Route path={config.routes.projects} element={<Projects />} />
         <Route path={config.routes.resume} element={<Resume />} />
         <Route path={config.routes.contact} element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Layout.Main>
