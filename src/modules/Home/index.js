@@ -4,12 +4,13 @@ import { useHistory } from "react-router-dom"
 import { Button } from "../../components/Button"
 import { Typography } from "../../components/Typography"
 import { config } from "../../config"
+import { isHomeAnimationPlayed, setHomeAnimationAsPlayed } from "../../lib/app"
 import styles from "./Home.module.css"
 
 export function Home() {
   const history = useHistory()
   const [animationPlayed, setAnimationPlayed] = useState(
-    !!sessionStorage.getItem("homepage.animation.played")
+    isHomeAnimationPlayed()
   )
   const [hidden, setHidden] = useState(!animationPlayed)
   const titleRef = useRef(null)
@@ -45,7 +46,7 @@ export function Home() {
       })
     }
 
-    // header, footer & body animations are lazy written. Should be refactored.
+    // header, footer & footer animations are lazy written. Should be refactored.
     function write(text = "") {
       titleRef.current.innerHTML = titleRef.current.innerHTML + text
     }
@@ -54,11 +55,11 @@ export function Home() {
       setAnimationPlayed(true)
       setShowCursor(false)
       setHidden(false)
-      header.style.transform = "translateY(0)"
+      header.style.transform = "none"
       header.style.opacity = 1
-      footer.style.transform = "translateY(0)"
+      footer.style.transform = "none"
       footer.style.opacity = 1
-      sessionStorage.setItem("homepage.animation.played", "true")
+      setHomeAnimationAsPlayed()
       setTimeout(() => {
         document.body.style.overflowY = "auto"
       }, 2000)

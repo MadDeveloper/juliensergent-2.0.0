@@ -1,10 +1,11 @@
-import React from "react"
-import { Route, Switch } from "react-router-dom"
+import React, { useEffect } from "react"
+import { Route, Switch, useLocation } from "react-router-dom"
 import styles from "./App.module.css"
 import { Footer } from "./components/Footer"
 import { Header } from "./components/Header"
 import { Layout } from "./components/Layout"
 import { config } from "./config"
+import { isHomeAnimationPlayed, setHomeAnimationAsPlayed } from "./lib/app"
 import { useThemeObserver } from "./lib/theme"
 import { Blog } from "./modules/Blog"
 import { Contact } from "./modules/Contact"
@@ -13,7 +14,15 @@ import { Projects } from "./modules/Projects"
 import { Resume } from "./modules/Resume"
 
 export function App() {
+  const location = useLocation()
+
   useThemeObserver()
+
+  useEffect(() => {
+    if (location.pathname !== config.routes.home && !isHomeAnimationPlayed()) {
+      setHomeAnimationAsPlayed()
+    }
+  }, [location.pathname])
 
   return (
     <main className={styles.root}>
