@@ -1,0 +1,7 @@
+.root {
+  background: var(--faded-info-color);
+}
+
+.label {
+  color: var(--info-color);
+}

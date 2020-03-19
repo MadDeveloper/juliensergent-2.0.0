@@ -17,6 +17,13 @@
   --button-color: var(--primary-color);
   --button-background-color: var(--faded-primary-color);
 
+  --danger-color: #f64747;
+  --faded-danger-color: #fbebeb;
+  --info-color: #1f78d1;
+  --faded-info-color: #e4f1ff;
+  --success-color: #00b16a;
+  --faded-grey-color: #fafafa;
+
   /* Typography */
   --text-font-size: 16px;
   --text-font-size-small: 14px;
@@ -33,6 +40,8 @@
   --default-border-radius: 4px;
   --header-content-spacing: 40px;
   --small-screens-main-content-padding: 20px;
+  --standard-padding-vertical: 9px;
+  --standard-padding-horizontal: 18px;
 }
 
 :root[data-theme="dark"] {

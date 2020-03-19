@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  width: 100%;
+  min-height: 42px;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--standard-padding-vertical) var(--standard-padding-horizontal);
+  font-size: var(--text-font-size);
+  color: var(--text-color-normal);
+  background: var(--faded-grey-color);
+  border-radius: var(--default-border-radius);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.content .icon {
+  margin-right: 10px;
+}
+
+.action {
+  margin-right: -7px;
+}
