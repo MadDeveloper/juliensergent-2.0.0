@@ -9,6 +9,7 @@
   color: var(--text-color-normal);
   background: var(--faded-grey-color);
   border-radius: var(--default-border-radius);
+  box-sizing: border-box;
 }
 
 .content {

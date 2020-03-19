@@ -4,7 +4,6 @@ import { Layout } from "../../../components/Layout"
 import { Typography } from "../../../components/Typography"
 import { ExtraInfos } from "../ExtraInfos"
 import { TechnologyList } from "../TechnologyList"
-import styles from "./Jobs.module.css"
 
 export function Jobs() {
   function openLink(link = "") {
@@ -29,7 +28,7 @@ export function Jobs() {
       <article>
         <Typography.Subtitle>Software engineer</Typography.Subtitle>
 
-        <div className={styles.company}>
+        <div>
           <Button onClick={openCarlipa} compact>
             Carlipa
           </Button>
@@ -67,7 +66,7 @@ export function Jobs() {
       <article>
         <Typography.Subtitle>Software engineer</Typography.Subtitle>
 
-        <div className={styles.company}>
+        <div>
           <Button onClick={openLibertyRider} compact>
             Liberty Rider
           </Button>
@@ -109,7 +108,7 @@ export function Jobs() {
       <article>
         <Typography.Subtitle>React developer</Typography.Subtitle>
 
-        <div className={styles.company}>
+        <div>
           <Button onClick={openCapgemini} compact>
             Capgemini
           </Button>
@@ -144,7 +143,7 @@ export function Jobs() {
       <article>
         <Typography.Subtitle>JavaScript developer</Typography.Subtitle>
 
-        <div className={styles.company}>
+        <div>
           <Button onClick={openCapgemini} compact>
             Capgemini
           </Button>
@@ -175,7 +174,7 @@ export function Jobs() {
       <article>
         <Typography.Subtitle>Angular developer</Typography.Subtitle>
 
-        <div className={styles.company}>
+        <div>
           <Button compact>Twinipix</Button>
         </div>
 
@@ -204,7 +203,7 @@ export function Jobs() {
       <article>
         <Typography.Subtitle>Co-founder</Typography.Subtitle>
 
-        <div className={styles.company}>
+        <div>
           <Button compact>Prep'App</Button>
         </div>
 

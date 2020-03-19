@@ -24,7 +24,7 @@ export function ExtraInfos({ date = "", location = "", link = "" }) {
       )}
       {link.length > 0 && (
         <div className={styles.item}>
-          <ExternalLink to="link" className={styles.companyUrl}>
+          <ExternalLink to={link} className={styles.companyUrl}>
             <LinkIcon title={link} className={styles.icon} />
             {link}
           </ExternalLink>

@@ -4,10 +4,6 @@
   flex-wrap: wrap;
 }
 
-.company {
-  margin-top: 15px;
-}
-
 .technicalEnvironment .technology {
   margin-top: 20px;
   flex-basis: 25%;
