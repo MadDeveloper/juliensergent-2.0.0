@@ -30,56 +30,42 @@ export function Introduction() {
           frontend or backend developer, I can only be a fullstack developer.
         </Typography.Text>
       </Typography.Paragraph>
-      <Typography.Subtitle>Loved technologies</Typography.Subtitle>
-      <TechnologyList
-        list={[
-          {
-            name: "JavaScript",
-            path: "javascript",
-            content: (
-              <span>Highly skilled, daily usage. Preferred language.</span>
-            )
-          },
-          {
-            name: "Node.js",
-            path: "node",
-            content: <span>Who can't love Node.js? Favorite revolution.</span>
-          },
-          {
-            name: "React",
-            path: "react",
-            content: <span>The best UI library. I love it, really.</span>
-          },
-          {
-            name: "React Native",
-            path: "react",
-            content: <span>React best friend, mine too.</span>
-          },
-          {
-            name: "TypeScript",
-            path: "typescript",
-            content: <span>I can not do without it.</span>
-          },
-          {
-            name: "MongoDB",
-            path: "mongodb",
-            content: (
-              <span>
-                Daily usage. Match perfectly with JavaScript, and my opinion.
-              </span>
-            )
-          },
-          {
-            name: "GraphQL",
-            path: "graphql",
-            content: (
-              <span>
-                When I discovered it, I just stopped developing REST API.
-              </span>
-            )
-          }
-        ]}
-      />
+      <div>
+        <Typography.Subtitle>Skills quick look</Typography.Subtitle>
+        <TechnologyList
+          compact
+          list={[
+            {
+              name: "JavaScript",
+              path: "javascript"
+            },
+            {
+              name: "Node.js",
+              path: "node"
+            },
+            {
+              name: "React",
+              path: "react"
+            },
+            {
+              name: "React Native",
+              path: "react"
+            },
+            {
+              name: "TypeScript",
+              path: "typescript"
+            },
+            {
+              name: "MongoDB",
+              path: "mongodb"
+            },
+            {
+              name: "GraphQL",
+              path: "graphql"
+            }
+          ]}
+        />
+      </div>
     </Layout.Content>
   )
 }

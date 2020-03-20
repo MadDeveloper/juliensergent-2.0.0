@@ -5,9 +5,9 @@ import { Typography } from "../../../components/Typography"
 import { TechnologyIcon } from "./TechnologyIcon"
 import styles from "./TechnologyList.module.css"
 
-export function TechnologyList({ list = [], className = "" }) {
+export function TechnologyList({ list = [], className = "", compact = false }) {
   return (
-    <div className={cs(styles.root, className)}>
+    <div className={cs(styles.root, className, { [styles.compact]: compact })}>
       {list.map(technology => (
         <div key={technology.name} className={styles.item}>
           <TechnologyIcon name={technology.name} path={technology.path} />
@@ -37,5 +37,6 @@ TechnologyList.propTypes = {
       path: PropTypes.string.isRequired
     })
   ).isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  compact: PropTypes.bool
 }
