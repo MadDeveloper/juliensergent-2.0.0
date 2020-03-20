@@ -52,10 +52,6 @@ export function Introduction() {
               path: "react"
             },
             {
-              name: "TypeScript",
-              path: "typescript"
-            },
-            {
               name: "MongoDB",
               path: "mongodb"
             },
