@@ -1,5 +1,9 @@
 @import "./assets/styles/imports.css";
 
+* {
+  outline: none;
+}
+
 html {
   /* avoid scrollbar shift */
   height: 100%;
