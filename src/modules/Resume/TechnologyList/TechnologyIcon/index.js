@@ -1,11 +1,11 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { Typography } from "../../../../components/Typography"
-import { useImage } from "../../../../lib/assets"
+import { useIcon } from "../../../../lib/assets"
 import styles from "./TechnologyIcon.module.css"
 
 export function TechnologyIcon({ name = "", path = "" }) {
-  const [image] = useImage(`technologies/${path}`)
+  const [image] = useIcon(`technologies/${path}`)
 
   return (
     <div className={styles.root}>

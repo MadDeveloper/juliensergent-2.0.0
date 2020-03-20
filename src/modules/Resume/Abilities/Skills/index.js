@@ -1,13 +1,13 @@
 import React from "react"
-import angularImage from "../../../../assets/images/technologies/angular.png"
-import dockerImage from "../../../../assets/images/technologies/docker.png"
-import graphqlImage from "../../../../assets/images/technologies/graphql.png"
-import javascriptImage from "../../../../assets/images/technologies/javascript.png"
-import mongodbImage from "../../../../assets/images/technologies/mongodb.png"
-import nodejsImage from "../../../../assets/images/technologies/node.png"
-import reactImage from "../../../../assets/images/technologies/react.png"
-import rxjsImage from "../../../../assets/images/technologies/rxjs.png"
-import typescriptImage from "../../../../assets/images/technologies/typescript.png"
+import { ReactComponent as AngularIcon } from "../../../../assets/icons/technologies/angular.svg"
+import { ReactComponent as DockerIcon } from "../../../../assets/icons/technologies/docker.svg"
+import { ReactComponent as GraphQLIcon } from "../../../../assets/icons/technologies/graphql.svg"
+import { ReactComponent as JavaScriptIcon } from "../../../../assets/icons/technologies/javascript.svg"
+import { ReactComponent as MongoDBIcon } from "../../../../assets/icons/technologies/mongodb.svg"
+import { ReactComponent as NodeJSIcon } from "../../../../assets/icons/technologies/node.svg"
+import { ReactComponent as ReactIcon } from "../../../../assets/icons/technologies/react.svg"
+import { ReactComponent as RxJSIcon } from "../../../../assets/icons/technologies/rxjs.svg"
+import { ReactComponent as TypeScriptIcon } from "../../../../assets/icons/technologies/typescript.svg"
 import { Typography } from "../../../../components/Typography"
 import styles from "./Skills.module.css"
 
@@ -17,7 +17,7 @@ export function Skills() {
       <Typography.Subtitle>Skills</Typography.Subtitle>
       <div className={styles.list}>
         <div className={styles.item}>
-          <img src={javascriptImage} alt="JavaScript" className={styles.icon} />
+          <JavaScriptIcon title="JavaScript" className={styles.icon} />
           <div>
             <Typography.Paragraph heading>
               <Typography.Text bold>JavaScript</Typography.Text>
@@ -32,7 +32,7 @@ export function Skills() {
           </div>
         </div>
         <div className={styles.item}>
-          <img src={nodejsImage} alt="Node.js" className={styles.icon} />
+          <NodeJSIcon title="Node.js" className={styles.icon} />
           <div>
             <Typography.Paragraph heading>
               <Typography.Text bold>Node.js</Typography.Text>
@@ -47,7 +47,7 @@ export function Skills() {
           </div>
         </div>
         <div className={styles.item}>
-          <img src={reactImage} alt="React" className={styles.icon} />
+          <ReactIcon alt="React" className={styles.icon} />
           <div>
             <Typography.Paragraph heading>
               <Typography.Text bold>React</Typography.Text>
@@ -61,7 +61,7 @@ export function Skills() {
           </div>
         </div>
         <div className={styles.item}>
-          <img src={reactImage} alt="React Native" className={styles.icon} />
+          <ReactIcon alt="React Native" className={styles.icon} />
           <div>
             <Typography.Paragraph heading>
               <Typography.Text bold>React Native</Typography.Text>
@@ -74,7 +74,7 @@ export function Skills() {
           </div>
         </div>
         <div className={styles.item}>
-          <img src={typescriptImage} alt="TypeScript" className={styles.icon} />
+          <TypeScriptIcon alt="TypeScript" className={styles.icon} />
           <div>
             <Typography.Paragraph heading>
               <Typography.Text bold>TypeScript</Typography.Text>
@@ -87,7 +87,7 @@ export function Skills() {
           </div>
         </div>
         <div className={styles.item}>
-          <img src={rxjsImage} alt="RxJS" className={styles.icon} />
+          <RxJSIcon alt="RxJS" className={styles.icon} />
           <div>
             <Typography.Paragraph heading>
               <Typography.Text bold>RxJS</Typography.Text>
@@ -101,7 +101,7 @@ export function Skills() {
           </div>
         </div>
         <div className={styles.item}>
-          <img src={angularImage} alt="Angular" className={styles.icon} />
+          <AngularIcon alt="Angular" className={styles.icon} />
           <div>
             <Typography.Paragraph heading>
               <Typography.Text bold>Angular</Typography.Text>
@@ -117,7 +117,7 @@ export function Skills() {
           </div>
         </div>
         <div className={styles.item}>
-          <img src={mongodbImage} alt="MongoDB" className={styles.icon} />
+          <MongoDBIcon alt="MongoDB" className={styles.icon} />
           <div>
             <Typography.Paragraph heading>
               <Typography.Text bold>MongoDB</Typography.Text>
@@ -132,7 +132,7 @@ export function Skills() {
           </div>
         </div>
         <div className={styles.item}>
-          <img src={graphqlImage} alt="GraphQL" className={styles.icon} />
+          <GraphQLIcon alt="GraphQL" className={styles.icon} />
           <div>
             <Typography.Paragraph heading>
               <Typography.Text bold>GraphQL</Typography.Text>
@@ -145,7 +145,7 @@ export function Skills() {
           </div>
         </div>
         <div className={styles.item}>
-          <img src={dockerImage} alt="Docker" className={styles.icon} />
+          <DockerIcon alt="Docker" className={styles.icon} />
           <div>
             <Typography.Paragraph heading>
               <Typography.Text bold>Docker</Typography.Text>

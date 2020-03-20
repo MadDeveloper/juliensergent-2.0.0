@@ -53,12 +53,12 @@ export function Jobs() {
         </Typography.Paragraph>
         <TechnologyList
           list={[
-            { name: "JavaScript", path: "javascript.png" },
-            { name: "Node.js", path: "node.png" },
-            { name: "React", path: "react.png" },
-            { name: "React Native", path: "react.png" },
-            { name: "MongoDB", path: "mongodb.png" },
-            { name: "Docker", path: "docker.png" }
+            { name: "JavaScript", path: "javascript" },
+            { name: "Node.js", path: "node" },
+            { name: "React", path: "react" },
+            { name: "React Native", path: "react" },
+            { name: "MongoDB", path: "mongodb" },
+            { name: "Docker", path: "docker" }
           ]}
         />
       </article>
@@ -91,16 +91,16 @@ export function Jobs() {
         </Typography.Paragraph>
         <TechnologyList
           list={[
-            { name: "JavaScript", path: "javascript.png" },
-            { name: "Node.js", path: "node.png" },
-            { name: "TypeScript", path: "typescript.png" },
-            { name: "Angular", path: "angular.png" },
-            { name: "GraphQL", path: "graphql.png" },
-            { name: "Amazon", path: "aws.png" },
-            { name: "Firebase", path: "firebase.png" },
-            { name: "PostgreSQL", path: "postgresql.png" },
-            { name: "RxJS", path: "rxjs.png" },
-            { name: "Docker", path: "docker.png" }
+            { name: "JavaScript", path: "javascript" },
+            { name: "Node.js", path: "node" },
+            { name: "TypeScript", path: "typescript" },
+            { name: "Angular", path: "angular" },
+            { name: "GraphQL", path: "graphql" },
+            { name: "Amazon", path: "aws" },
+            { name: "Firebase", path: "firebase" },
+            { name: "PostgreSQL", path: "postgresql" },
+            { name: "RxJS", path: "rxjs" },
+            { name: "Docker", path: "docker" }
           ]}
         />
       </article>
@@ -134,9 +134,9 @@ export function Jobs() {
         </Typography.Paragraph>
         <TechnologyList
           list={[
-            { name: "React", path: "react.png" },
-            { name: "Elastic Search", path: "elasticsearch.png" },
-            { name: "Amazon Web Services", path: "aws.png" }
+            { name: "React", path: "react" },
+            { name: "Elastic Search", path: "elasticsearch" },
+            { name: "Amazon Web Services", path: "aws" }
           ]}
         />
       </article>
@@ -166,9 +166,7 @@ export function Jobs() {
         <Typography.Paragraph>
           <Typography.Text bold>Technical environment</Typography.Text>
         </Typography.Paragraph>
-        <TechnologyList
-          list={[{ name: "JavaScript", path: "javascript.png" }]}
-        />
+        <TechnologyList list={[{ name: "JavaScript", path: "javascript" }]} />
       </article>
 
       <article>
@@ -192,10 +190,10 @@ export function Jobs() {
         </Typography.Paragraph>
         <TechnologyList
           list={[
-            { name: "Angular", path: "angular.png" },
-            { name: "TypeScript", path: "typescript.png" },
-            { name: "Firebase", path: "firebase.png" },
-            { name: "Facebook API", path: "facebook.png" }
+            { name: "Angular", path: "angular" },
+            { name: "TypeScript", path: "typescript" },
+            { name: "Firebase", path: "firebase" },
+            { name: "Facebook API", path: "facebook" }
           ]}
         />
       </article>
@@ -222,9 +220,9 @@ export function Jobs() {
         </Typography.Paragraph>
         <TechnologyList
           list={[
-            { name: "PHP", path: "php.png" },
-            { name: "JavaScript", path: "javascript.png" },
-            { name: "MySQL", path: "mysql.png" }
+            { name: "PHP", path: "php" },
+            { name: "JavaScript", path: "javascript" },
+            { name: "MySQL", path: "mysql" }
           ]}
         />
       </article>

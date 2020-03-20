@@ -2,26 +2,33 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 .languages .lang {
   display: flex;
   align-items: flex-start;
+  flex-basis: 50%;
 }
 
 .languages .lang .flag {
   display: inline-block;
+  min-width: 50px;
   width: 50px;
+  max-width: 50px;
+  min-height: 50px;
   height: 50px;
+  max-height: 50px;
   margin-right: 20px;
-  border-radius: 50%;
 }
 
 @media (max-width: 767px) {
   .languages {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .languages .lang {
+    flex-basis: 100%;
   }
 
   .languages .lang:not(:last-child) {

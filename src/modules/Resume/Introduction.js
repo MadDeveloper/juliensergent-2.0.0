@@ -33,13 +33,13 @@ export function Introduction() {
       <Typography.Subtitle>Loved technologies</Typography.Subtitle>
       <TechnologyList
         list={[
-          { name: "JavaScript", path: "javascript.png" },
-          { name: "Node.js", path: "node.png" },
-          { name: "React", path: "react.png" },
-          { name: "React Native", path: "react.png" },
-          { name: "GraphQL", path: "graphql.png" },
-          { name: "TypeScript", path: "typescript.png" },
-          { name: "MongoDB", path: "mongodb.png" }
+          { name: "JavaScript", path: "javascript" },
+          { name: "Node.js", path: "node" },
+          { name: "React", path: "react" },
+          { name: "React Native", path: "react" },
+          { name: "GraphQL", path: "graphql" },
+          { name: "TypeScript", path: "typescript" },
+          { name: "MongoDB", path: "mongodb" }
         ]}
       />
     </Layout.Content>

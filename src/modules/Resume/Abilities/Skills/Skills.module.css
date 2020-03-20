@@ -18,16 +18,17 @@
 
 .list .item .icon {
   display: inline-block;
-  /* display: none; */
+  min-width: 50px;
   width: 50px;
+  max-width: 50px;
+  min-height: 50px;
   height: 50px;
+  max-height: 50px;
   margin-right: 20px;
-  /* border-radius: 50%; */
 }
 
 .list .item .description {
   display: block;
-  /* max-width: 200px; */
 }
 
 @media (max-width: 575px) {
@@ -36,6 +37,7 @@
   }
 
   .list .item {
+    flex-basis: 100%;
     margin-right: 0;
   }
 }

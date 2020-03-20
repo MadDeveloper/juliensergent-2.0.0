@@ -1,6 +1,6 @@
 import React from "react"
-import enFlag from "../../../../assets/images/flags/en.jpg"
-import frFlag from "../../../../assets/images/flags/fr.jpg"
+import { ReactComponent as FranceFlagIcon } from "../../../../assets/icons/flags/france.svg"
+import { ReactComponent as UnitedKingdomFlagIcon } from "../../../../assets/icons/flags/united-kingdom.svg"
 import { Typography } from "../../../../components/Typography"
 import styles from "./Languages.module.css"
 
@@ -10,7 +10,7 @@ export function Languages() {
       <Typography.Subtitle>Languages</Typography.Subtitle>
       <div className={styles.languages}>
         <div className={styles.lang}>
-          <img src={frFlag} alt="fr flag" className={styles.flag} />
+          <FranceFlagIcon title="French" className={styles.flag} />
           <div>
             <div>
               <Typography.Text bold>French</Typography.Text>
@@ -21,7 +21,7 @@ export function Languages() {
           </div>
         </div>
         <div className={styles.lang}>
-          <img src={enFlag} alt="en flag" className={styles.flag} />
+          <UnitedKingdomFlagIcon title="English" className={styles.flag} />
           <div>
             <div>
               <Typography.Text bold>English</Typography.Text>
