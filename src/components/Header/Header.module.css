@@ -1,9 +1,11 @@
 .root {
   padding: 20px 0;
+  height: 90px;
   background-color: var(--header-background-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .nameLink {
