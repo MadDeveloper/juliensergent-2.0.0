@@ -27,7 +27,7 @@
   /* Typography */
   --text-font-size: 16px;
   --text-font-size-small: 14px;
-  --pagetitle-font-size: 38px;
+  --pagetitle-font-size: 40px;
   --title-font-size: 34px;
   --subtitle-font-size: 26px;
   --header-menu-label-font-size: 16px;
@@ -46,4 +46,10 @@
 
 :root[data-theme="dark"] {
   --text-color-normal: hsl(210, 10%, 62%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --text-color-normal: hsl(210, 10%, 62%); */
+  }
 }
