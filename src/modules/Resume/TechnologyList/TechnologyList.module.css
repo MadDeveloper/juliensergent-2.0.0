@@ -1,22 +1,27 @@
 .root {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.technology {
-  margin-top: 20px;
-  flex-basis: 25%;
+.item {
+  display: flex;
+  flex-basis: calc(50% - 20px);
+  margin-right: 20px;
+  box-sizing: border-box;
 }
 
-@media (max-width: 767px) {
-  .technology {
-    flex-basis: 33.3333%;
-  }
+.item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 575px) {
-  .technology {
-    flex-basis: 50%;
+  .root {
+    flex-direction: column;
+  }
+
+  .item {
+    flex-basis: 100%;
+    margin-right: 0;
   }
 }

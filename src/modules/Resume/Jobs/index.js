@@ -3,7 +3,6 @@ import { Button } from "../../../components/Button"
 import { Layout } from "../../../components/Layout"
 import { Typography } from "../../../components/Typography"
 import { ExtraInfos } from "../ExtraInfos"
-import { TechnologyList } from "../TechnologyList"
 
 export function Jobs() {
   function openLink(link = "") {
@@ -47,8 +46,7 @@ export function Jobs() {
             Redux and Material-UI. Intensive usage of JavaScript.
           </Typography.Text>
         </Typography.Paragraph>
-        <Typography.Paragraph></Typography.Paragraph>
-        <Typography.Paragraph>
+        {/* <Typography.Paragraph>
           <Typography.Text bold>Technical environment</Typography.Text>
         </Typography.Paragraph>
         <TechnologyList
@@ -60,7 +58,7 @@ export function Jobs() {
             { name: "MongoDB", path: "mongodb" },
             { name: "Docker", path: "docker" }
           ]}
-        />
+        /> */}
       </article>
 
       <article>
@@ -86,7 +84,7 @@ export function Jobs() {
           </Typography.Text>
         </Typography.Paragraph>
 
-        <Typography.Paragraph>
+        {/* <Typography.Paragraph>
           <Typography.Text bold>Technical environment</Typography.Text>
         </Typography.Paragraph>
         <TechnologyList
@@ -102,7 +100,7 @@ export function Jobs() {
             { name: "RxJS", path: "rxjs" },
             { name: "Docker", path: "docker" }
           ]}
-        />
+        /> */}
       </article>
 
       <article>
@@ -129,7 +127,7 @@ export function Jobs() {
           </Typography.Text>
         </Typography.Paragraph>
 
-        <Typography.Paragraph>
+        {/* <Typography.Paragraph>
           <Typography.Text bold>Technical environment</Typography.Text>
         </Typography.Paragraph>
         <TechnologyList
@@ -138,7 +136,7 @@ export function Jobs() {
             { name: "Elastic Search", path: "elasticsearch" },
             { name: "Amazon Web Services", path: "aws" }
           ]}
-        />
+        /> */}
       </article>
       <article>
         <Typography.Subtitle>JavaScript developer</Typography.Subtitle>
@@ -163,10 +161,10 @@ export function Jobs() {
           </Typography.Text>
         </Typography.Paragraph>
 
-        <Typography.Paragraph>
+        {/* <Typography.Paragraph>
           <Typography.Text bold>Technical environment</Typography.Text>
         </Typography.Paragraph>
-        <TechnologyList list={[{ name: "JavaScript", path: "javascript" }]} />
+        <TechnologyList list={[{ name: "JavaScript", path: "javascript" }]} /> */}
       </article>
 
       <article>
@@ -185,7 +183,7 @@ export function Jobs() {
           </Typography.Text>
         </Typography.Paragraph>
 
-        <Typography.Paragraph>
+        {/* <Typography.Paragraph>
           <Typography.Text bold>Technical environment</Typography.Text>
         </Typography.Paragraph>
         <TechnologyList
@@ -195,7 +193,7 @@ export function Jobs() {
             { name: "Firebase", path: "firebase" },
             { name: "Facebook API", path: "facebook" }
           ]}
-        />
+        /> */}
       </article>
 
       <article>
@@ -215,7 +213,7 @@ export function Jobs() {
           </Typography.Text>
         </Typography.Paragraph>
 
-        <Typography.Paragraph>
+        {/* <Typography.Paragraph>
           <Typography.Text bold>Technical environment</Typography.Text>
         </Typography.Paragraph>
         <TechnologyList
@@ -224,7 +222,7 @@ export function Jobs() {
             { name: "JavaScript", path: "javascript" },
             { name: "MySQL", path: "mysql" }
           ]}
-        />
+        /> */}
       </article>
     </Layout.Content>
   )
