@@ -6,6 +6,7 @@ import { Typography } from "../../components/Typography"
 import { calculateAge } from "../../lib/time"
 import styles from "./About.module.css"
 import { AroundTheWeb } from "./AroundTheWeb"
+import { Projects } from "./Projects"
 
 export function About() {
   const navigate = useNavigate()
@@ -58,6 +59,7 @@ export function About() {
         </Typography.Paragraph>
       </div>
       <AroundTheWeb />
+      <Projects />
     </Layout.MainContent>
   )
 }

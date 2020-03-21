@@ -9,9 +9,9 @@ import { useThemeObserver } from "./lib/theme"
 import { About } from "./modules/About"
 import { Blog } from "./modules/Blog"
 import { Contact } from "./modules/Contact"
+import { DevShop } from "./modules/DevShop"
 import { Home } from "./modules/Home"
 import { NotFound } from "./modules/NotFound"
-import { Projects } from "./modules/Projects"
 import { Resume } from "./modules/Resume"
 
 export function App() {
@@ -36,7 +36,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/devshop" element={<DevShop />} />
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
