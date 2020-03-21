@@ -5,8 +5,9 @@
   --primary-color: #6b1fff;
   --faded-primary-color: rgb(238, 233, 255);
   --active-primary-color: #4d05e8;
+  --inactive-color: #aaabac;
   --text-color-normal: #273238;
-  --text-color-secondary: #aaabac;
+  --text-color-secondary: var(--inactive-color);
   --title-color: #273238;
   --link-color: #6b1fff;
   --faded-link-color: var(--faded-primary-color);

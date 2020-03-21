@@ -1,0 +1,39 @@
+.component {
+  margin-top: 40px;
+}
+
+.component .title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.component .live {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: var(--default-border-radius);
+  box-sizing: border-box;
+}
+
+.component .actions {
+  display: flex;
+  margin: 10px 0;
+}
+
+.component .actions .action:not(:last-child) {
+  margin-right: 5px;
+}
+
+.component .editor {
+  display: flex;
+  overflow: hidden;
+  transition: opacity 0.3s;
+}
+
+.component .editor.hidden {
+  height: 0;
+  opacity: 0;
+}
