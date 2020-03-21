@@ -1,13 +1,14 @@
 import React from "react"
-import { ExternalLink } from "../../../components/ExternalLink"
-import { Typography } from "../../../components/Typography"
+import { ExternalLink } from "../../components/ExternalLink"
+import { Layout } from "../../components/Layout"
+import { Typography } from "../../components/Typography"
 import { ContactForm } from "./ContactForm"
 
 export function Contact() {
   return (
-    <section>
-      <Typography.Subtitle>How to contact me</Typography.Subtitle>
-      <Typography.Paragraph>
+    <Layout.MainContent>
+      <Typography.PageTitle>How to contact me</Typography.PageTitle>
+      <Typography.Paragraph heading>
         <Typography.Text>You can use the form below:</Typography.Text>
       </Typography.Paragraph>
       <ContactForm />
@@ -20,6 +21,6 @@ export function Contact() {
           .
         </Typography.Text>
       </Typography.Paragraph>
-    </section>
+    </Layout.MainContent>
   )
 }

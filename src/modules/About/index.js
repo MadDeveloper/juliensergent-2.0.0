@@ -4,14 +4,18 @@ import { Button } from "../../components/Button"
 import { Layout } from "../../components/Layout"
 import { Typography } from "../../components/Typography"
 import { calculateAge } from "../../lib/time"
+import styles from "./About.module.css"
 import { AroundTheWeb } from "./AroundTheWeb"
-import { Contact } from "./Contact"
 
 export function About() {
   const navigate = useNavigate()
 
   function navigateToResume() {
     navigate("/resume")
+  }
+
+  function navigateToContact() {
+    navigate("/contact")
   }
 
   return (
@@ -45,10 +49,15 @@ export function About() {
         </Typography.Paragraph>
         <Typography.Paragraph>
           <Button onClick={navigateToResume}>View my resume</Button>
+          <Button
+            className={styles.contactMeButton}
+            onClick={navigateToContact}
+          >
+            Contact me
+          </Button>
         </Typography.Paragraph>
       </div>
       <AroundTheWeb />
-      <Contact />
     </Layout.MainContent>
   )
 }

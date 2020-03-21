@@ -3,13 +3,12 @@ import { useNavigate } from "react-router-dom"
 import { Button } from "../../../components/Button"
 import { Layout } from "../../../components/Layout"
 import { Typography } from "../../../components/Typography"
-import { config } from "../../../config"
 
 export function Projects() {
   const navigate = useNavigate()
 
   function navigateToProjects() {
-    navigate(config.routes.projects)
+    navigate("/projects")
   }
 
   return (

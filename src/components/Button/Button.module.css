@@ -12,9 +12,9 @@
   transition-duration: 0.2s;
 }
 
-/* .root:hover {
+.root:hover {
   color: var(--active-primary-color);
-} */
+}
 
 .root:active {
   transform: scale(0.95);

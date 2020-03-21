@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import { Button } from "../../../components/Button"
-import { Form } from "../../../components/Form"
-import { ErrorMessage } from "../../../components/Message/ErrorMessage"
-import { InfoMessage } from "../../../components/Message/InfoMessage"
-import { encoreFormData } from "../../../lib/form"
+import { Button } from "../../components/Button"
+import { Form } from "../../components/Form"
+import { ErrorMessage } from "../../components/Message/ErrorMessage"
+import { InfoMessage } from "../../components/Message/InfoMessage"
+import { encoreFormData } from "../../lib/form"
 import styles from "./Contact.module.css"
 
 export function ContactForm() {
