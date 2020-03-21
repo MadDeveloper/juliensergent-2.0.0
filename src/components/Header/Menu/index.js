@@ -79,6 +79,11 @@ export function Menu({ itemsHidden = [] }) {
           </MenuItem>
         </div>
       )}
+      <div className={styles.item}>
+        <MenuItem to="/about" active={isActive("/about")}>
+          About
+        </MenuItem>
+      </div>
     </nav>
   )
 }

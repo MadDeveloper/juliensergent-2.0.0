@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import { Button } from "../../components/Button"
-import { Form } from "../../components/Form"
-import { ErrorMessage } from "../../components/Message/ErrorMessage"
-import { InfoMessage } from "../../components/Message/InfoMessage"
-import { encoreFormData } from "../../lib/form"
+import { Button } from "../../../components/Button"
+import { Form } from "../../../components/Form"
+import { ErrorMessage } from "../../../components/Message/ErrorMessage"
+import { InfoMessage } from "../../../components/Message/InfoMessage"
+import { encoreFormData } from "../../../lib/form"
 import styles from "./Contact.module.css"
 
 export function ContactForm() {
@@ -36,21 +36,24 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={submit}>
-      <Form.Input
-        name="email"
-        label="Email address"
-        value={email}
-        onChange={setEmail}
-      />
-      <Form.Input
-        name="message"
-        label="Message"
-        value={message}
-        textarea
-        onChange={setMessage}
-      />
-      <Button onClick={submit}>Send your message</Button>
+    <div>
+      <form className={styles.form} onSubmit={submit}>
+        <Form.Input
+          name="email"
+          type="email"
+          label="Email address"
+          value={email}
+          onChange={setEmail}
+        />
+        <Form.Input
+          name="message"
+          label="Message"
+          value={message}
+          textarea
+          onChange={setMessage}
+        />
+        <Button onClick={submit}>Send your message</Button>
+      </form>
       {error && <ErrorMessage className={styles.message}>{error}</ErrorMessage>}
       {success && (
         <InfoMessage className={styles.message}>
@@ -58,6 +61,6 @@ export function ContactForm() {
           possible.
         </InfoMessage>
       )}
-    </form>
+    </div>
   )
 }

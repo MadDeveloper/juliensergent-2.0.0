@@ -1,7 +1,10 @@
 .form {
   width: 100%;
-  max-width: 400px;
   margin-top: 20px;
+}
+
+.form input[type="email"] {
+  max-width: 300px;
 }
 
 .message {

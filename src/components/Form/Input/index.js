@@ -6,11 +6,12 @@ import styles from "./Input.module.css"
 export function Input({
   name = "",
   label = "",
+  type = "text",
   value = "",
   textarea = false,
   onChange,
   currentValue,
-  ...options
+  ...props
 }) {
   const [focused, setFocused] = useState(false)
 
@@ -56,12 +57,13 @@ export function Input({
         <input
           id={name}
           name={name}
+          type={type}
           value={value}
           className={styles.input}
           onChange={handleChange}
           onFocus={handleFocus}
           onBlur={handleBlur}
-          {...options}
+          {...props}
         />
       )}
     </div>
@@ -70,6 +72,7 @@ export function Input({
 
 Input.propTypes = {
   name: PropTypes.string.isRequired,
+  type: PropTypes.string,
   label: PropTypes.string,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   textarea: PropTypes.bool,

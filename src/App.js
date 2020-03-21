@@ -7,8 +7,8 @@ import { Layout } from "./components/Layout"
 import { config } from "./config"
 import { isHomeAnimationPlayed, setHomeAnimationAsPlayed } from "./lib/app"
 import { useThemeObserver } from "./lib/theme"
+import { About } from "./modules/About"
 import { Blog } from "./modules/Blog"
-import { Contact } from "./modules/Contact"
 import { Home } from "./modules/Home"
 import { NotFound } from "./modules/NotFound"
 import { Projects } from "./modules/Projects"
@@ -38,7 +38,7 @@ export function App() {
         <Route path={config.routes.blog} element={<Blog />} />
         <Route path={config.routes.projects} element={<Projects />} />
         <Route path={config.routes.resume} element={<Resume />} />
-        <Route path={config.routes.contact} element={<Contact />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 

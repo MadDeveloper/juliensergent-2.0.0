@@ -3,7 +3,6 @@ import React, { useCallback, useEffect, useRef, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { Button } from "../../components/Button"
 import { Typography } from "../../components/Typography"
-import { config } from "../../config"
 import { isHomeAnimationPlayed, setHomeAnimationAsPlayed } from "../../lib/app"
 import styles from "./Home.module.css"
 
@@ -87,8 +86,8 @@ export function Home() {
       .then(postAnimation)
   }, [animationPlayed])
 
-  function navigateToResume() {
-    navigation(config.routes.resume)
+  function navigateToAbout() {
+    navigation("/about")
   }
 
   useEffect(() => {
@@ -124,8 +123,8 @@ export function Home() {
             </Typography.Subtitle>
           </div>
           <div className={styles.showMore}>
-            <Button className={styles.button} onClick={navigateToResume}>
-              View my resume
+            <Button className={styles.button} onClick={navigateToAbout}>
+              About me
             </Button>
           </div>
         </div>
