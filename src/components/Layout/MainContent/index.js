@@ -13,5 +13,5 @@ export function MainContent({ children }) {
 }
 
 MainContent.propTypes = {
-  children: PropTypes.any
+  children: PropTypes.any,
 }

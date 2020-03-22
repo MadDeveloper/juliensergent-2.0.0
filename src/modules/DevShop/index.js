@@ -74,8 +74,8 @@ export function DevShop() {
   border-radius: var(--default-border-radius);
   transition-property: border-color, background-color, color, transform;
   transition-duration: 0.2s;
-}`
-              }
+}`,
+              },
             ]}
           />
         </div>

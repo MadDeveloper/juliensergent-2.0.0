@@ -26,5 +26,5 @@ export function MenuItem({ to = "", active = false, children }) {
 MenuItem.propTypes = {
   to: PropTypes.string.isRequired,
   active: PropTypes.bool,
-  children: PropTypes.any
+  children: PropTypes.any,
 }

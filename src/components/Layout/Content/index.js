@@ -7,13 +7,13 @@ export function Content({
   compact = false,
   headerSpacing = false,
   className = "",
-  children
+  children,
 }) {
   return (
     <div
       className={cs(styles.root, className, {
         [styles.compact]: compact,
-        [styles.headerSpacing]: headerSpacing
+        [styles.headerSpacing]: headerSpacing,
       })}
     >
       {children}
@@ -25,5 +25,5 @@ Content.propTypes = {
   compact: PropTypes.bool,
   className: PropTypes.string,
   headerSpacing: PropTypes.bool,
-  children: PropTypes.any
+  children: PropTypes.any,
 }

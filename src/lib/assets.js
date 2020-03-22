@@ -6,7 +6,7 @@ export function useAsset(path = "") {
 
   useEffect(() => {
     import(`../assets/${path}`)
-      .then(data => data.default)
+      .then((data) => data.default)
       .then(setAsset)
       .catch(setError)
   }, [path])

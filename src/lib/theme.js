@@ -5,7 +5,7 @@ import { setTheme } from "../store/actions"
 export const Theme = {
   Light: "light",
   Dark: "dark",
-  Default: "light"
+  Default: "light",
 }
 
 export function setHTMLTheme(theme = Theme.Default) {

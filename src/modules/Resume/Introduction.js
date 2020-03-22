@@ -44,28 +44,28 @@ export function Introduction() {
         list={[
           {
             name: "JavaScript",
-            path: "javascript"
+            path: "javascript",
           },
           {
             name: "Node.js",
-            path: "node"
+            path: "node",
           },
           {
             name: "React",
-            path: "react"
+            path: "react",
           },
           {
             name: "React Native",
-            path: "react"
+            path: "react",
           },
           {
             name: "MongoDB",
-            path: "mongodb"
+            path: "mongodb",
           },
           {
             name: "GraphQL",
-            path: "graphql"
-          }
+            path: "graphql",
+          },
         ]}
       />
     </Layout.Content>

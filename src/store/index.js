@@ -15,5 +15,5 @@ export function StoreProvider({ children }) {
 }
 
 StoreProvider.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 }

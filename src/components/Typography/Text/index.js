@@ -16,7 +16,7 @@ export function Text({
       className={cs(styles.root, className, {
         [styles.bold]: bold,
         [styles.secondary]: secondary,
-        [styles.small]: small
+        [styles.small]: small,
       })}
       {...props}
     >
@@ -30,5 +30,5 @@ Text.propTypes = {
   bold: PropTypes.bool,
   small: PropTypes.bool,
   secondary: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
 }

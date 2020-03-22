@@ -14,5 +14,5 @@ export function Subtitle({ heading = false, className = "", children }) {
 Subtitle.propTypes = {
   heading: PropTypes.bool,
   className: PropTypes.string,
-  children: PropTypes.any
+  children: PropTypes.any,
 }

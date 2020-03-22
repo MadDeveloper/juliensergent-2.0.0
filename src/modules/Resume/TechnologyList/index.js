@@ -8,7 +8,7 @@ import styles from "./TechnologyList.module.css"
 export function TechnologyList({ list = [], className = "", compact = false }) {
   return (
     <div className={cs(styles.root, className, { [styles.compact]: compact })}>
-      {list.map(technology => (
+      {list.map((technology) => (
         <div key={technology.name} className={styles.item}>
           <TechnologyIcon name={technology.name} path={technology.path} />
           <div>
@@ -34,9 +34,9 @@ TechnologyList.propTypes = {
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       content: PropTypes.any,
-      path: PropTypes.string.isRequired
+      path: PropTypes.string.isRequired,
     })
   ).isRequired,
   className: PropTypes.string,
-  compact: PropTypes.bool
+  compact: PropTypes.bool,
 }

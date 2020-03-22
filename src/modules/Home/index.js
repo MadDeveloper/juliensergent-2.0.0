@@ -20,7 +20,7 @@ export function Home() {
     const footer = document.getElementsByTagName("footer")[0]
 
     function initAnimation() {
-      return new Promise(resolve => {
+      return new Promise((resolve) => {
         setPlayingAnimation(true)
         setAnimationPlayed(false)
         setHidden(true)
@@ -76,7 +76,7 @@ export function Home() {
             promise.then(() => {
               write(letter)
 
-              return new Promise(resolve =>
+              return new Promise((resolve) =>
                 setTimeout(resolve, durations[index] || defaultDuration)
               )
             }),

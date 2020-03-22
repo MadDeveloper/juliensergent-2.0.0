@@ -14,5 +14,5 @@ export function Paragraph({ heading = false, className = "", children }) {
 Paragraph.propTypes = {
   heading: PropTypes.bool,
   className: PropTypes.string,
-  children: PropTypes.any
+  children: PropTypes.any,
 }

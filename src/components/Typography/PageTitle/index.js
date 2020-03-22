@@ -9,5 +9,5 @@ export function PageTitle({ className = "", children }) {
 
 PageTitle.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.any
+  children: PropTypes.any,
 }

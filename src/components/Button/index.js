@@ -9,7 +9,7 @@ export function Button({
   secondary = false,
   compact = false,
   onClick,
-  children
+  children,
 }) {
   function handleClick(event) {
     if (typeof onClick === "function") {
@@ -22,7 +22,7 @@ export function Button({
       type={type}
       className={cs(styles.root, className, {
         [styles.secondary]: secondary,
-        [styles.compact]: compact
+        [styles.compact]: compact,
       })}
       onClick={handleClick}
     >
@@ -36,5 +36,5 @@ Button.propTypes = {
   secondary: PropTypes.bool,
   compact: PropTypes.bool,
   children: PropTypes.any,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 }

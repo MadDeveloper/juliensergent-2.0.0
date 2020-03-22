@@ -10,11 +10,11 @@ export function Editor({ code = "", files = [] }) {
   return (
     <div className={styles.root}>
       <div className={styles.files}>
-        {files.map(file => (
+        {files.map((file) => (
           <div
             key={file.name}
             className={cs(styles.file, {
-              [styles.active]: currentFile.name === file.name
+              [styles.active]: currentFile.name === file.name,
             })}
             onClick={() => setCurrentFile(file)}
           >
@@ -37,7 +37,7 @@ Editor.propTypes = {
     PropTypes.shape({
       code: PropTypes.string,
       name: PropTypes.string,
-      language: PropTypes.string
+      language: PropTypes.string,
     })
-  )
+  ),
 }

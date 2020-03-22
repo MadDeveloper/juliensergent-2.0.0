@@ -11,5 +11,5 @@ export function TechnologyIcon({ name = "", path = "" }) {
 
 TechnologyIcon.propTypes = {
   name: PropTypes.string.isRequired,
-  path: PropTypes.string.isRequired
+  path: PropTypes.string.isRequired,
 }

@@ -37,5 +37,5 @@ export function ExtraInfos({ date = "", location = "", link = "" }) {
 ExtraInfos.propTypes = {
   date: PropTypes.string,
   location: PropTypes.string,
-  link: PropTypes.string
+  link: PropTypes.string,
 }

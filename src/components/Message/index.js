@@ -8,7 +8,7 @@ export function Message({
   actionIcon,
   className,
   children,
-  onTriggerAction
+  onTriggerAction,
 }) {
   return (
     <div className={cs(styles.root, className)}>
@@ -34,7 +34,7 @@ Message.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.node,
-    PropTypes.bool
+    PropTypes.bool,
   ]),
-  onTriggerAction: PropTypes.func
+  onTriggerAction: PropTypes.func,
 }

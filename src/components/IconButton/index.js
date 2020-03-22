@@ -14,5 +14,5 @@ export function IconButton({ active = false, children, ...props }) {
 IconButton.propTypes = {
   active: PropTypes.bool,
   children: PropTypes.element.isRequired,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 }

@@ -9,5 +9,5 @@ export function Main({ className = "", children }) {
 
 Main.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.any
+  children: PropTypes.any,
 }

@@ -14,5 +14,5 @@ export function Title({ heading = false, className = "", children }) {
 Title.propTypes = {
   heading: PropTypes.bool,
   className: PropTypes.string,
-  children: PropTypes.any
+  children: PropTypes.any,
 }

@@ -1,7 +1,7 @@
 import { SET_THEME } from "./actions"
 
 export const initialState = {
-  theme: null
+  theme: null,
 }
 
 export default (state, action) => {
@@ -9,7 +9,7 @@ export default (state, action) => {
     case SET_THEME:
       return {
         ...state,
-        theme: action.theme
+        theme: action.theme,
       }
 
     default:

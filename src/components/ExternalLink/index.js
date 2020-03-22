@@ -17,5 +17,5 @@ export function ExternalLink({ to = "", className = "", children }) {
 ExternalLink.propTypes = {
   to: PropTypes.string.isRequired,
   className: PropTypes.string,
-  children: PropTypes.any
+  children: PropTypes.any,
 }

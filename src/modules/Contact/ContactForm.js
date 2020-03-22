@@ -22,13 +22,13 @@ export function ContactForm() {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encoreFormData({ "form-name": "contact", email, message })
+        body: encoreFormData({ "form-name": "contact", email, message }),
       })
         .then(() => {
           setEmail("")
           setMessage("")
         })
-        .catch(error => alert(error))
+        .catch((error) => alert(error))
         .finally(() => setSuccess(true))
     } else {
       setError("Please provide your email address and a valid message.")

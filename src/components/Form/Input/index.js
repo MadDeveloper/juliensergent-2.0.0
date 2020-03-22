@@ -35,7 +35,7 @@ export function Input({
       <label
         className={cs(styles.label, {
           [styles.active]: active,
-          [styles.focus]: focused
+          [styles.focus]: focused,
         })}
         htmlFor={name}
       >
@@ -76,5 +76,5 @@ Input.propTypes = {
   label: PropTypes.string,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   textarea: PropTypes.bool,
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
 }
