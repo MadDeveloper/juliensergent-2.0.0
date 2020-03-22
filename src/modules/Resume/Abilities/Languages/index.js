@@ -10,7 +10,7 @@ export function Languages() {
       <Typography.Subtitle>Languages</Typography.Subtitle>
       <div className={styles.languages}>
         <div className={styles.lang}>
-          <FranceFlagIcon title="French" className={styles.flag} />
+          <FranceFlagIcon className={styles.flag} />
           <div>
             <div>
               <Typography.Text bold>French</Typography.Text>
@@ -21,7 +21,7 @@ export function Languages() {
           </div>
         </div>
         <div className={styles.lang}>
-          <UnitedKingdomFlagIcon title="English" className={styles.flag} />
+          <UnitedKingdomFlagIcon className={styles.flag} />
           <div>
             <div>
               <Typography.Text bold>English</Typography.Text>

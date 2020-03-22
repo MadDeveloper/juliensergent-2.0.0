@@ -11,11 +11,6 @@ import { Typography } from "../../components/Typography"
 import styles from "./DevShop.module.css"
 
 export function DevShop() {
-  const [code, setCode] = useState(`function Button {
-  return (
-    <button>Button</button>
-  )
-}`)
   const [showCode, setShowCode] = useState(false)
 
   function toggleCode() {
@@ -47,19 +42,63 @@ export function DevShop() {
         <div className={styles.actions}>
           <div className={styles.action}>
             <IconButton active={showCode} onClick={toggleCode}>
-              <SourceIcon title="source" />
+              <SourceIcon title="Toggle source" />
             </IconButton>
           </div>
           <div className={styles.action}>
             <IconButton>
-              <CopyIcon title="copy" />
+              <CopyIcon title="Copy full source" />
             </IconButton>
           </div>
         </div>
         <div className={cs(styles.editor, { [styles.hidden]: !showCode })}>
           <Editor
             files={[
-              { name: "Button.js", code },
+              {
+                name: "Button.js",
+                language: "js",
+                code: `import cs from "classnames"
+import PropTypes from "prop-types"
+import React from "react"
+import styles from "./Button.module.css"
+
+export function Button({
+  type = "button",
+  className = "",
+  secondary = false,
+  compact = false,
+  onClick,
+  children,
+}) {
+  function handleClick(event) {
+    if (typeof onClick === "function") {
+      onClick(event)
+    }
+  }
+
+  return (
+    <button
+      type={type}
+      className={cs(styles.root, className, {
+        [styles.secondary]: secondary,
+        [styles.compact]: compact,
+      })}
+      onClick={handleClick}
+    >
+      {children}
+    </button>
+  )
+}
+
+Button.propTypes = {
+  type: PropTypes.string,
+  secondary: PropTypes.bool,
+  compact: PropTypes.bool,
+  children: PropTypes.any,
+  onClick: PropTypes.func,
+}
+`,
+              },
               {
                 name: "Button.module.css",
                 code: `.root {
@@ -74,7 +113,26 @@ export function DevShop() {
   border-radius: var(--default-border-radius);
   transition-property: border-color, background-color, color, transform;
   transition-duration: 0.2s;
-}`,
+}
+
+.root:hover {
+  color: var(--active-primary-color);
+}
+
+.root:active {
+  transform: scale(0.95);
+}
+
+.root.secondary {
+  background-color: transparent;
+  color: var(--text-color-normal);
+}
+
+.root.compact {
+  padding: 5px 10px;
+}
+`,
+                language: "css",
               },
             ]}
           />
