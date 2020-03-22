@@ -49,6 +49,10 @@
   --text-color-normal: hsl(210, 10%, 62%);
 }
 
+.__react_component_tooltip {
+  padding: 8px 12px !important;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     /* --text-color-normal: hsl(210, 10%, 62%); */

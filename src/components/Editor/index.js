@@ -10,9 +10,9 @@ import styles from "./Editor.module.css"
 export function Editor({ files = [] }) {
   const codeRef = useRef(null)
   const [currentFile, setCurrentFile] = useState(files[0])
+  const [copied, setCopied] = useState(false)
 
   function copyCodeToClipboard() {
-    // @todo: add tooltips
     const { code } = currentFile
     const element = document.createElement("textarea")
 
@@ -35,6 +35,12 @@ export function Editor({ files = [] }) {
       document.getSelection().removeAllRanges()
       document.getSelection().addRange(selected)
     }
+
+    setCopied(true)
+
+    const timeout = setTimeout(() => setCopied(false), 3000)
+
+    return () => clearTimeout(timeout)
   }
 
   useEffect(() => {
@@ -50,7 +56,14 @@ export function Editor({ files = [] }) {
   return (
     <div className={styles.root}>
       <div className={styles.actions}>
-        <IconButton onClick={copyCodeToClipboard}>
+        <IconButton
+          onClick={copyCodeToClipboard}
+          tooltipId="copy"
+          tooltipText="Copy"
+          tooltipProps={{
+            getContent: () => (copied ? "Copied!" : "Copy"),
+          }}
+        >
           <CopyIcon />
         </IconButton>
       </div>

@@ -41,13 +41,21 @@ export function DevShop() {
         </div>
         <div className={styles.actions}>
           <div className={styles.action}>
-            <IconButton active={showCode} onClick={toggleCode}>
-              <SourceIcon title="Toggle source" />
+            <IconButton
+              active={showCode}
+              tooltipId="toggle-source-button"
+              tooltipText="Toggle source"
+              onClick={toggleCode}
+            >
+              <SourceIcon />
             </IconButton>
           </div>
           <div className={styles.action}>
-            <IconButton>
-              <CopyIcon title="Copy full source" />
+            <IconButton
+              tooltipId="copy-full-source-button"
+              tooltipText="Copy full source"
+            >
+              <CopyIcon />
             </IconButton>
           </div>
         </div>
