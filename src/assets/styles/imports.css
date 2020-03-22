@@ -1,3 +1,4 @@
+@import "../../../node_modules/react-tippy/dist/tippy.css";
 @import "./reset.css";
 @import "./fonts.css";
 @import "./globals.css";

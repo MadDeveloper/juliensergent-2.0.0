@@ -1,5 +1,7 @@
 .root {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
   border-radius: 50%;
   transition: background-color 0.2s, transform 0.2s;
   width: 40px;

@@ -1,37 +1,35 @@
 import cs from "classnames"
 import PropTypes from "prop-types"
-import React, { Fragment } from "react"
-import ReactTooltip from "react-tooltip"
+import React from "react"
+import { Tooltip } from "react-tippy"
 import styles from "./IconButton.module.css"
 
 export function IconButton({
   active = false,
   children,
   tooltipId = "",
-  tooltipText = "",
+  tooltip = "",
   tooltipProps,
   ...props
 }) {
   return (
-    <Fragment>
-      <div
+    <Tooltip
+      disabled={!tooltip}
+      position="top"
+      title={tooltip}
+      trigger="mouseenter"
+      hideOnClick={false}
+      animation="shift"
+      animateFill={false}
+      arrow
+    >
+      <button
         className={cs(styles.root, { [styles.active]: active })}
-        data-tip={tooltipText}
-        data-for={tooltipId}
         {...props}
       >
         {children}
-      </div>
-      {tooltipId.length > 0 && (
-        <ReactTooltip
-          id={tooltipId}
-          effect="solid"
-          place="top"
-          type="dark"
-          {...tooltipProps}
-        />
-      )}
-    </Fragment>
+      </button>
+    </Tooltip>
   )
 }
 
@@ -39,7 +37,7 @@ IconButton.propTypes = {
   active: PropTypes.bool,
   children: PropTypes.element.isRequired,
   tooltipId: PropTypes.string,
-  tooltipText: PropTypes.string,
+  tooltip: PropTypes.string,
   tooltipProps: PropTypes.object,
   onClick: PropTypes.func,
 }

@@ -1,10 +1,10 @@
 import cs from "classnames"
 import React, { useState } from "react"
-import { ReactComponent as CopyIcon } from "../../assets/icons/editor/copy.svg"
 import { ReactComponent as SourceIcon } from "../../assets/icons/editor/source.svg"
 import { Button } from "../../components/Button"
 import { Editor } from "../../components/Editor"
 import { IconButton } from "../../components/IconButton"
+import { CopyIconButton } from "../../components/IconButton/CopyIconButton"
 import { Layout } from "../../components/Layout"
 import { InfoMessage } from "../../components/Message/InfoMessage"
 import { Typography } from "../../components/Typography"
@@ -43,20 +43,14 @@ export function DevShop() {
           <div className={styles.action}>
             <IconButton
               active={showCode}
-              tooltipId="toggle-source-button"
-              tooltipText="Toggle source"
+              tooltip="Toggle source"
               onClick={toggleCode}
             >
               <SourceIcon />
             </IconButton>
           </div>
           <div className={styles.action}>
-            <IconButton
-              tooltipId="copy-full-source-button"
-              tooltipText="Copy full source"
-            >
-              <CopyIcon />
-            </IconButton>
+            <CopyIconButton text="Copy full source" contentToCopy="" />
           </div>
         </div>
         <div className={cs(styles.editor, { [styles.hidden]: !showCode })}>
