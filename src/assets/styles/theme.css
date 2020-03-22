@@ -51,6 +51,7 @@
 
 .__react_component_tooltip {
   padding: 8px 12px !important;
+  user-select: none;
 }
 
 @media (prefers-color-scheme: dark) {
