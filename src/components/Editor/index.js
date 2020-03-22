@@ -9,12 +9,15 @@ import styles from "./Editor.module.css"
 export function Editor({ files = [] }) {
   const codeRef = useRef(null)
   const [currentFile, setCurrentFile] = useState(files[0])
+  const [html, setHtml] = useState(null)
 
   useEffect(() => {
-    codeRef.current.innerHTML = Prism.highlight(
-      currentFile.code,
-      Prism.languages[currentFile.language],
-      currentFile.language
+    setHtml(
+      Prism.highlight(
+        currentFile.code,
+        Prism.languages[currentFile.language],
+        currentFile.language
+      )
     )
   }, [currentFile.language, currentFile.code])
 
@@ -45,7 +48,8 @@ export function Editor({ files = [] }) {
         <code
           ref={codeRef}
           className={cs(`language-${currentFile.language}`, styles.code)}
-        ></code>
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </pre>
     </div>
   )
