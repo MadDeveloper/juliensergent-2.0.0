@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  overflow: hidden;
+  transition: opacity 0.3s;
+}
+
+.root.hidden {
+  height: 0;
+  opacity: 0;
+}

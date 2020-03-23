@@ -1,0 +1,8 @@
+.root {
+  display: flex;
+  margin: 10px 0;
+}
+
+.action:not(:last-child) {
+  margin-right: 5px;
+}

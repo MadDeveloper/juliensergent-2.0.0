@@ -26,7 +26,7 @@ export function Editor({ files = [] }) {
   return (
     <div className={styles.root}>
       <div className={styles.actions}>
-        <CopyIconButton content={currentFile.code} />
+        <CopyIconButton contentToCopy={currentFile.code} />
       </div>
       <div className={styles.files}>
         {showFiles &&
