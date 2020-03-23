@@ -1,4 +1,8 @@
-import cs from "classnames"
+export const files = [
+  {
+    name: "Input.js",
+    language: "js",
+    code: `import cs from "classnames"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 import styles from "./Input.module.css"
@@ -82,3 +86,71 @@ Input.propTypes = {
   cols: PropTypes.number,
   onChange: PropTypes.func.isRequired,
 }
+`,
+  },
+  {
+    name: "Input.module.css",
+    code: `.root {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+}
+
+.label {
+  user-select: none;
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  font-size: inherit;
+  color: hsl(0, 0%, 45%);
+  background: #fff;
+  transition-property: top, font-size;
+  transition-duration: 0.2s;
+  cursor: text;
+}
+
+.label.active {
+  top: 5px;
+  font-size: 11px;
+}
+
+.label.focus {
+  color: var(--primary-color);
+}
+
+.input {
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--text-color-normal);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 17px 12px 4px 12px;
+  border-radius: var(--default-border-radius);
+  border: 2px solid hsl(0, 0%, 90%);
+  font-size: inherit;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+/* Change Autocomplete styles in Webkit */
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--text-color-normal);
+  background: #fff;
+  box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+.input.textarea {
+  resize: none;
+}
+
+.input:focus {
+  border-color: var(--primary-color);
+}
+`,
+    language: "css",
+  },
+]

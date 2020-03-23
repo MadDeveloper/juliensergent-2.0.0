@@ -1,32 +1,33 @@
 import React, { useState } from "react"
-import { Button } from "../../../../components/Button"
+import { Button as UIButton } from "../../../../components/Button"
 import { Actions } from "../shared/Actions"
 import { Description } from "../shared/Description"
 import { Live } from "../shared/Live"
 import { Name } from "../shared/Name"
 import { Source } from "../shared/Source"
-import styles from "./Buttons.module.css"
+import styles from "./Button.module.css"
+import { files } from "./source"
 
-export function Buttons() {
+export function Button() {
   const [showSource, setShowSource] = useState(false)
 
   return (
     <div>
-      <Name>Button</Name>
+      <Name>Buttons</Name>
       <Description>
         For me, buttons are very important and a part of good design.
       </Description>
       <Live>
-        <Button className={styles.button}>Button</Button>
-        <Button className={styles.button} compact>
+        <UIButton className={styles.button}>Button</UIButton>
+        <UIButton className={styles.button} compact>
           Compact
-        </Button>
-        <Button className={styles.button} secondary>
+        </UIButton>
+        <UIButton className={styles.button} secondary>
           Secondary
-        </Button>
+        </UIButton>
       </Live>
       <Actions onToggleCode={setShowSource} />
-      <Source hidden={!showSource} />
+      <Source files={files} hidden={!showSource} />
     </div>
   )
 }

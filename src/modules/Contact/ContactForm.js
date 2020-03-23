@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Button } from "../../components/Button"
 import { Form } from "../../components/Form"
+import { FormBlock } from "../../components/Form/FormBlock"
 import { ErrorMessage } from "../../components/Message/ErrorMessage"
 import { InfoMessage } from "../../components/Message/InfoMessage"
 import { encoreFormData } from "../../lib/form"
@@ -38,20 +39,25 @@ export function ContactForm() {
   return (
     <div>
       <form className={styles.form} onSubmit={submit}>
-        <Form.Input
-          name="email"
-          type="email"
-          label="Email address"
-          value={email}
-          onChange={setEmail}
-        />
-        <Form.Input
-          name="message"
-          label="Message"
-          value={message}
-          textarea
-          onChange={setMessage}
-        />
+        <FormBlock>
+          <Form.Input
+            name="email"
+            type="email"
+            label="Email address"
+            value={email}
+            onChange={setEmail}
+          />
+        </FormBlock>
+        <FormBlock>
+          <Form.Input
+            name="message"
+            label="Message"
+            value={message}
+            textarea
+            rows={10}
+            onChange={setMessage}
+          />
+        </FormBlock>
         <Button onClick={submit}>Send your message</Button>
       </form>
       {error && <ErrorMessage className={styles.message}>{error}</ErrorMessage>}
