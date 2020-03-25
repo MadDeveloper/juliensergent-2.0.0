@@ -1,0 +1,58 @@
+.cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 350px;
+  height: 350px;
+  border-radius: 4px;
+  padding: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.cards .card:not(:last-child) {
+  margin-right: 10px;
+}
+
+.cards .card.buttons {
+  background-color: #8f51f7;
+  background-image: linear-gradient(147deg, #8f51f7 0%, #3f02bf 74%);
+}
+
+.cards .card.inputs {
+  background-image: linear-gradient(
+    -225deg,
+    #ff057c 0%,
+    #8d0b93 50%,
+    #321575 100%
+  );
+}
+
+.cards .card:hover {
+  transform: scale(1.03);
+}
+
+.cards .card:active {
+  transform: scale(1);
+}
+
+.cards .card .title {
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.cards .card.buttons .description {
+  color: #c5a9ff;
+}
+
+.cards .card.inputs .description {
+  color: #d2beff;
+}

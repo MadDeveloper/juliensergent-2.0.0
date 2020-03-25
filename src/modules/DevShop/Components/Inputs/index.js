@@ -6,17 +6,17 @@ import { Description } from "../shared/Description"
 import { Live } from "../shared/Live"
 import { Name } from "../shared/Name"
 import { Source } from "../shared/Source"
-import styles from "./Input.module.css"
+import styles from "./Inputs.module.css"
 import { files } from "./source"
 
-export function Input() {
+export function Inputs() {
   const [showSource, setShowSource] = useState(false)
   const [author, setAuthor] = useState("")
   const [bio, setBio] = useState("")
 
   return (
     <div>
-      <Name>Input</Name>
+      <Name>Inputs</Name>
       <Description>
         Inputs are used almost an each website, and their UX and UI are often
         miserable.

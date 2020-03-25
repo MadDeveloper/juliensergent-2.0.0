@@ -5,10 +5,10 @@ import { Description } from "../shared/Description"
 import { Live } from "../shared/Live"
 import { Name } from "../shared/Name"
 import { Source } from "../shared/Source"
-import styles from "./Button.module.css"
+import styles from "./Buttons.module.css"
 import { files } from "./source"
 
-export function Button() {
+export function Buttons() {
   const [showSource, setShowSource] = useState(false)
 
   return (

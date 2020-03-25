@@ -9,9 +9,9 @@
   --text-color-normal: #273238;
   --text-color-secondary: var(--inactive-color);
   --title-color: #273238;
-  --link-color: #6b1fff;
+  --link-color: var(--primary-color);
   --faded-link-color: var(--faded-primary-color);
-  --active-link-color: #4d05e8;
+  --active-link-color: var(--active-primary-color);
   --header-background-color: transparent;
   --header-menu-label-color: var(--text-color-normal);
 

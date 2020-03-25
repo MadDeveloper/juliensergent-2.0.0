@@ -2,9 +2,7 @@ import React from "react"
 import { Layout } from "../../components/Layout"
 import { InfoMessage } from "../../components/Message/InfoMessage"
 import { Typography } from "../../components/Typography"
-import { Button } from "./Components/Button"
-import { Input } from "./Components/Input"
-import styles from "./DevShop.module.css"
+import { Components } from "./Components"
 
 export function DevShop() {
   return (
@@ -17,12 +15,7 @@ export function DevShop() {
           share with you, and unlicensed.
         </Typography.Text>
       </Typography.Paragraph>
-      <div className={styles.component}>
-        <Button />
-      </div>
-      <div className={styles.component}>
-        <Input />
-      </div>
+      <Components />
     </Layout.MainContent>
   )
 }
