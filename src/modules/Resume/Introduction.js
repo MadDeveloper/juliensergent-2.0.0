@@ -10,7 +10,7 @@ export function Introduction() {
     <Layout.Content>
       <div className={styles.root}>
         <div>
-          <Typography.Paragraph>
+          <Typography.Paragraph heading>
             <Typography.Text>
               Hi, I'm <Typography.Text bold>Julien</Typography.Text>, I'm{" "}
               <Typography.Text bold>

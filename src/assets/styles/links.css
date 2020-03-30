@@ -1,9 +1,14 @@
 a {
+  position: relative;
   color: var(--link-color);
   text-decoration: none;
+  border-bottom: 2px solid transparent;
+  line-height: 1.5;
+  transition: border-color 0.3s;
 }
 
 a:hover {
   color: var(--active-link-color);
-  text-decoration: underline;
+  border-color: var(--active-link-color);
+  /* text-decoration: underline; */
 }
