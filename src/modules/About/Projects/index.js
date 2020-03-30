@@ -6,7 +6,7 @@ export function Projects() {
   return (
     <section>
       <Typography.Subtitle>Projects</Typography.Subtitle>
-      <InfoMessage>This section is in construction.</InfoMessage>
+      <InfoMessage>This section is coming later.</InfoMessage>
       <Typography.Paragraph></Typography.Paragraph>
     </section>
   )

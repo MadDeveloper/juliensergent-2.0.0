@@ -12,6 +12,12 @@ export function Article() {
             {new Date().toUTCString()}
           </Typography.Text>
         </Typography.Paragraph>
+        <Typography.Paragraph>
+          <Typography.Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Typography.Text>
+        </Typography.Paragraph>
       </div>
       <div>
         <Link to="">Read more</Link>
