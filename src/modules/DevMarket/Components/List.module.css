@@ -10,7 +10,7 @@
   align-items: flex-start;
   justify-content: flex-end;
   width: 350px;
-  height: 350px;
+  height: 250px;
   border-radius: 4px;
   padding: 20px;
   cursor: pointer;
@@ -55,4 +55,19 @@
 
 .cards .card.inputs .description {
   color: #d2beff;
+}
+
+@media (max-width: 767px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards .card {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .cards .card:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }

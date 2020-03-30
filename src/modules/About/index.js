@@ -1,6 +1,5 @@
 import React from "react"
-import { useNavigate } from "react-router-dom"
-import { Button } from "../../components/Button"
+import { Link } from "react-router-dom"
 import { Layout } from "../../components/Layout"
 import { Typography } from "../../components/Typography"
 import { calculateAge } from "../../lib/time"
@@ -9,16 +8,6 @@ import { AroundTheWeb } from "./AroundTheWeb"
 import { Projects } from "./Projects"
 
 export function About() {
-  const navigate = useNavigate()
-
-  function navigateToResume() {
-    navigate("/resume")
-  }
-
-  function navigateToContact() {
-    navigate("/contact")
-  }
-
   return (
     <Layout.MainContent>
       <Typography.PageTitle>Hi, I'm Julien.</Typography.PageTitle>
@@ -49,13 +38,10 @@ export function About() {
           </Typography.Text>
         </Typography.Paragraph>
         <Typography.Paragraph>
-          <Button onClick={navigateToResume}>View my resume</Button>
-          <Button
-            className={styles.contactMeButton}
-            onClick={navigateToContact}
-          >
+          <Link to="/resume">View my resume</Link>
+          <Link to="/contact" className={styles.contactMeButton}>
             Contact me
-          </Button>
+          </Link>
         </Typography.Paragraph>
       </div>
       <AroundTheWeb />

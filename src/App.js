@@ -9,7 +9,7 @@ import { useThemeObserver } from "./lib/theme"
 import { About } from "./modules/About"
 import { Blog } from "./modules/Blog"
 import { Contact } from "./modules/Contact"
-import { DevShop } from "./modules/DevShop"
+import { DevMarket } from "./modules/DevMarket"
 import { Home } from "./modules/Home"
 import { NotFound } from "./modules/NotFound"
 import { Resume } from "./modules/Resume"
@@ -36,7 +36,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/devshop" element={<DevShop />} />
+        <Route path="/devmarket/*" element={<DevMarket />} />
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />

@@ -4,6 +4,7 @@ import { FormBlock } from "../../../../components/Form/FormBlock"
 import { Actions } from "../shared/Actions"
 import { Description } from "../shared/Description"
 import { Live } from "../shared/Live"
+import { MoreComing } from "../shared/MoreComing"
 import { Name } from "../shared/Name"
 import { Source } from "../shared/Source"
 import styles from "./Inputs.module.css"
@@ -46,6 +47,7 @@ export function Inputs() {
       </Live>
       <Actions onToggleCode={setShowSource} />
       <Source files={files} hidden={!showSource} />
+      <MoreComing>I will add more input elements with time.</MoreComing>
     </div>
   )
 }

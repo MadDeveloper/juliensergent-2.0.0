@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { Typography } from "../../../components/Typography"
 import styles from "./List.module.css"
 
-export function List() {
+export function Components() {
   const navigate = useNavigate()
 
   function navigateToButtons() {

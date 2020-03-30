@@ -11,7 +11,7 @@ export function Menu() {
   const [opened, setOpened] = useState(false)
 
   function isActive(route = "") {
-    return location.pathname === route
+    return location.pathname.startsWith(route)
   }
 
   function open() {
@@ -39,8 +39,8 @@ export function Menu() {
         </MenuItem>
       </div>
       <div className={styles.item}>
-        <MenuItem to="/devshop" active={isActive("/devshop")}>
-          Dev. shop
+        <MenuItem to="/devmarket" active={isActive("/devmarket")}>
+          Dev. market
         </MenuItem>
       </div>
       <div className={styles.item}>
