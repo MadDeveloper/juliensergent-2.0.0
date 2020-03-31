@@ -3,8 +3,8 @@ import Prism from "prismjs"
 import PropTypes from "prop-types"
 import React, { useEffect, useRef, useState } from "react"
 import { CopyIconButton } from "../IconButton/CopyIconButton"
-import { Typography } from "../Typography"
 import styles from "./Editor.module.css"
+import { Files } from "./Files"
 
 export function Editor({ files = [] }) {
   const codeRef = useRef(null)
@@ -28,22 +28,13 @@ export function Editor({ files = [] }) {
       <div className={styles.actions}>
         <CopyIconButton contentToCopy={currentFile.code} />
       </div>
-      <div className={styles.files}>
-        {showFiles &&
-          files.map((file) => (
-            <div
-              key={file.name}
-              className={cs(styles.file, {
-                [styles.active]: currentFile.name === file.name,
-              })}
-              onClick={() => setCurrentFile(file)}
-            >
-              <Typography.Text className={styles.name}>
-                {file.name}
-              </Typography.Text>
-            </div>
-          ))}
-      </div>
+      {showFiles && (
+        <Files
+          files={files}
+          active={currentFile}
+          onSelectFile={setCurrentFile}
+        />
+      )}
       <pre className={styles.content}>
         <code
           ref={codeRef}
