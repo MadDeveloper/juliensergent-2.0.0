@@ -16,10 +16,12 @@ export function Menu() {
 
   function open() {
     setOpened(true)
+    document.documentElement.classList.add("noscroll")
   }
 
   function close() {
     setOpened(false)
+    document.documentElement.classList.remove("noscroll")
   }
 
   useEffect(() => {

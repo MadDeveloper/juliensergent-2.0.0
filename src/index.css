@@ -15,6 +15,10 @@ html {
   /* overflow-y: scroll; */
 }
 
+html.noscroll {
+  overflow: hidden;
+}
+
 html,
 body {
   min-height: 100%;

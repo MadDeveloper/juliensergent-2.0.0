@@ -16,16 +16,23 @@
 }
 
 @media (max-width: 767px) {
+  .root {
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+
   .root.opened {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
-    background-color: #fff;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
-    padding: 30px;
+    background-color: #fff;
+    justify-content: center;
+    padding: var(--small-screens-main-content-padding);
     z-index: 1000;
+    box-sizing: border-box;
   }
 
   .item {
@@ -40,7 +47,7 @@
   }
 
   .root.opened .item button {
-    font-size: var(--subtitle-font-size);
+    font-size: var(--title-font-size);
   }
 
   .openIcon,
@@ -49,7 +56,9 @@
   }
 
   .closeIcon {
-    align-self: flex-end;
+    position: absolute;
+    top: calc(20px + var(--small-screens-main-content-padding));
+    right: var(--small-screens-main-content-padding);
   }
 
   .wideMenu {
