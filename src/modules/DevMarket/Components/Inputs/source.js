@@ -112,7 +112,7 @@ Input.propTypes = {
 }
 
 .label.active {
-  top: 5px;
+  top: 7px;
   font-size: 11px;
 }
 
@@ -121,6 +121,9 @@ Input.propTypes = {
 }
 
 .input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-size: inherit;
   font-family: inherit;
   color: var(--text-color-normal);
@@ -130,7 +133,7 @@ Input.propTypes = {
   border-radius: var(--default-border-radius);
   border: 2px solid hsl(0, 0%, 90%);
   font-size: inherit;
-  background: #fff;
+  background-color: #fff;
   transition: border-color 0.2s;
 }
 
