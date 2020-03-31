@@ -1,5 +1,23 @@
 export const files = [
   {
+    name: "example.js",
+    language: "js",
+    code: `<Input
+  type="text"
+  name="author"
+  label="Author"
+  value={author}
+  onChange={setAuthor}
+/>
+<Input
+  name="bio"
+  label="Bio"
+  textarea
+  value={bio}
+  onChange={setBio}
+/>`,
+  },
+  {
     name: "Input.js",
     language: "js",
     code: `import cs from "classnames"
@@ -117,7 +135,7 @@ Input.propTypes = {
 }
 
 .label.focus {
-  color: var(--primary-color);
+  color: #6b1fff;
 }
 
 .input {
@@ -126,11 +144,11 @@ Input.propTypes = {
   appearance: none;
   font-size: inherit;
   font-family: inherit;
-  color: var(--text-color-normal);
+  color: #273238;
   width: 100%;
   box-sizing: border-box;
   padding: 17px 12px 4px 12px;
-  border-radius: var(--default-border-radius);
+  border-radius: 4px;
   border: 2px solid hsl(0, 0%, 90%);
   font-size: inherit;
   background-color: #fff;
@@ -141,7 +159,7 @@ Input.propTypes = {
 .input:-webkit-autofill,
 .input:-webkit-autofill:hover,
 .input:-webkit-autofill:focus {
-  -webkit-text-fill-color: var(--text-color-normal);
+  -webkit-text-fill-color: #273238;
   background: #fff;
   box-shadow: 0 0 0px 1000px #fff inset;
 }
@@ -151,7 +169,7 @@ Input.propTypes = {
 }
 
 .input:focus {
-  border-color: var(--primary-color);
+  border-color: #6b1fff;
 }
 `,
     language: "css",

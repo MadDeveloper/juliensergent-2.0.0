@@ -8,7 +8,7 @@
   --inactive-color: #aaabac;
   --text-color-normal: #273238;
   --text-color-secondary: var(--inactive-color);
-  --title-color: #273238;
+  --title-color: var(--text-color-normal);
   --link-color: var(--primary-color);
   --faded-link-color: var(--faded-primary-color);
   --active-link-color: var(--active-primary-color);

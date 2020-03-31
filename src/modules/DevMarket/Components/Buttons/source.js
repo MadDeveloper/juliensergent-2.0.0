@@ -1,5 +1,12 @@
 export const files = [
   {
+    name: "example.js",
+    language: "js",
+    code: `<Button>Button</Button>
+<Button compact>Compact</Button>
+<Button secondary>Secondary</Button>`,
+  },
+  {
     name: "Button.js",
     language: "js",
     code: `import cs from "classnames"
@@ -48,21 +55,21 @@ Button.propTypes = {
   {
     name: "Button.module.css",
     code: `.root {
-  font-family: "Roboto", sans-serif;
-  font-size: var(--text-font-size);
+  font-family: inherit;
+  font-size: 16px;
   font-weight: 500;
-  padding: var(--standard-padding-vertical) var(--standard-padding-horizontal);
-  color: var(--button-color);
+  padding: 9px 18px;
+  color: #6b1fff;
   outline: none;
   border: none;
-  background-color: var(--button-background-color);
-  border-radius: var(--default-border-radius);
+  background-color: rgb(238, 233, 255);
+  border-radius: 4px;
   transition-property: border-color, background-color, color, transform;
   transition-duration: 0.2s;
 }
 
 .root:hover {
-  color: var(--active-primary-color);
+  color: #4d05e8;
 }
 
 .root:active {
@@ -71,7 +78,7 @@ Button.propTypes = {
 
 .root.secondary {
   background-color: transparent;
-  color: var(--text-color-normal);
+  color: #273238;
 }
 
 .root.compact {
