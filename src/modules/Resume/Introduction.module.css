@@ -7,10 +7,10 @@
   background-image: url(../../assets/images/julien.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 150px;
-  min-width: 150px;
-  height: 150px;
-  min-height: 150px;
+  width: 200px;
+  min-width: 200px;
+  height: 200px;
+  min-height: 200px;
   border-radius: 50%;
   margin-left: 30px;
   box-shadow: 0 0 20px hsl(0, 0%, 87%);
@@ -23,5 +23,6 @@
 
   .photo {
     margin-left: 0;
+    margin-bottom: 30px;
   }
 }
