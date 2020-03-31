@@ -16,7 +16,7 @@
 
 .root:hover,
 .root.active {
-  background-color: var(--active-primary-color);
+  background-color: var(--primary-color);
 }
 
 .name {
