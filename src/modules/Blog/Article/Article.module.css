@@ -1,0 +1,12 @@
+.title {
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+.title a {
+  color: var(--text-color-normal);
+}
+
+.description {
+  margin-bottom: 15px;
+}

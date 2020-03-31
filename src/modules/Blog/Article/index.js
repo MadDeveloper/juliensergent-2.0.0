@@ -1,15 +1,18 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { Typography } from "../../../components/Typography"
+import styles from "./Article.module.css"
 
 export function Article() {
   return (
     <article>
-      <Typography.Subtitle>Getting started with React</Typography.Subtitle>
-      <div style={{ marginTop: "-10px", marginBottom: 20 }}>
-        <Typography.Paragraph>
+      <Typography.Subtitle className={styles.title}>
+        <Link to="/">Getting started with React</Link>
+      </Typography.Subtitle>
+      <div className={styles.description}>
+        <Typography.Paragraph heading>
           <Typography.Text secondary>
-            {new Date().toUTCString()}
+            {new Date().toLocaleString()}
           </Typography.Text>
         </Typography.Paragraph>
         <Typography.Paragraph>
