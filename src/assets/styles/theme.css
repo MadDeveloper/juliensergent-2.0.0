@@ -40,7 +40,7 @@
   /* Misc */
   --default-border-radius: 4px;
   --header-content-spacing: 40px;
-  --small-screens-main-content-padding: 20px;
+  --main-content-padding: 20px;
   --standard-padding-vertical: 9px;
   --standard-padding-horizontal: 18px;
 }

@@ -30,7 +30,7 @@
     flex-direction: column;
     background-color: #fff;
     justify-content: center;
-    padding: var(--small-screens-main-content-padding);
+    padding: var(--main-content-padding);
     z-index: 1000;
     box-sizing: border-box;
   }
@@ -57,8 +57,8 @@
 
   .closeIcon {
     position: absolute;
-    top: calc(20px + var(--small-screens-main-content-padding));
-    right: var(--small-screens-main-content-padding);
+    top: calc(20px + var(--main-content-padding));
+    right: var(--main-content-padding);
   }
 
   .wideMenu {
