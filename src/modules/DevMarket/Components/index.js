@@ -57,7 +57,7 @@ export function Components() {
       </div>
       <div className={styles.cards}>
         <div
-          className={cs(styles.card, styles.inputs)}
+          className={cs(styles.card, styles.typography)}
           onClick={navigateToTypography}
         >
           <InputIcon className={styles.icon} />
@@ -70,20 +70,7 @@ export function Components() {
             </Typography.Text>
           </div>
         </div>
-        <div className={cs(styles.card, styles.inputs)}>
-          <InputIcon className={styles.icon} />
-          <div>
-            <Typography.Subtitle className={styles.title}>
-              Links
-            </Typography.Subtitle>
-            <Typography.Text className={styles.description}>
-              Basis of the navigation, a good UI/UX is vital.
-            </Typography.Text>
-          </div>
-        </div>
-      </div>
-      <div className={styles.cards}>
-        <div className={cs(styles.card, styles.inputs)}>
+        <div className={cs(styles.card, styles.cardsCard)}>
           <InputIcon className={styles.icon} />
           <div>
             <Typography.Subtitle className={styles.title}>
@@ -94,7 +81,20 @@ export function Components() {
             </Typography.Text>
           </div>
         </div>
-        <div className={cs(styles.card, styles.inputs)}>
+      </div>
+      <div className={styles.cards}>
+        <div className={cs(styles.card, styles.links)}>
+          <InputIcon className={styles.icon} />
+          <div>
+            <Typography.Subtitle className={styles.title}>
+              Links
+            </Typography.Subtitle>
+            <Typography.Text className={styles.description}>
+              Basis of the navigation, a good UI/UX is vital.
+            </Typography.Text>
+          </div>
+        </div>
+        <div className={cs(styles.card, styles.messages)}>
           <InputIcon className={styles.icon} />
           <div>
             <Typography.Subtitle className={styles.title}>
