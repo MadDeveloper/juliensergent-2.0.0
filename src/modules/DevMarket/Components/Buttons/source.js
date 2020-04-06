@@ -1,6 +1,6 @@
 export const files = [
   {
-    name: "example.js",
+    name: "story.js",
     language: "js",
     code: `<Button>Button</Button>
 <Button compact>Compact</Button>

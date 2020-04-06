@@ -7,12 +7,13 @@ export function Files({ files = [], active = null, onSelectFile }) {
   return (
     <div className={styles.root}>
       {files.map((file) => (
-        <File
-          key={file.name}
-          file={file}
-          active={active?.name === file.name}
-          onSelect={onSelectFile}
-        />
+        <div key={file.name} className={styles.file}>
+          <File
+            file={file}
+            active={active?.name === file.name}
+            onSelect={onSelectFile}
+          />
+        </div>
       ))}
     </div>
   )

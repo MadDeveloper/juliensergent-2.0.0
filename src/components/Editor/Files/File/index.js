@@ -22,7 +22,7 @@ export function File({ file = {}, active = false, onSelect }) {
 }
 
 File.propTypes = {
-  files: PropTypes.object.isRequired,
+  file: PropTypes.object.isRequired,
   active: PropTypes.bool,
   onSelect: PropTypes.func.isRequired,
 }

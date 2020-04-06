@@ -17,6 +17,10 @@ export function Components() {
     navigate("inputs")
   }
 
+  function navigateToTypography() {
+    navigate("typography")
+  }
+
   return (
     <div>
       <Typography.Title>Components</Typography.Title>
@@ -47,6 +51,57 @@ export function Components() {
             <Typography.Text className={styles.description}>
               Inputs are used almost an each website, and their UX and UI are
               often miserable.
+            </Typography.Text>
+          </div>
+        </div>
+      </div>
+      <div className={styles.cards}>
+        <div
+          className={cs(styles.card, styles.inputs)}
+          onClick={navigateToTypography}
+        >
+          <InputIcon className={styles.icon} />
+          <div>
+            <Typography.Subtitle className={styles.title}>
+              Typography
+            </Typography.Subtitle>
+            <Typography.Text className={styles.description}>
+              Typography is the foundation of everything.
+            </Typography.Text>
+          </div>
+        </div>
+        <div className={cs(styles.card, styles.inputs)}>
+          <InputIcon className={styles.icon} />
+          <div>
+            <Typography.Subtitle className={styles.title}>
+              Links
+            </Typography.Subtitle>
+            <Typography.Text className={styles.description}>
+              Basis of the navigation, a good UI/UX is vital.
+            </Typography.Text>
+          </div>
+        </div>
+      </div>
+      <div className={styles.cards}>
+        <div className={cs(styles.card, styles.inputs)}>
+          <InputIcon className={styles.icon} />
+          <div>
+            <Typography.Subtitle className={styles.title}>
+              Cards
+            </Typography.Subtitle>
+            <Typography.Text className={styles.description}>
+              Now used in many ways and almost every website.
+            </Typography.Text>
+          </div>
+        </div>
+        <div className={cs(styles.card, styles.inputs)}>
+          <InputIcon className={styles.icon} />
+          <div>
+            <Typography.Subtitle className={styles.title}>
+              Message
+            </Typography.Subtitle>
+            <Typography.Text className={styles.description}>
+              Displayed for informations, success or errors.
             </Typography.Text>
           </div>
         </div>

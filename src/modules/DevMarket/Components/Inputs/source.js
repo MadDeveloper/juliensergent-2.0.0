@@ -1,6 +1,6 @@
 export const files = [
   {
-    name: "example.js",
+    name: "story.js",
     language: "js",
     code: `<Input
   type="text"
