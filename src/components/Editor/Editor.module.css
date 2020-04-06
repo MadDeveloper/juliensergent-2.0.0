@@ -55,27 +55,28 @@
   margin-bottom: 1px;
   box-sizing: border-box;
   overflow: auto;
-  scrollbar-color: #374b5a transparent;
-  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-editor-thumb-background)
+    var(--scrollbar-background);
+  scrollbar-width: var(--scrollbar-width);
 }
 
 .content::-webkit-scrollbar {
-  background: transparent;
-  background-color: transparent;
-  width: 5px;
-  height: 7px;
+  background: var(--scrollbar-background);
+  background-color: var(--scrollbar-background);
+  width: var(--scrollbar-width);
+  height: var(--scrolbar-height);
 }
 
 .content::-webkit-scrollbar-track {
-  background: transparent;
-  background-color: transparent;
-  border-radius: 10px;
+  background: var(--scrollbar-background);
+  background-color: var(--scrollbar-background);
+  border-radius: var(--scrollbar-border-radius);
 }
 
 .content::-webkit-scrollbar-thumb {
-  background: #374b5a;
-  background-color: #374b5a;
-  border-radius: 10px;
+  background: var(--scrollbar-editor-thumb-background);
+  background-color: var(--scrollbar-editor-thumb-background);
+  border-radius: var(--scrollbar-border-radius);
 }
 
 .code {
