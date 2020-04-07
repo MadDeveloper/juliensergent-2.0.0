@@ -1,0 +1,14 @@
+<svg id="Calque_1" data-name="Calque 1" 
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.84 184.12">
+  <defs>
+    <style>
+      #typography-icon-first-letter, #typography-icon-second-letter {
+        font-size: 150px;
+        font-family: Roboto;
+        font-weight: 900;
+      }
+    </style>
+  </defs>
+  <text id="typography-icon-first-letter" transform="translate(3 145)">A</text>
+  <text id="typography-icon-second-letter" fill="#aaabac" transform="translate(107 145)">a</text>
+</svg>

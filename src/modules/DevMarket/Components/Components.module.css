@@ -23,52 +23,6 @@
   margin-right: 10px;
 }
 
-.cards .card.buttons {
-  background-color: #8f51f7;
-  background-image: linear-gradient(147deg, #8f51f7 0%, #3f02bf 74%);
-}
-.cards .card.buttons .description {
-  color: #c5a9ff;
-}
-
-.cards .card.inputs {
-  background-image: linear-gradient(-225deg, #a312ad 0%, #321575 100%);
-}
-.cards .card.inputs .description {
-  color: #d2beff;
-}
-
-.cards .card.typography {
-  background-image: linear-gradient(-225deg, #273238 0%, #101619 100%);
-}
-.cards .card.typography .description {
-  color: #b9b9b9;
-}
-
-.cards .card.links {
-  background-image: linear-gradient(147deg, #8f51f7 0%, #3f02bf 74%);
-}
-.cards .card.links .description {
-  color: #c5a9ff;
-}
-
-.cards .card.cardsCard {
-  background-image: linear-gradient(-225deg, #f9f9f9 0%, #ece9f3 100%);
-}
-.cards .card.cardsCard .title {
-  color: var(--text-color-normal);
-}
-.cards .card.cardsCard .description {
-  color: #a2a2a2;
-}
-
-.cards .card.messages {
-  background-image: linear-gradient(-225deg, #12ada6 0%, #097190 100%);
-}
-.cards .card.messages .description {
-  color: #00f7f7;
-}
-
 .cards .card:hover {
   transform: scale(0.96);
 }
@@ -86,6 +40,56 @@
 .cards .card .title {
   margin: 0 0 10px 0;
   color: #fff;
+}
+
+.cards .card.buttons {
+  background-color: #8f51f7;
+  background-image: linear-gradient(147deg, #7128ea 0%, #5309a7 74%);
+}
+.cards .card.buttons .description {
+  color: #dbc9ff;
+}
+
+.cards .card.inputs {
+  background-image: linear-gradient(-225deg, #1b0e8c 0%, #020154 100%);
+}
+.cards .card.inputs .description {
+  color: #bfbbff;
+}
+
+.cards .card.typography {
+  background-image: linear-gradient(-225deg, #273238 0%, #101619 100%);
+}
+.cards .card.typography .description {
+  color: #b9b9b9;
+}
+
+.cards .card.links {
+  background-image: linear-gradient(147deg, #5b58fd 0%, #3b2eff 74%);
+}
+.cards .card.links .description {
+  color: #c0c2ff;
+}
+
+.cards .card.cardsCard {
+  background-image: linear-gradient(-225deg, #f1f1f1 0%, #eeee 100%);
+}
+.cards .card.cardsCard .title {
+  color: var(--text-color-normal);
+}
+.cards .card.cardsCard .description {
+  color: #a2a2a2;
+}
+.cards .card.cardsCard .icon {
+  fill: none;
+  fill: #273238;
+}
+
+.cards .card.messages {
+  background-image: linear-gradient(-225deg, #02afa8 0%, #019691 100%);
+}
+.cards .card.messages .description {
+  color: #1affea;
 }
 
 @media (max-width: 767px) {

@@ -2,7 +2,11 @@ import cs from "classnames"
 import React from "react"
 import { useNavigate } from "react-router-dom"
 import { ReactComponent as ButtonIcon } from "../../../assets/icons/button.svg"
+import { ReactComponent as CardIcon } from "../../../assets/icons/card.svg"
+import { ReactComponent as ChatIcon } from "../../../assets/icons/chat.svg"
 import { ReactComponent as InputIcon } from "../../../assets/icons/input.svg"
+import { ReactComponent as LinkIcon } from "../../../assets/icons/link.svg"
+import { ReactComponent as TypographyIcon } from "../../../assets/icons/typography.svg"
 import { Typography } from "../../../components/Typography"
 import styles from "./Components.module.css"
 
@@ -60,7 +64,7 @@ export function Components() {
           className={cs(styles.card, styles.typography)}
           onClick={navigateToTypography}
         >
-          <InputIcon className={styles.icon} />
+          <TypographyIcon className={styles.icon} />
           <div>
             <Typography.Subtitle className={styles.title}>
               Typography
@@ -71,7 +75,7 @@ export function Components() {
           </div>
         </div>
         <div className={cs(styles.card, styles.cardsCard)}>
-          <InputIcon className={styles.icon} />
+          <CardIcon className={styles.icon} />
           <div>
             <Typography.Subtitle className={styles.title}>
               Cards
@@ -84,7 +88,7 @@ export function Components() {
       </div>
       <div className={styles.cards}>
         <div className={cs(styles.card, styles.links)}>
-          <InputIcon className={styles.icon} />
+          <LinkIcon className={styles.icon} />
           <div>
             <Typography.Subtitle className={styles.title}>
               Links
@@ -95,7 +99,7 @@ export function Components() {
           </div>
         </div>
         <div className={cs(styles.card, styles.messages)}>
-          <InputIcon className={styles.icon} />
+          <ChatIcon className={styles.icon} />
           <div>
             <Typography.Subtitle className={styles.title}>
               Message

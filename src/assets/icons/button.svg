@@ -1,1 +1,13 @@
-<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 195"><defs><style>.cls-1{font-size:72px;font-family:Helvetica-Bold, Helvetica;font-weight:700;}</style></defs><title>button</title><path d="M486.72,176a7.39,7.39,0,0,1,7.28,7.28V327.72a7.39,7.39,0,0,1-7.28,7.28H25.28A7.39,7.39,0,0,1,18,327.72V183.28A7.39,7.39,0,0,1,25.28,176H486.72m0-18H25.28A25.36,25.36,0,0,0,0,183.28V327.72A25.36,25.36,0,0,0,25.28,353H486.72A25.36,25.36,0,0,0,512,327.72V183.28A25.36,25.36,0,0,0,486.72,158Z" transform="translate(0 -158)"/><text class="cls-1" transform="translate(137.09 123.39)">Button</text></svg>
+<svg id="Calque_1" data-name="Calque 1" 
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 195">
+  <defs>
+    <style>
+      #button-icon-text{
+        font-size: 72px;
+        font-family: SFUIText-Heavy, SF UI Text;
+      }
+    </style>
+  </defs>
+  <path d="M486.72,176a7.39,7.39,0,0,1,7.28,7.28V327.72a7.39,7.39,0,0,1-7.28,7.28H25.28A7.39,7.39,0,0,1,18,327.72V183.28A7.39,7.39,0,0,1,25.28,176H486.72m0-18H25.28A25.36,25.36,0,0,0,0,183.28V327.72A25.36,25.36,0,0,0,25.28,353H486.72A25.36,25.36,0,0,0,512,327.72V183.28A25.36,25.36,0,0,0,486.72,158Z" transform="translate(0 -158)"/>
+  <text id="button-icon-text" transform="translate(137.09 123.39)">Button</text>
+</svg>
