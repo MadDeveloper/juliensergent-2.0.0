@@ -49,12 +49,24 @@
 .cards .card.buttons .description {
   color: #dbc9ff;
 }
+.cards .card.buttons .icon {
+  max-width: 120px;
+  width: 120px;
+  max-height: 120px;
+  height: 120px;
+}
 
 .cards .card.inputs {
   background-image: linear-gradient(-225deg, #1b0e8c 0%, #020154 100%);
 }
 .cards .card.inputs .description {
   color: #bfbbff;
+}
+.cards .card.inputs .icon {
+  max-width: 120px;
+  width: 120px;
+  max-height: 120px;
+  height: 120px;
 }
 
 .cards .card.typography {
@@ -103,6 +115,6 @@
   }
 
   .cards .card:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
