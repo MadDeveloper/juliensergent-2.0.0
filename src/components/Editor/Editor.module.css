@@ -64,19 +64,29 @@
   background: var(--scrollbar-background);
   background-color: var(--scrollbar-background);
   width: var(--scrollbar-width);
-  height: var(--scrolbar-height);
+  height: var(--scrollbar-height);
 }
 
 .content::-webkit-scrollbar-track {
-  background: var(--scrollbar-background);
+  background: var(--scrollbar-editor-tracker-background);
   background-color: var(--scrollbar-background);
   border-radius: var(--scrollbar-border-radius);
 }
+
+/* .content::-webkit-scrollbar-track:hover {
+  background: var(--scrollbar-editor-tracker-hover-background);
+  background-color: var(--scrollbar-editor-tracker-hover-background);
+} */
 
 .content::-webkit-scrollbar-thumb {
   background: var(--scrollbar-editor-thumb-background);
   background-color: var(--scrollbar-editor-thumb-background);
   border-radius: var(--scrollbar-border-radius);
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-editor-thumb-hover-background);
+  background-color: var(--scrollbar-editor-thumb-hover-background);
 }
 
 .code {

@@ -39,11 +39,18 @@
 
   /* Scrollbars */
   --scrollbar-background: transparent;
-  --scrollbar-width: 8px;
-  --scrolbar-height: 7px;
+  --scrollbar-width: 9px;
+  --scrollbar-height: 9px;
   --scrollbar-border-radius: 10px;
+  --scrollbar-tracker-background: transparent;
+  --scrollbar-tracker-hover-background: #ccc;
   --scrollbar-thumb-background: #999;
-  --scrollbar-editor-thumb-background: #374b5a;
+  --scrollbar-thumb-hover-background: #666;
+
+  --scrollbar-editor-tracker-background: transparent;
+  --scrollbar-editor-tracker-hover-background: #304250;
+  --scrollbar-editor-thumb-background: #3d5569;
+  --scrollbar-editor-thumb-hover-background: #5c7284;
 
   /* Misc */
   --default-border-radius: 4px;
@@ -68,30 +75,42 @@
   }
 }
 
-html,
-body {
+/* Scrollbars */
+* {
   scrollbar-color: var(--scrollbar-thumb-background) var(--scrollbar-background);
   scrollbar-width: var(--scrollbar-width);
 }
 
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
+::-webkit-scrollbar,
+::-webkit-scrollbar {
   background: var(--scrollbar-background);
   background-color: var(--scrollbar-background);
   width: var(--scrollbar-width);
-  height: var(--scrolbar-height);
+  height: var(--scrollbar-height);
 }
 
-html::-webkit-scrollbar-track,
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
   background: var(--scrollbar-background);
   background-color: var(--scrollbar-background);
   border-radius: var(--scrollbar-border-radius);
 }
 
-html::-webkit-scrollbar-thumb,
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
   background: var(--scrollbar-thumb-background);
   background-color: var(--scrollbar-thumb-background);
   border-radius: var(--scrollbar-border-radius);
+}
+
+/* ::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:hover {
+  background: var(--scrollbar-tracker-hover-background);
+  background-color: var(--scrollbar-tracker-hover-background);
+} */
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-background);
+  background-color: var(--scrollbar-thumb-hover-background);
 }
