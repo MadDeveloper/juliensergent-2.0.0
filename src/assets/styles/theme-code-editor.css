@@ -51,7 +51,10 @@ code[class*="language-"] {
   color: #f1828d;
 }
 
-.token.function,
+.token.function {
+  color: #7ef3f3;
+}
+
 .token.tag {
   color: #00ffae;
 }

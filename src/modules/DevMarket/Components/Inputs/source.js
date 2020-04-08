@@ -1,7 +1,7 @@
 export const files = [
   {
     name: "story.js",
-    language: "js",
+    language: "jsx",
     code: `<Input
   type="text"
   name="author"
@@ -19,7 +19,7 @@ export const files = [
   },
   {
     name: "Input.js",
-    language: "js",
+    language: "jsx",
     code: `import cs from "classnames"
 import PropTypes from "prop-types"
 import React, { useState } from "react"

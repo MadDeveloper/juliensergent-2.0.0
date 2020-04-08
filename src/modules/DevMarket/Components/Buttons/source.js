@@ -1,14 +1,14 @@
 export const files = [
   {
     name: "story.js",
-    language: "js",
+    language: "jsx",
     code: `<Button>Button</Button>
 <Button compact>Compact</Button>
 <Button secondary>Secondary</Button>`,
   },
   {
     name: "Button.js",
-    language: "js",
+    language: "jsx",
     code: `import cs from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
