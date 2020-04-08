@@ -84,21 +84,20 @@
 }
 
 .cards .card.cardsCard {
-  background-image: linear-gradient(-225deg, #f1f1f1 0%, #eeee 100%);
+  background-image: linear-gradient(-225deg, #efefef 0%, #eae8e8ee 100%);
 }
 .cards .card.cardsCard .title {
   color: var(--text-color-normal);
 }
 .cards .card.cardsCard .description {
-  color: #a2a2a2;
+  color: #848484;
 }
 .cards .card.cardsCard .icon {
-  /* fill: #273238; */
   fill: #000;
-  max-width: 160px;
-  width: 160px;
-  max-height: 160px;
-  height: 160px;
+  max-width: 200px;
+  width: 200px;
+  max-height: auto;
+  height: auto;
 }
 
 .cards .card.messages {

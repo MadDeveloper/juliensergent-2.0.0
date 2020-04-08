@@ -2,7 +2,7 @@ import cs from "classnames"
 import React from "react"
 import { useNavigate } from "react-router-dom"
 import { ReactComponent as ButtonIcon } from "../../../assets/icons/button.svg"
-import { ReactComponent as CardIcon } from "../../../assets/icons/card.svg"
+import { ReactComponent as CardsIcon } from "../../../assets/icons/cards.svg"
 import { ReactComponent as ChatIcon } from "../../../assets/icons/info.svg"
 import { ReactComponent as InputIcon } from "../../../assets/icons/input.svg"
 import { ReactComponent as LinkIcon } from "../../../assets/icons/link.svg"
@@ -75,7 +75,7 @@ export function Components() {
           </div>
         </div>
         <div className={cs(styles.card, styles.cardsCard)}>
-          <CardIcon className={styles.icon} />
+          <CardsIcon className={styles.icon} />
           <div>
             <Typography.Subtitle className={styles.title}>
               Cards
