@@ -1,4 +1,5 @@
 import "prismjs"
+import "prismjs/components/prism-jsx"
 import React from "react"
 import ReactDOM from "react-dom"
 import { BrowserRouter } from "react-router-dom"

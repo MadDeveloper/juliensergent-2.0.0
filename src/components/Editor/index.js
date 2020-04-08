@@ -6,19 +6,14 @@ import { CopyIconButton } from "../IconButton/CopyIconButton"
 import styles from "./Editor.module.css"
 import { Files } from "./Files"
 
-export function Editor({ files = [] }) {
+export function Editor({ files = [], plugins = [] }) {
   const codeRef = useRef(null)
   const [currentFile, setCurrentFile] = useState(files[0])
-  const [html, setHtml] = useState(null)
 
   useEffect(() => {
-    setHtml(
-      Prism.highlight(
-        currentFile.code,
-        Prism.languages[currentFile.language],
-        currentFile.language
-      )
-    )
+    if (codeRef.current) {
+      Prism.highlightElement(codeRef.current)
+    }
   }, [currentFile.language, currentFile.code])
 
   const showFiles = Array.isArray(files) && files.length > 0
@@ -35,12 +30,13 @@ export function Editor({ files = [] }) {
           onSelectFile={setCurrentFile}
         />
       )}
-      <pre className={styles.content}>
+      <pre className={cs(styles.content, plugins.join(" "))}>
         <code
           ref={codeRef}
           className={cs(`language-${currentFile.language}`, styles.code)}
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        >
+          {currentFile.code}
+        </code>
       </pre>
     </div>
   )
@@ -54,4 +50,5 @@ Editor.propTypes = {
       language: PropTypes.string,
     })
   ),
+  plugins: PropTypes.arrayOf(PropTypes.string),
 }

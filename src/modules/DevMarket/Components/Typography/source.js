@@ -1,7 +1,7 @@
 export const files = [
   {
     name: "story.js",
-    language: "js",
+    language: "jsx",
     code: `<Typography.PageTitle>
   Page title
 </Typography.PageTitle>
@@ -15,7 +15,7 @@ export const files = [
   },
   {
     name: "Typography.js",
-    language: "js",
+    language: "jsx",
     code: `import { PageTitle } from "./PageTitle"
 import { Paragraph } from "./Paragraph"
 import { Subtitle } from "./Subtitle"
@@ -41,7 +41,7 @@ PageTitle.propTypes = {
   children: PropTypes.any,
 }
 `,
-    language: "js",
+    language: "jsx",
   },
   {
     name: "PageTitle.module.css",
@@ -53,7 +53,7 @@ PageTitle.propTypes = {
   margin: 0 0 40px;
 }
 `,
-    language: "js",
+    language: "css",
   },
   {
     name: "Title.js",
@@ -76,7 +76,7 @@ Title.propTypes = {
   children: PropTypes.any,
 }
 `,
-    language: "js",
+    language: "jsx",
   },
   {
     name: "Title.module.css",
@@ -93,7 +93,7 @@ Title.propTypes = {
   margin-top: 0;
 }
 `,
-    language: "js",
+    language: "css",
   },
   {
     name: "Subtitle.js",
@@ -116,7 +116,7 @@ Subtitle.propTypes = {
   children: PropTypes.any,
 }
 `,
-    language: "js",
+    language: "jsx",
   },
   {
     name: "Subtitle.module.css",
@@ -134,7 +134,7 @@ Subtitle.propTypes = {
   margin-top: 0;
 }
 `,
-    language: "js",
+    language: "css",
   },
   {
     name: "Text.js",
@@ -171,7 +171,7 @@ Text.propTypes = {
   className: PropTypes.string,
 }
 `,
-    language: "js",
+    language: "jsx",
   },
   {
     name: "Text.module.css",

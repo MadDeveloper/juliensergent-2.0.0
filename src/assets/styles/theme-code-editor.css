@@ -51,7 +51,8 @@ code[class*="language-"] {
   color: #f1828d;
 }
 
-.token.function {
+.token.function,
+.token.tag {
   color: #00ffae;
 }
 
@@ -60,7 +61,6 @@ code[class*="language-"] {
 }
 
 .token.property,
-.token.tag,
 .token.boolean,
 .token.number,
 .token.constant,
