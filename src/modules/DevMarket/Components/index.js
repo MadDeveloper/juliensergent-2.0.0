@@ -43,6 +43,18 @@ export function Components() {
             </Typography.Text>
           </div>
         </div>
+
+        <div className={cs(styles.card, styles.messages)}>
+          <ChatIcon className={styles.icon} />
+          <div>
+            <Typography.Subtitle className={styles.title}>
+              Message
+            </Typography.Subtitle>
+            <Typography.Text className={styles.description}>
+              Displayed for informations, success or errors.
+            </Typography.Text>
+          </div>
+        </div>
         <div
           className={cs(styles.card, styles.inputs)}
           onClick={navigateToInputs}
@@ -60,20 +72,6 @@ export function Components() {
         </div>
       </div>
       <div className={styles.cards}>
-        <div
-          className={cs(styles.card, styles.typography)}
-          onClick={navigateToTypography}
-        >
-          <TypographyIcon className={styles.icon} />
-          <div>
-            <Typography.Subtitle className={styles.title}>
-              Typography
-            </Typography.Subtitle>
-            <Typography.Text className={styles.description}>
-              Typography is the foundation of everything.
-            </Typography.Text>
-          </div>
-        </div>
         <div className={cs(styles.card, styles.cardsCard)}>
           <CardsIcon className={styles.icon} />
           <div>
@@ -85,28 +83,32 @@ export function Components() {
             </Typography.Text>
           </div>
         </div>
-      </div>
-      <div className={styles.cards}>
-        <div className={cs(styles.card, styles.links)}>
-          <LinkIcon className={styles.icon} />
-          <div>
-            <Typography.Subtitle className={styles.title}>
-              Links
-            </Typography.Subtitle>
-            <Typography.Text className={styles.description}>
-              Basis of the navigation, a good UI/UX is vital.
-            </Typography.Text>
+        <div>
+          <div
+            className={cs(styles.card, styles.typography, styles.stacked)}
+            onClick={navigateToTypography}
+          >
+            <TypographyIcon className={styles.icon} />
+            <div>
+              <Typography.Subtitle className={styles.title}>
+                Typography
+              </Typography.Subtitle>
+              <Typography.Text className={styles.description}>
+                Typography is the foundation of everything.
+              </Typography.Text>
+            </div>
           </div>
-        </div>
-        <div className={cs(styles.card, styles.messages)}>
-          <ChatIcon className={styles.icon} />
-          <div>
-            <Typography.Subtitle className={styles.title}>
-              Message
-            </Typography.Subtitle>
-            <Typography.Text className={styles.description}>
-              Displayed for informations, success or errors.
-            </Typography.Text>
+
+          <div className={cs(styles.card, styles.links)}>
+            <LinkIcon className={styles.icon} />
+            <div>
+              <Typography.Subtitle className={styles.title}>
+                Links
+              </Typography.Subtitle>
+              <Typography.Text className={styles.description}>
+                Basis of the navigation, a good UI/UX is vital.
+              </Typography.Text>
+            </div>
           </div>
         </div>
       </div>

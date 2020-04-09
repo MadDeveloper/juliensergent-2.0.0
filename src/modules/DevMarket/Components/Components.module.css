@@ -1,5 +1,6 @@
 .cards {
-  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: -20px;
   display: flex;
   justify-content: space-between;
 }
@@ -9,18 +10,21 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  /* flex: 1; */
+  flex: 1;
   flex-basis: 50%;
-  height: 265px;
-  border-radius: 4px;
+  border-radius: var(--default-border-radius);
   padding: 20px;
   cursor: pointer;
   box-sizing: border-box;
   transition: transform 0.3s cubic-bezier(0.16, 0.58, 0.59, 0.82);
 }
 
-.cards .card:not(:last-child) {
+.cards .card {
   margin-right: 20px;
+}
+
+.cards .card.stacked {
+  margin-bottom: 20px;
 }
 
 .cards .card:hover {
@@ -43,7 +47,7 @@
 }
 
 .cards .card.buttons {
-  background-color: #8f51f7;
+  background-color: #5309a7;
   background-image: linear-gradient(147deg, #7128ea 0%, #5309a7 74%);
 }
 .cards .card.buttons .description {
@@ -57,6 +61,7 @@
 }
 
 .cards .card.inputs {
+  background-color: #020154;
   background-image: linear-gradient(-225deg, #1b0e8c 0%, #020154 100%);
 }
 .cards .card.inputs .description {
@@ -70,6 +75,7 @@
 }
 
 .cards .card.typography {
+  background-color: #101619;
   background-image: linear-gradient(-225deg, #273238 0%, #101619 100%);
 }
 .cards .card.typography .description {
@@ -77,6 +83,7 @@
 }
 
 .cards .card.links {
+  background-color: #3b2eff;
   background-image: linear-gradient(147deg, #5b58fd 0%, #3b2eff 74%);
 }
 .cards .card.links .description {
@@ -84,7 +91,8 @@
 }
 
 .cards .card.cardsCard {
-  background-image: linear-gradient(-225deg, #efefef 0%, #eae8e8ee 100%);
+  background-color: #eae8e8ee;
+  background-image: linear-gradient(-225deg, #f1f1f1 0%, #eae8e8ee 100%);
 }
 .cards .card.cardsCard .title {
   color: var(--text-color-normal);
@@ -101,15 +109,17 @@
 }
 
 .cards .card.messages {
-  background-image: linear-gradient(-225deg, #02c7a3 0%, #01af87 100%);
+  background-color: #529fff;
+  background-image: linear-gradient(-225deg, #63a0ec 0%, #529fff 100%);
 }
 .cards .card.messages .description {
-  color: #7dffe2;
+  color: #d3e6ff;
 }
 
 @media (max-width: 767px) {
   .cards {
     flex-direction: column;
+    margin-right: 0;
   }
 
   .cards .card {
