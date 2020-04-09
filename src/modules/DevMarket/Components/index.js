@@ -28,86 +28,89 @@ export function Components() {
   return (
     <div>
       <Typography.Title>Components</Typography.Title>
-      <div className={styles.cards}>
-        <div
-          className={cs(styles.card, styles.buttons)}
-          onClick={navigateToButtons}
-        >
-          <ButtonIcon className={styles.icon} />
-          <div>
-            <Typography.Subtitle className={styles.title}>
-              Buttons
-            </Typography.Subtitle>
-            <Typography.Text className={styles.description}>
-              For me, buttons are very important and a part of good design.
-            </Typography.Text>
-          </div>
-        </div>
-
-        <div className={cs(styles.card, styles.messages)}>
-          <ChatIcon className={styles.icon} />
-          <div>
-            <Typography.Subtitle className={styles.title}>
-              Messages
-            </Typography.Subtitle>
-            <Typography.Text className={styles.description}>
-              Having a feedback message after an action leads to a good UX.
-            </Typography.Text>
-          </div>
-        </div>
-        <div
-          className={cs(styles.card, styles.inputs)}
-          onClick={navigateToInputs}
-        >
-          <InputIcon className={styles.icon} />
-          <div>
-            <Typography.Subtitle className={styles.title}>
-              Inputs
-            </Typography.Subtitle>
-            <Typography.Text className={styles.description}>
-              Inputs are used almost an each website, and their UX and UI are
-              often miserable.
-            </Typography.Text>
-          </div>
-        </div>
-      </div>
-      <div className={styles.cards}>
-        <div className={cs(styles.card, styles.cardsCard)}>
-          <CardsIcon className={styles.icon} />
-          <div>
-            <Typography.Subtitle className={styles.title}>
-              Cards
-            </Typography.Subtitle>
-            <Typography.Text className={styles.description}>
-              Now used in many ways and almost every website.
-            </Typography.Text>
-          </div>
-        </div>
-        <div>
+      <div className={styles.cardsContainer}>
+        <div className={styles.cards}>
           <div
-            className={cs(styles.card, styles.typography, styles.stacked)}
-            onClick={navigateToTypography}
+            className={cs(styles.card, styles.buttons)}
+            onClick={navigateToButtons}
           >
-            <TypographyIcon className={styles.icon} />
+            <ButtonIcon className={styles.icon} />
             <div>
               <Typography.Subtitle className={styles.title}>
-                Typography
+                Buttons
               </Typography.Subtitle>
               <Typography.Text className={styles.description}>
-                Typography is the foundation of everything.
+                For me, buttons are very important and a part of good design.
               </Typography.Text>
             </div>
           </div>
 
-          <div className={cs(styles.card, styles.links)}>
-            <LinkIcon className={styles.icon} />
+          <div className={cs(styles.card, styles.messages)}>
+            <ChatIcon className={styles.icon} />
             <div>
               <Typography.Subtitle className={styles.title}>
-                Links
+                Messages
               </Typography.Subtitle>
               <Typography.Text className={styles.description}>
-                Basis of the navigation, a good UI/UX is vital.
+                Having a feedback message after an action leads to a good UX.
               </Typography.Text>
+            </div>
+          </div>
+          <div
+            className={cs(styles.card, styles.inputs)}
+            onClick={navigateToInputs}
+          >
+            <InputIcon className={styles.icon} />
+            <div>
+              <Typography.Subtitle className={styles.title}>
+                Inputs
+              </Typography.Subtitle>
+              <Typography.Text className={styles.description}>
+                Inputs are used almost an each website, and their UX and UI are
+                often miserable.
+              </Typography.Text>
+            </div>
+          </div>
+        </div>
+        <div className={styles.cards}>
+          <div className={styles.cards}>
+            <div className={cs(styles.card, styles.cardsCard)}>
+              <CardsIcon className={styles.icon} />
+              <div>
+                <Typography.Subtitle className={styles.title}>
+                  Cards
+                </Typography.Subtitle>
+                <Typography.Text className={styles.description}>
+                  Now used in many ways and almost every website.
+                </Typography.Text>
+              </div>
+            </div>
+          </div>
+          <div className={cs(styles.cards, styles.vertical)}>
+            <div
+              className={cs(styles.card, styles.typography)}
+              onClick={navigateToTypography}
+            >
+              <TypographyIcon className={styles.icon} />
+              <div>
+                <Typography.Subtitle className={styles.title}>
+                  Typography
+                </Typography.Subtitle>
+                <Typography.Text className={styles.description}>
+                  Typography is the foundation of everything.
+                </Typography.Text>
+              </div>
+            </div>
+            <div className={cs(styles.card, styles.links)}>
+              <LinkIcon className={styles.icon} />
+              <div>
+                <Typography.Subtitle className={styles.title}>
+                  Links
+                </Typography.Subtitle>
+                <Typography.Text className={styles.description}>
+                  Basis of the navigation, a good UI/UX is vital.
+                </Typography.Text>
+              </div>
             </div>
           </div>
         </div>
