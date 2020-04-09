@@ -48,10 +48,10 @@ export function Components() {
           <ChatIcon className={styles.icon} />
           <div>
             <Typography.Subtitle className={styles.title}>
-              Message
+              Messages
             </Typography.Subtitle>
             <Typography.Text className={styles.description}>
-              Displayed for informations, success or errors.
+              Having a feedback message after an action leads to a good UX.
             </Typography.Text>
           </div>
         </div>
