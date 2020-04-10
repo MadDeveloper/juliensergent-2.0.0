@@ -1,12 +1,12 @@
 import React from "react"
-import { InfoMessage } from "../../../components/Message/InfoMessage"
+import { Message } from "../../../components/Message"
 import { Typography } from "../../../components/Typography"
 
 export function Projects() {
   return (
     <section>
       <Typography.Subtitle>Projects</Typography.Subtitle>
-      <InfoMessage>This section is coming later.</InfoMessage>
+      <Message info>This section is coming later.</Message>
       <Typography.Paragraph></Typography.Paragraph>
     </section>
   )

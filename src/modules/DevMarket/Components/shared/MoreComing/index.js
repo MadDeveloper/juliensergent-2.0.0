@@ -1,10 +1,14 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { InfoMessage } from "../../../../../components/Message/InfoMessage"
+import { Message } from "../../../../../components/Message"
 import styles from "./MoreComing.module.css"
 
 export function MoreComing({ children }) {
-  return <InfoMessage className={styles.root}>{children}</InfoMessage>
+  return (
+    <Message info className={styles.root}>
+      {children}
+    </Message>
+  )
 }
 
 MoreComing.propTypes = {

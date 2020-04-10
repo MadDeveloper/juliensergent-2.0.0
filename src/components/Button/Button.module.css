@@ -22,7 +22,7 @@
 
 .root.secondary {
   background-color: transparent;
-  color: var(--text-color-normal);
+  color: inherit;
 }
 
 .root.compact {

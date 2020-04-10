@@ -12,9 +12,34 @@
   box-sizing: border-box;
 }
 
+.root.success {
+  background-color: var(--faded-success-color);
+}
+
+.root.error {
+  background-color: var(--faded-danger-color);
+}
+
+.root.info {
+  background-color: var(--faded-info-color);
+}
+
 .content {
   display: flex;
   align-items: center;
+  color: inherit;
+}
+
+.root.success .content {
+  color: var(--success-color);
+}
+
+.root.error .content {
+  color: var(--danger-color);
+}
+
+.root.info .content {
+  color: var(--info-color);
 }
 
 .actionIconContainer {

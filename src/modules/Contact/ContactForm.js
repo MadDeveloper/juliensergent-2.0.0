@@ -2,8 +2,7 @@ import React, { useState } from "react"
 import { Button } from "../../components/Button"
 import { Form } from "../../components/Form"
 import { FormBlock } from "../../components/Form/FormBlock"
-import { ErrorMessage } from "../../components/Message/ErrorMessage"
-import { SuccessMessage } from "../../components/Message/SuccessMessage"
+import { Message } from "../../components/Message"
 import { encoreFormData } from "../../lib/form"
 import styles from "./Contact.module.css"
 
@@ -60,12 +59,16 @@ export function ContactForm() {
         </FormBlock>
         <Button onClick={submit}>Send your message</Button>
       </form>
-      {error && <ErrorMessage className={styles.message}>{error}</ErrorMessage>}
+      {error && (
+        <Message error className={styles.message}>
+          {error}
+        </Message>
+      )}
       {success && (
-        <SuccessMessage className={styles.message}>
+        <Message success className={styles.message}>
           Message sent, thank you! I will try to give you a response as soon as
           possible.
-        </SuccessMessage>
+        </Message>
       )}
     </div>
   )

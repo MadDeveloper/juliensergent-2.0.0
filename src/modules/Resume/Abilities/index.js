@@ -1,6 +1,6 @@
 import React from "react"
 import { Layout } from "../../../components/Layout"
-import { InfoMessage } from "../../../components/Message/InfoMessage"
+import { Message } from "../../../components/Message"
 import { Typography } from "../../../components/Typography"
 import { Languages } from "./Languages"
 import { Skills } from "./Skills"
@@ -11,9 +11,9 @@ export function Abilities() {
     <Layout.Content>
       <Typography.Title>Abilities</Typography.Title>
       <Typography.Paragraph>
-        <InfoMessage>
+        <Message info>
           Only skills and tools with valuable experiences are listed below.
-        </InfoMessage>
+        </Message>
       </Typography.Paragraph>
       <Skills />
       <Tools />

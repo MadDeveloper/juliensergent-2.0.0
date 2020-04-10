@@ -3,22 +3,21 @@ export const files = [
     name: "story.js",
     language: "jsx",
     code: `import {ReactComponent as RefreshIcon} from "assets/icons/refresh.svg"
-
+  
 <Message>
   A default message with no style, but stylisable as you want.
 </Message>
-<InfoMessage>
+<Message info>
+  An information message, to inform about something.
+</Message>
+<Message success>
   A success message when something happened successfully.
-</InfoMessage>
-<SuccessMessage>
-A success message when something happened successfully
-</SuccessMessage>
-<ErrorMessage>
-  An error message when something went wrong.
-</ErrorMessage>
-<ErrorMessage action={<RefreshIcon />}>
+</Message>
+<Message error>An error message when something went wrong.</Message>
+<Message error action={<RefreshIcon />}>
   Something went wrong while loading data, please retry.
-</ErrorMessage>`,
+</Message>
+</div>`,
   },
   {
     name: "Message.js",
@@ -68,9 +67,34 @@ Message.propTypes = {
   box-sizing: border-box;
 }
 
+.root.success {
+  background-color: #bbffef;
+}
+
+.root.error {
+  background-color: #fbebeb;
+}
+
+.root.info {
+  background-color: ##edf1ff;
+}
+
 .content {
   display: flex;
   align-items: center;
+  color: inherit;
+}
+
+.root.success .content {
+  color: #009e79;
+}
+
+.root.error .content {
+  color: #f64747;
+}
+
+.root.info .content {
+  color: #1f78d1;
 }
 
 .actionIconContainer {
@@ -92,102 +116,6 @@ Message.propTypes = {
 
 .actionIconContainer:hover svg {
   fill: #273238;
-}
-`,
-  },
-  {
-    name: "SuccessMessage.js",
-    language: "jsx",
-    code: `import cs from "classnames"
-import React from "react"
-import { Message } from ".."
-import { Typography } from "../../Typography"
-import styles from "./SuccessMessage.module.css"
-
-export function SuccessMessage({ className, children, ...props }) {
-  return (
-    <Message className={cs(styles.root, className)} {...props}>
-      <Typography.Text className={styles.label}>{children}</Typography.Text>
-    </Message>
-  )
-}
-
-SuccessMessage.propTypes = Message.propTypes
-`,
-  },
-  {
-    name: "SuccessMessage.module.css",
-    language: "css",
-    code: `.root {
-  background-color: #aaffeb;
-}
-
-.label {
-  color: #009e79;
-}
-`,
-  },
-  {
-    name: "InfoMessage.js",
-    language: "jsx",
-    code: `import cs from "classnames"
-import React from "react"
-import { Message } from ".."
-import { Typography } from "../../Typography"
-import styles from "./InfoMessage.module.css"
-
-export function InfoMessage({ className, children, ...props }) {
-  return (
-    <Message className={cs(styles.root, className)} {...props}>
-      <span className={styles.label}>{children}</span>
-    </Message>
-  )
-}
-
-InfoMessage.propTypes = Message.propTypes
-`,
-  },
-  {
-    name: "InfoMessage.module.css",
-    language: "css",
-    code: `.root {
-  background-color: #edf1ff;
-}
-
-.label {
-  color: #1f78d1;
-}
-`,
-  },
-  {
-    name: "ErrorMessage.js",
-    language: "jsx",
-    code: `import cs from "classnames"
-    import React from "react"
-    import { Message } from ".."
-    import { Typography } from "../../Typography"
-    import styles from "./ErrorMessage.module.css"
-
-    export function ErrorMessage({ className, children, ...props }) {
-      return (
-        <Message className={cs(styles.root, className)} {...props}>
-          <span className={styles.label}>{children}</span>
-        </Message>
-      )
-    }
-
-    ErrorMessage.propTypes = Message.propTypes
-`,
-  },
-  {
-    name: "ErrorMessage.module.css",
-    language: "css",
-    code: `.root {
-  background-color: #fbebeb;
-}
-
-.label {
-  color: #f64747;
 }
 `,
   },
