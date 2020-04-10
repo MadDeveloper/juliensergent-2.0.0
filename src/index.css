@@ -35,8 +35,3 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-a:hover,
-button:hover {
-  cursor: pointer;
-}

@@ -69,6 +69,10 @@
   display: inline-block !important;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     /* --text-color-normal: hsl(210, 10%, 62%); */

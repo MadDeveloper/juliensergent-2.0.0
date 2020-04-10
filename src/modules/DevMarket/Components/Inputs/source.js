@@ -119,7 +119,7 @@ Input.propTypes = {
 .label {
   user-select: none;
   position: absolute;
-  top: 15px;
+  top: 17px;
   left: 14px;
   font-size: inherit;
   color: hsl(0, 0%, 45%);
@@ -146,6 +146,7 @@ Input.propTypes = {
   font-family: inherit;
   color: #273238;
   width: 100%;
+  min-height: 47px;
   box-sizing: border-box;
   padding: 17px 12px 4px 12px;
   border-radius: 4px;

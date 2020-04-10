@@ -5,11 +5,11 @@ a {
   border-bottom: 2px solid transparent;
   line-height: 1.5;
   font-family: inherit;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, color 0.3s;
 }
 
 a:hover {
   color: var(--active-link-color);
   border-color: var(--active-link-color);
-  /* text-decoration: underline; */
+  cursor: pointer;
 }
