@@ -119,11 +119,11 @@ SuccessMessage.propTypes = Message.propTypes
     name: "SuccessMessage.module.css",
     language: "css",
     code: `.root {
-  background-color: #adffe4;
+  background-color: #aaffeb;
 }
 
 .label {
-  color: #009a68;
+  color: #009e79;
 }
 `,
   },
