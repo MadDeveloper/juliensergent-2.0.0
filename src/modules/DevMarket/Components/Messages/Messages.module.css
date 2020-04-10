@@ -1,0 +1,8 @@
+.rootLive {
+  display: flex;
+  flex-direction: column;
+}
+
+.message:not(:last-child) {
+  margin-bottom: 10px;
+}

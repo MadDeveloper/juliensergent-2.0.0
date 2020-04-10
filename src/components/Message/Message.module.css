@@ -7,7 +7,7 @@
   padding: var(--standard-padding-vertical) var(--standard-padding-horizontal);
   font-size: var(--text-font-size);
   color: var(--text-color-normal);
-  background: var(--faded-grey-color);
+  background-color: var(--faded-grey-color);
   border-radius: var(--default-border-radius);
   box-sizing: border-box;
 }

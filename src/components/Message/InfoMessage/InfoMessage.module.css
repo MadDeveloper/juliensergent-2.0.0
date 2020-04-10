@@ -1,5 +1,5 @@
 .root {
-  background: var(--faded-info-color);
+  background-color: var(--faded-info-color);
 }
 
 .label {

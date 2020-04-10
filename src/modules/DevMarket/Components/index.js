@@ -29,6 +29,10 @@ export function Components() {
     navigate("links")
   }
 
+  function navigateToMessages() {
+    navigate("messages")
+  }
+
   return (
     <div>
       <Typography.Title>Components</Typography.Title>
@@ -49,7 +53,10 @@ export function Components() {
             </div>
           </div>
 
-          <div className={cs(styles.card, styles.messages, styles.w33)}>
+          <div
+            className={cs(styles.card, styles.messages, styles.w33)}
+            onClick={navigateToMessages}
+          >
             <ChatIcon className={styles.icon} />
             <div>
               <Typography.Subtitle className={styles.title}>

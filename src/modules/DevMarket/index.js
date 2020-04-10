@@ -6,6 +6,7 @@ import { BackToComponents } from "./BackToComponents"
 import { Buttons } from "./Components/Buttons"
 import { Inputs } from "./Components/Inputs"
 import { Links } from "./Components/Links"
+import { Messages } from "./Components/Messages"
 import { Typography } from "./Components/Typography"
 import Home from "./Home"
 
@@ -23,7 +24,7 @@ export function DevMarket() {
         <Route path="typography" element={<Typography />} />
         <Route path="links" element={<Links />} />
         <Route path="cards" element={<div />} />
-        <Route path="messages" element={<div />} />
+        <Route path="messages" element={<Messages />} />
       </Routes>
     </Layout.MainContent>
   )
