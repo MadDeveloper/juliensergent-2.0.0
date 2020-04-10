@@ -2,6 +2,7 @@ import React from "react"
 import { ExternalLink } from "../../components/ExternalLink"
 import { Layout } from "../../components/Layout"
 import { Typography } from "../../components/Typography"
+import { AroundTheWeb } from "./AroundTheWeb"
 import { ContactForm } from "./ContactForm"
 
 export function Contact() {
@@ -21,6 +22,7 @@ export function Contact() {
           .
         </Typography.Text>
       </Typography.Paragraph>
+      <AroundTheWeb />
     </Layout.MainContent>
   )
 }

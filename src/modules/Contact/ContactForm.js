@@ -54,7 +54,7 @@ export function ContactForm() {
             label="Message"
             value={message}
             textarea
-            rows={7}
+            rows={5}
             onChange={setMessage}
           />
         </FormBlock>

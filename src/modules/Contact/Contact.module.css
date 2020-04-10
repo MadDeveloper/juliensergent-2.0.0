@@ -7,6 +7,10 @@
   max-width: 300px;
 }
 
+.form textarea {
+  max-width: 600px;
+}
+
 .message {
   margin-top: 10px;
 }

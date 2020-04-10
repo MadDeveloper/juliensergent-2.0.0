@@ -4,7 +4,6 @@ import { Layout } from "../../components/Layout"
 import { Typography } from "../../components/Typography"
 import { calculateAge } from "../../lib/time"
 import styles from "./About.module.css"
-import { AroundTheWeb } from "./AroundTheWeb"
 import { Projects } from "./Projects"
 
 export function About() {
@@ -44,7 +43,6 @@ export function About() {
           </Link>
         </Typography.Paragraph>
       </div>
-      <AroundTheWeb />
       <Projects />
     </Layout.MainContent>
   )
