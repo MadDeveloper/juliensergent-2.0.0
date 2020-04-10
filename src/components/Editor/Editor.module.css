@@ -8,6 +8,16 @@
   box-sizing: border-box;
 }
 
+.root *::-moz-selection {
+  background: #ff0;
+  color: var(--text-color-normal);
+}
+
+.root *::selection {
+  background: #ff0;
+  color: var(--text-color-normal);
+}
+
 .actions {
   position: absolute;
   top: 5px;

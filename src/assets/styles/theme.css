@@ -118,3 +118,14 @@ button:hover {
   background: var(--scrollbar-thumb-hover-background);
   background-color: var(--scrollbar-thumb-hover-background);
 }
+
+/* Selection */
+::-moz-selection {
+  background: var(--text-color-normal);
+  color: #fff;
+}
+
+::selection {
+  background: var(--text-color-normal);
+  color: #fff;
+}
