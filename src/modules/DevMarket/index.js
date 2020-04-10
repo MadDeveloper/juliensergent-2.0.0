@@ -5,6 +5,7 @@ import { Typography as UITypography } from "../../components/Typography"
 import { BackToComponents } from "./BackToComponents"
 import { Buttons } from "./Components/Buttons"
 import { Inputs } from "./Components/Inputs"
+import { Links } from "./Components/Links"
 import { Typography } from "./Components/Typography"
 import Home from "./Home"
 
@@ -20,7 +21,7 @@ export function DevMarket() {
         <Route path="buttons" element={<Buttons />} />
         <Route path="inputs" element={<Inputs />} />
         <Route path="typography" element={<Typography />} />
-        <Route path="links" element={<div />} />
+        <Route path="links" element={<Links />} />
         <Route path="cards" element={<div />} />
         <Route path="messages" element={<div />} />
       </Routes>

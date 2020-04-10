@@ -25,6 +25,10 @@ export function Components() {
     navigate("typography")
   }
 
+  function navigateToLinks() {
+    navigate("links")
+  }
+
   return (
     <div>
       <Typography.Title>Components</Typography.Title>
@@ -101,7 +105,10 @@ export function Components() {
                 </Typography.Text>
               </div>
             </div>
-            <div className={cs(styles.card, styles.links)}>
+            <div
+              className={cs(styles.card, styles.links)}
+              onClick={navigateToLinks}
+            >
               <LinkIcon className={styles.icon} />
               <div>
                 <Typography.Subtitle className={styles.title}>
