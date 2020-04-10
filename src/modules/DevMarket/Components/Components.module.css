@@ -16,11 +16,11 @@
 }
 
 .cards .card {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  flex: 1;
   min-height: 240px;
   border-radius: var(--default-border-radius);
   padding: 20px;
@@ -35,6 +35,10 @@
 }
 
 .cards .card:hover {
+  transform: scale(0.98);
+}
+
+.cards .card:active {
   transform: scale(0.96);
 }
 
@@ -109,10 +113,10 @@
 }
 .cards .card.cardsCard .icon {
   fill: #000;
-  max-width: 200px;
-  width: 200px;
-  max-height: auto;
-  height: auto;
+  max-width: 120px;
+  width: 120px;
+  max-height: 120px;
+  height: 120px;
 }
 
 .cards .card.messages {
@@ -121,6 +125,20 @@
 }
 .cards .card.messages .description {
   color: #d3e6ff;
+}
+.cards .card.messages .icon {
+  max-width: 90px;
+  width: 90px;
+  max-height: 90px;
+  height: 90px;
+}
+
+.w33 {
+  flex-basis: 33.3333%;
+}
+
+.w50 {
+  flex-basis: 50%;
 }
 
 @media (max-width: 767px) {

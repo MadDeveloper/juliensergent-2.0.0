@@ -31,7 +31,7 @@ export function Components() {
       <div className={styles.cardsContainer}>
         <div className={styles.cards}>
           <div
-            className={cs(styles.card, styles.buttons)}
+            className={cs(styles.card, styles.buttons, styles.w33)}
             onClick={navigateToButtons}
           >
             <ButtonIcon className={styles.icon} />
@@ -45,7 +45,7 @@ export function Components() {
             </div>
           </div>
 
-          <div className={cs(styles.card, styles.messages)}>
+          <div className={cs(styles.card, styles.messages, styles.w33)}>
             <ChatIcon className={styles.icon} />
             <div>
               <Typography.Subtitle className={styles.title}>
@@ -57,7 +57,7 @@ export function Components() {
             </div>
           </div>
           <div
-            className={cs(styles.card, styles.inputs)}
+            className={cs(styles.card, styles.inputs, styles.w33)}
             onClick={navigateToInputs}
           >
             <InputIcon className={styles.icon} />
@@ -73,7 +73,7 @@ export function Components() {
           </div>
         </div>
         <div className={styles.cards}>
-          <div className={styles.cards}>
+          <div className={cs(styles.cards, styles.w50)}>
             <div className={cs(styles.card, styles.cardsCard)}>
               <CardsIcon className={styles.icon} />
               <div>
@@ -86,7 +86,7 @@ export function Components() {
               </div>
             </div>
           </div>
-          <div className={cs(styles.cards, styles.vertical)}>
+          <div className={cs(styles.cards, styles.vertical, styles.w50)}>
             <div
               className={cs(styles.card, styles.typography)}
               onClick={navigateToTypography}
