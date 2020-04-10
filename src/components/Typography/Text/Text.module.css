@@ -3,7 +3,7 @@
   font-weight: normal;
   font-size: var(--text-font-size);
   line-height: 1.5;
-  color: var(--text-color-normal);
+  color: inherit;
 }
 
 .root.bold {

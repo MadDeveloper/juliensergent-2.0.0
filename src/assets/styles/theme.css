@@ -65,6 +65,11 @@
   --text-color-normal: hsl(210, 10%, 62%);
 }
 
+html,
+body {
+  color: var(--text-color-normal);
+}
+
 /* Can be a bug from the react-tippy library */
 [data-tooltipped] {
   display: inline-block !important;
