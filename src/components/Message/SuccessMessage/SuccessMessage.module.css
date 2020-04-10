@@ -1,0 +1,7 @@
+.root {
+  background-color: var(--faded-success-color);
+}
+
+.label {
+  color: var(--success-color);
+}

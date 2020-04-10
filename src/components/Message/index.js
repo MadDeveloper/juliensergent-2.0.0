@@ -3,33 +3,19 @@ import PropTypes from "prop-types"
 import React from "react"
 import styles from "./Message.module.css"
 
-export function Message({
-  icon,
-  actionIcon,
-  className,
-  children,
-  onTriggerAction,
-}) {
+export function Message({ action, className, children }) {
   return (
     <div className={cs(styles.root, className)}>
-      <div className={styles.content}>
-        {/* <FontIcon value={icon} className={styles.icon} /> */}
-        {children}
-      </div>
-      {/* {actionIcon && (
-        <IconButton
-          icon={actionIcon}
-          className={styles.action}
-          onClick={onTriggerAction}
-        />
-      )} */}
+      <div className={styles.content}>{children}</div>
+      {React.isValidElement(action) && (
+        <div className={styles.actionIconContainer}>{action}</div>
+      )}
     </div>
   )
 }
 
 Message.propTypes = {
-  icon: PropTypes.string,
-  actionIcon: PropTypes.string,
+  action: PropTypes.element,
   className: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.element,

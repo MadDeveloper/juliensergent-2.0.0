@@ -25,7 +25,7 @@
   transform: scale(0.9);
 }
 
-svg {
+.root svg {
   width: 22px;
   height: 22px;
   fill: var(--inactive-color);

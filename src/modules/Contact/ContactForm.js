@@ -3,7 +3,7 @@ import { Button } from "../../components/Button"
 import { Form } from "../../components/Form"
 import { FormBlock } from "../../components/Form/FormBlock"
 import { ErrorMessage } from "../../components/Message/ErrorMessage"
-import { InfoMessage } from "../../components/Message/InfoMessage"
+import { SuccessMessage } from "../../components/Message/SuccessMessage"
 import { encoreFormData } from "../../lib/form"
 import styles from "./Contact.module.css"
 
@@ -62,10 +62,10 @@ export function ContactForm() {
       </form>
       {error && <ErrorMessage className={styles.message}>{error}</ErrorMessage>}
       {success && (
-        <InfoMessage className={styles.message}>
+        <SuccessMessage className={styles.message}>
           Message sent, thank you! I will try to give you a response as soon as
           possible.
-        </InfoMessage>
+        </SuccessMessage>
       )}
     </div>
   )

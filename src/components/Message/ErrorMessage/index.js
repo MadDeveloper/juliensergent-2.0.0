@@ -4,16 +4,10 @@ import { Message } from "../"
 import { Typography } from "../../Typography"
 import styles from "./ErrorMessage.module.css"
 
-export function ErrorMessage({ className, ...props }) {
+export function ErrorMessage({ className, children, ...props }) {
   return (
-    <Message
-      {...props}
-      icon="alert_circle"
-      className={cs(styles.root, className)}
-    >
-      <Typography.Text className={styles.label}>
-        {props.children}
-      </Typography.Text>
+    <Message className={cs(styles.root, className)} {...props}>
+      <Typography.Text className={styles.label}>{children}</Typography.Text>
     </Message>
   )
 }

@@ -1,7 +1,9 @@
 import React, { useState } from "react"
+import { ReactComponent as RefreshIcon } from "../../../../assets//icons/refresh.svg"
 import { Message } from "../../../../components/Message"
 import { ErrorMessage } from "../../../../components/Message/ErrorMessage"
 import { InfoMessage } from "../../../../components/Message/InfoMessage"
+import { SuccessMessage } from "../../../../components/Message/SuccessMessage"
 import { Actions } from "../shared/Actions"
 import { Description } from "../shared/Description"
 import { Live } from "../shared/Live"
@@ -33,8 +35,18 @@ export function Messages() {
             </InfoMessage>
           </div>
           <div className={styles.message}>
+            <SuccessMessage>
+              A success message when something happened successfully
+            </SuccessMessage>
+          </div>
+          <div className={styles.message}>
             <ErrorMessage>
               An error message when something went wrong.
+            </ErrorMessage>
+          </div>
+          <div className={styles.message}>
+            <ErrorMessage action={<RefreshIcon />}>
+              Something went wrong while loading data, please retry.
             </ErrorMessage>
           </div>
         </div>

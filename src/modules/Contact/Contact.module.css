@@ -16,7 +16,8 @@
 }
 
 @media (max-width: 575px) {
-  .form input[type="email"] {
+  .form input[type="email"],
+  .form textarea {
     max-width: 100%;
   }
 }

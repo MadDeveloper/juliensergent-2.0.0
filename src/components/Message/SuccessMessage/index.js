@@ -2,9 +2,9 @@ import cs from "classnames"
 import React from "react"
 import { Message } from ".."
 import { Typography } from "../../Typography"
-import styles from "./InfoMessage.module.css"
+import styles from "./SuccessMessage.module.css"
 
-export function InfoMessage({ className, children, ...props }) {
+export function SuccessMessage({ className, children, ...props }) {
   return (
     <Message className={cs(styles.root, className)} {...props}>
       <Typography.Text className={styles.label}>{children}</Typography.Text>
@@ -12,4 +12,4 @@ export function InfoMessage({ className, children, ...props }) {
   )
 }
 
-InfoMessage.propTypes = Message.propTypes
+SuccessMessage.propTypes = Message.propTypes
