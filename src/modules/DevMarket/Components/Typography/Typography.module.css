@@ -1,7 +1,10 @@
 .rootLive {
   flex: 1;
+  max-width: 200px;
 }
 
-.text {
-  text-align: center;
+@media (max-width: 767px) {
+  .rootLive {
+    max-width: 100%;
+  }
 }

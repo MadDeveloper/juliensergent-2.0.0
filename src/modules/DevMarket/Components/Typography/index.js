@@ -21,14 +21,10 @@ export function Typography() {
       </Description>
       <Live>
         <div className={styles.rootLive}>
-          <UITypography.PageTitle className={styles.text}>
-            Page title
-          </UITypography.PageTitle>
-          <UITypography.Title className={styles.text}>Title</UITypography.Title>
-          <UITypography.Subtitle className={styles.text}>
-            Subtitle
-          </UITypography.Subtitle>
-          <UITypography.Paragraph className={styles.text}>
+          <UITypography.PageTitle>Page title</UITypography.PageTitle>
+          <UITypography.Title>Title</UITypography.Title>
+          <UITypography.Subtitle>Subtitle</UITypography.Subtitle>
+          <UITypography.Paragraph>
             <UITypography.Text>Text</UITypography.Text>
           </UITypography.Paragraph>
         </div>
