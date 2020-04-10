@@ -13,7 +13,7 @@
   min-height: 200px;
   border-radius: 50%;
   margin-left: 30px;
-  box-shadow: 0 0 20px hsl(0, 0%, 87%);
+  box-shadow: 0 0 30px hsl(0, 0%, 90%);
 }
 
 @media (max-width: 575px) {
