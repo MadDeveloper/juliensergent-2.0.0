@@ -75,7 +75,8 @@ button:hover {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --text-color-normal: hsl(210, 10%, 62%); */
+    /* --app-background-color: #001825;
+    --text-color-normal: hsl(210, 10%, 80%); */
   }
 }
 
