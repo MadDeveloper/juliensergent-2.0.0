@@ -4,7 +4,11 @@ import React from "react"
 import styles from "./Icon.module.css"
 
 export function Icon({ icon: Icon, className = "" }) {
-  return <Icon className={cs(styles.root, className)} />
+  return (
+    <div className={styles.root}>
+      <Icon className={cs(styles.icon, className)} />
+    </div>
+  )
 }
 
 Icon.propTypes = {

@@ -2,83 +2,64 @@ export const files = [
   {
     name: "story.js",
     language: "jsx",
-    code: `<Card
-  header={<CardsIcon className={styles.icon} />}
-  title="Cards"
-  description="Now used in many ways and almost every website."
-  style={{
-    width: 350,
-    backgroundColor: "#eae8e8ee",
-    backgroundImage:
-      "linear-gradient(-225deg, #f1f1f1 0%, #eae8e8ee 100%)",
-  }}
-></Card>`,
+    code: `<Card.Layout style={{ width: 350 }}>
+  <Card.Content>
+    <Card.Icon icon={CardsIcon} />
+    <Card.Title>Cards</Card.Title>
+    <Card.Description>
+      Now used in many ways and almost every website.
+    </Card.Description>
+  </Card.Content>
+</Card.Layout>`,
   },
   {
     name: "Card.js",
     language: "jsx",
-    code: `import cs from "classnames"
-import PropTypes from "prop-types"
-import React from "react"
-import { Typography } from "../Typography"
-import styles from "./Card.module.css"
+    code: `import { Content } from "./Content"
+import { Description } from "./Description"
+import { Icon } from "./Icon"
+import { Layout } from "./Layout"
+import { Title } from "./Title"
 
-export function Card({
-  header = null,
-  headerClassName = "",
-  title = "",
-  titleClassName = "",
-  description = "",
-  descriptionClassName = "",
-  className = "",
-  ...props
-}) {
-  return (
-    <div className={cs(styles.root, className)} {...props}>
-      {header && (
-        <div className={cs(styles.header, headerClassName)}>{header}</div>
-      )}
-      <div>
-        {title && title.length > 0 && (
-          <h2 className={cs(styles.title, titleClassName)}>
-            {title}
-          </h2>
-        )}
-        {description && description.length > 0 && (
-          <span className={cs(styles.description, descriptionClassName)}>
-            {description}
-          </span>
-        )}
-      </div>
-    </div>
-  )
-}
-
-Card.propTypes = {
-  header: PropTypes.any,
-  headerClassName: PropTypes.string,
-  title: PropTypes.string,
-  titleClassName: PropTypes.string,
-  description: PropTypes.string,
-  descriptionClassName: PropTypes.string,
-  className: PropTypes.string,
+export const Card = {
+  Layout,
+  Icon,
+  Content,
+  Title,
+  Description,
 }
 `,
   },
   {
-    name: "Card.module.css",
+    name: "Layout.js",
+    language: "jsx",
+    code: `import cs from "classnames"
+import PropTypes from "prop-types"
+import React from "react"
+import styles from "./Layout.module.css"
+
+export function Layout({ className = "",  children, ...props }) {
+  return (
+    <div className={cs(styles.root, className)} {...props}>
+      {children}
+    </div>
+  )
+}
+
+Layout.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.any,
+}
+`,
+  },
+  {
+    name: "Layout.module.css",
     code: `.root {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  min-height: 240px;
   border-radius: 4px;
-  padding: 20px;
-  margin-bottom: 20px;
   cursor: pointer;
-  box-sizing: border-box;
+  background-color: #f1f1f1;
   transition: transform 0.3s cubic-bezier(0.16, 0.58, 0.59, 0.82);
 }
 
@@ -89,26 +70,122 @@ Card.propTypes = {
 .root:active {
   transform: scale(0.96);
 }
+`,
+    language: "css",
+  },
+  {
+    name: "Icon.js",
+    language: "jsx",
+    code: `import cs from "classnames"
+import PropTypes from "prop-types"
+import React from "react"
+import styles from "./Icon.module.css"
 
-.header {
-  width: 100px;
-  height: 100px;
-  max-width: 100px;
-  max-height: 100px;
+export function Icon({ icon: Icon, className = "" }) {
+  return (
+    <div className={styles.root}>
+      <Icon className={cs(styles.icon, className)} />
+    </div>
+  )
+}
+
+Icon.propTypes = {
+  icon: PropTypes.object,
+  className: PropTypes.string,
+}
+`,
+  },
+  {
+    name: "Icon.module.css",
+    code: `.root {
+  display: flex;
   align-self: center;
   margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
 }
 
-.header svg {
-  width: 100%;
-  height: 100%;
+.icon {
+  width: 100px;
+  height: 100px;
+}
+`,
+    language: "css",
+  },
+  {
+    name: "Content.js",
+    language: "jsx",
+    code: `import cs from "classnames"
+import PropTypes from "prop-types"
+import React from "react"
+import styles from "./Content.module.css"
+
+export function Content({ className = "", children }) {
+  return <div className={cs(styles.root, className)}>{children}</div>
 }
 
-.title {
+Content.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.any,
+}
+`,
+  },
+  {
+    name: "Content.module.css",
+    code: `.root {
+  padding: 20px;
+}
+`,
+    language: "css",
+  },
+  {
+    name: "Title.js",
+    language: "jsx",
+    code: `import cs from "classnames"
+import PropTypes from "prop-types"
+import React from "react"
+import { Typography } from "../../Typography"
+import styles from "./Title.module.css"
+
+export function Title({ className = "", children }) {
+  return <h2 className={cs(styles.root, className)}>{children}</h2>
+}
+
+Title.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.string,
+}
+`,
+  },
+  {
+    name: "Title.module.css",
+    code: `.root {
   margin: 0 0 5px 0;
 }
+`,
+    language: "css",
+  },
+  {
+    name: "Description.js",
+    language: "jsx",
+    code: `import PropTypes from "prop-types"
+import React from "react"
+import styles from "./Description.module.css"
 
-.description {
+export function Description({ className = "", children }) {
+  return <p className={cs(styles.root, className)}>{children}</p>
+}
+
+Description.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.string,
+}
+`,
+  },
+  {
+    name: "Description.module.css",
+    code: `.root {
   color: #aaabac;
 }
 `,
