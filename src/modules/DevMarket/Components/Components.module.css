@@ -37,7 +37,7 @@
 .cards .card.buttons .description {
   color: #dbc9ff;
 }
-.cards .card.buttons .header {
+.cards .card.buttons .icon {
   width: 120px;
   height: 120px;
 }
@@ -50,7 +50,7 @@
 .cards .card.inputs .description {
   color: #bfbbff;
 }
-.cards .card.inputs .header {
+.cards .card.inputs .icon {
   width: 120px;
   height: 120px;
 }
@@ -84,11 +84,9 @@
 .cards .card.cardsCard .description {
   color: #848484;
 }
-.cards .card.cardsCard .header {
+.cards .card.cardsCard .icon {
   width: 120px;
   height: 120px;
-}
-.cards .card.cardsCard .icon {
   fill: #000;
 }
 
@@ -100,7 +98,7 @@
 .cards .card.messages .description {
   color: #d3e6ff;
 }
-.cards .card.messages .header {
+.cards .card.messages .icon {
   width: 80px;
   height: 80px;
 }

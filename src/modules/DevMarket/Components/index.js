@@ -43,72 +43,85 @@ export function Components() {
       <Typography.Title>Components</Typography.Title>
       <div className={styles.cardsContainer}>
         <div className={styles.cards}>
-          <Card
+          <Card.Layout
             className={cs(styles.card, styles.buttons, styles.w33)}
-            header={<ButtonIcon className={styles.icon} />}
-            headerClassName={styles.header}
-            title="Buttons"
-            titleClassName={styles.title}
-            description="For me, buttons are very important and a part of good design."
-            descriptionClassName={styles.description}
             onClick={navigateToButtons}
-          />
-          <Card
+          >
+            <Card.Icon icon={ButtonIcon} className={styles.icon} />
+            <Card.Content>
+              <Card.Title className={styles.title}>Buttons</Card.Title>
+              <Card.Description className={styles.description}>
+                For me, buttons are very important and a part of good design.
+              </Card.Description>
+            </Card.Content>
+          </Card.Layout>
+          <Card.Layout
             className={cs(styles.card, styles.messages, styles.w33)}
-            header={<ChatIcon className={styles.icon} />}
-            headerClassName={styles.header}
-            title="Messages"
-            titleClassName={styles.title}
-            description="Having a feedback message after an action leads to a good UX."
-            descriptionClassName={styles.description}
             onClick={navigateToMessages}
-          />
-          <Card
+          >
+            <Card.Icon icon={ChatIcon} className={styles.icon} />
+            <Card.Content>
+              <Card.Title className={styles.title}>Messages</Card.Title>
+              <Card.Description className={styles.description}>
+                Having a feedback message after an action leads to a good UX.
+              </Card.Description>
+            </Card.Content>
+          </Card.Layout>
+          <Card.Layout
             className={cs(styles.card, styles.inputs, styles.w33)}
-            header={<InputIcon className={styles.icon} />}
-            headerClassName={styles.header}
-            title="Inputs"
-            titleClassName={styles.title}
-            description="Inputs are used almost an each website, and their UX and UI are
-            often miserable."
-            descriptionClassName={styles.description}
             onClick={navigateToInputs}
-          />
+          >
+            <Card.Icon icon={InputIcon} className={styles.icon} />
+            <Card.Content>
+              <Card.Title className={styles.title}>Inputs</Card.Title>
+              <Card.Description className={styles.description}>
+                Inputs are used almost an each website, and their UX and UI are
+                often miserable.
+              </Card.Description>
+            </Card.Content>
+          </Card.Layout>
         </div>
         <div className={styles.cards}>
           <div className={cs(styles.cards, styles.w50)}>
-            <Card
+            <Card.Layout
               className={cs(styles.card, styles.cardsCard)}
-              header={<CardsIcon className={styles.icon} />}
-              headerClassName={styles.header}
-              title="Cards"
-              titleClassName={styles.title}
-              description="Now used in many ways and almost every website."
-              descriptionClassName={styles.description}
               onClick={navigateToCards}
-            ></Card>
+            >
+              <Card.Icon icon={CardsIcon} className={styles.icon} />
+              <Card.Content>
+                <Card.Title className={styles.title}>Cards</Card.Title>
+                <Card.Description className={styles.description}>
+                  Now used in many ways and almost every website.
+                </Card.Description>
+              </Card.Content>
+            </Card.Layout>
           </div>
           <div className={cs(styles.cards, styles.vertical, styles.w50)}>
-            <Card
+            <Card.Layout
               className={cs(styles.card, styles.typography)}
-              header={<TypographyIcon className={styles.icon} />}
-              headerClassName={styles.header}
-              title="Typography"
-              titleClassName={styles.title}
-              description="Typography is the foundation of everything."
-              descriptionClassName={styles.description}
               onClick={navigateToTypography}
-            ></Card>
-            <Card
+            >
+              <Card.Icon icon={TypographyIcon} className={styles.icon} />
+              <Card.Content>
+                <Card.Title className={styles.title}>Typography</Card.Title>
+                <Card.Description className={styles.description}>
+                  Typography is the foundation of everything.
+                </Card.Description>
+              </Card.Content>
+            </Card.Layout>
+
+            <Card.Layout
               className={cs(styles.card, styles.links)}
-              header={<LinkIcon className={styles.icon} />}
-              headerClassName={styles.header}
-              title="Links"
-              titleClassName={styles.title}
-              description="Basis of the navigation, a good UI/UX is vital."
-              descriptionClassName={styles.description}
               onClick={navigateToLinks}
-            ></Card>
+            >
+              <Card.Icon icon={LinkIcon} className={styles.icon} />
+              <Card.Content>
+                <Card.Title className={styles.title}>Links</Card.Title>
+                <Card.Description className={styles.description}>
+                  Basis of the navigation, a good UI/UX is vital.
+                </Card.Description>
+              </Card.Content>
+            </Card.Layout>
           </div>
         </div>
       </div>
