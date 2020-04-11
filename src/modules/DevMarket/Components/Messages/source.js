@@ -2,9 +2,7 @@ export const files = [
   {
     name: "story.js",
     language: "jsx",
-    code: `import {ReactComponent as RefreshIcon} from "assets/icons/refresh.svg"
-  
-<Message>
+    code: `<Message>
   A default message with no style, but stylisable as you want.
 </Message>
 <Message info>

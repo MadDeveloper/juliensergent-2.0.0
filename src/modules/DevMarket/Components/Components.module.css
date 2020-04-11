@@ -17,46 +17,19 @@
 
 .cards .card {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  min-height: 240px;
-  border-radius: var(--default-border-radius);
-  padding: 20px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  box-sizing: border-box;
-  transition: transform 0.3s cubic-bezier(0.16, 0.58, 0.59, 0.82);
-}
-
-.cards .card {
-  margin-right: 20px;
-}
-
-.cards .card:hover {
-  transform: scale(0.98);
-}
-
-.cards .card:active {
-  transform: scale(0.96);
+  width: auto;
+  margin: 0 20px 20px 0;
 }
 
 .cards .card .icon {
-  width: 100px;
-  height: 100px;
-  max-width: 100px;
-  max-height: 100px;
-  align-self: center;
-  margin: auto;
   fill: #fff;
 }
 
 .cards .card .title {
-  margin: 0 0 5px 0;
   color: #fff;
 }
 
+/* Buttons card */
 .cards .card.buttons {
   background-color: #5309a7;
   background-image: linear-gradient(147deg, #7128ea 0%, #5309a7 74%);
@@ -64,13 +37,12 @@
 .cards .card.buttons .description {
   color: #dbc9ff;
 }
-.cards .card.buttons .icon {
-  max-width: 120px;
+.cards .card.buttons .header {
   width: 120px;
-  max-height: 120px;
   height: 120px;
 }
 
+/* Inputs card */
 .cards .card.inputs {
   background-color: #020154;
   background-image: linear-gradient(-225deg, #1b0e8c 0%, #020154 100%);
@@ -78,13 +50,12 @@
 .cards .card.inputs .description {
   color: #bfbbff;
 }
-.cards .card.inputs .icon {
-  max-width: 120px;
+.cards .card.inputs .header {
   width: 120px;
-  max-height: 120px;
   height: 120px;
 }
 
+/* Typography card */
 .cards .card.typography {
   background-color: #101619;
   background-image: linear-gradient(-225deg, #273238 0%, #101619 100%);
@@ -93,6 +64,7 @@
   color: #b9b9b9;
 }
 
+/* Links card */
 .cards .card.links {
   background-color: #3b2eff;
   background-image: linear-gradient(147deg, #5b58fd 0%, #3b2eff 74%);
@@ -101,6 +73,7 @@
   color: #c0c2ff;
 }
 
+/* Cards card */
 .cards .card.cardsCard {
   background-color: #eae8e8ee;
   background-image: linear-gradient(-225deg, #f1f1f1 0%, #eae8e8ee 100%);
@@ -111,14 +84,15 @@
 .cards .card.cardsCard .description {
   color: #848484;
 }
-.cards .card.cardsCard .icon {
-  fill: #000;
-  max-width: 120px;
+.cards .card.cardsCard .header {
   width: 120px;
-  max-height: 120px;
   height: 120px;
 }
+.cards .card.cardsCard .icon {
+  fill: #000;
+}
 
+/* Messages card */
 .cards .card.messages {
   background-color: #529fff;
   background-image: linear-gradient(-225deg, #63a0ec 0%, #529fff 100%);
@@ -126,11 +100,9 @@
 .cards .card.messages .description {
   color: #d3e6ff;
 }
-.cards .card.messages .icon {
-  max-width: 90px;
-  width: 90px;
-  max-height: 90px;
-  height: 90px;
+.cards .card.messages .header {
+  width: 80px;
+  height: 80px;
 }
 
 .w33 {
