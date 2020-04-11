@@ -68,7 +68,7 @@ Message.propTypes = {
 }
 
 .root.success {
-  background-color: #bbffef;
+  background-color: #aef7e6;
 }
 
 .root.error {
