@@ -49,10 +49,12 @@ export function Components() {
           >
             <Card.Content className={styles.content}>
               <Card.Icon icon={ButtonIcon} className={styles.icon} />
-              <Card.Title className={styles.title}>Buttons</Card.Title>
-              <Card.Description className={styles.description}>
-                For me, buttons are very important and a part of good design.
-              </Card.Description>
+              <div>
+                <Card.Title className={styles.title}>Buttons</Card.Title>
+                <Card.Description className={styles.description}>
+                  For me, buttons are very important and a part of good design.
+                </Card.Description>
+              </div>
             </Card.Content>
           </Card.Layout>
           <Card.Layout
@@ -61,10 +63,12 @@ export function Components() {
           >
             <Card.Content className={styles.content}>
               <Card.Icon icon={ChatIcon} className={styles.icon} />
-              <Card.Title className={styles.title}>Messages</Card.Title>
-              <Card.Description className={styles.description}>
-                Having a feedback message after an action leads to a good UX.
-              </Card.Description>
+              <div>
+                <Card.Title className={styles.title}>Messages</Card.Title>
+                <Card.Description className={styles.description}>
+                  Having a feedback message after an action leads to a good UX.
+                </Card.Description>
+              </div>
             </Card.Content>
           </Card.Layout>
           <Card.Layout
@@ -73,11 +77,13 @@ export function Components() {
           >
             <Card.Content className={styles.content}>
               <Card.Icon icon={InputIcon} className={styles.icon} />
-              <Card.Title className={styles.title}>Inputs</Card.Title>
-              <Card.Description className={styles.description}>
-                Inputs are used almost an each website, and their UX and UI are
-                often miserable.
-              </Card.Description>
+              <div>
+                <Card.Title className={styles.title}>Inputs</Card.Title>
+                <Card.Description className={styles.description}>
+                  Inputs are used almost an each website, and their UX and UI
+                  are often miserable.
+                </Card.Description>
+              </div>
             </Card.Content>
           </Card.Layout>
         </div>
@@ -89,10 +95,12 @@ export function Components() {
             >
               <Card.Content className={styles.content}>
                 <Card.Icon icon={CardsIcon} className={styles.icon} />
-                <Card.Title className={styles.title}>Cards</Card.Title>
-                <Card.Description className={styles.description}>
-                  Now used in many ways and almost every website.
-                </Card.Description>
+                <div>
+                  <Card.Title className={styles.title}>Cards</Card.Title>
+                  <Card.Description className={styles.description}>
+                    Now used in many ways and almost every website.
+                  </Card.Description>
+                </div>
               </Card.Content>
             </Card.Layout>
           </div>
@@ -103,10 +111,12 @@ export function Components() {
             >
               <Card.Content className={styles.content}>
                 <Card.Icon icon={TypographyIcon} className={styles.icon} />
-                <Card.Title className={styles.title}>Typography</Card.Title>
-                <Card.Description className={styles.description}>
-                  Typography is the foundation of everything.
-                </Card.Description>
+                <div>
+                  <Card.Title className={styles.title}>Typography</Card.Title>
+                  <Card.Description className={styles.description}>
+                    Typography is the foundation of everything.
+                  </Card.Description>
+                </div>
               </Card.Content>
             </Card.Layout>
             <Card.Layout
@@ -115,10 +125,12 @@ export function Components() {
             >
               <Card.Content className={styles.content}>
                 <Card.Icon icon={LinkIcon} className={styles.icon} />
-                <Card.Title className={styles.title}>Links</Card.Title>
-                <Card.Description className={styles.description}>
-                  Basis of the navigation, a good UI/UX is vital.
-                </Card.Description>
+                <div>
+                  <Card.Title className={styles.title}>Links</Card.Title>
+                  <Card.Description className={styles.description}>
+                    Basis of the navigation, a good UI/UX is vital.
+                  </Card.Description>
+                </div>
               </Card.Content>
             </Card.Layout>
           </div>

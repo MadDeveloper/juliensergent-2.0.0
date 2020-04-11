@@ -98,6 +98,7 @@ Icon.propTypes = {
   {
     name: "Icon.module.css",
     code: `.root {
+  flex: 1;
   display: flex;
   align-self: center;
   margin: auto;
