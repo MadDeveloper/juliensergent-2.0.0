@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { ReactComponent as CardsIcon } from "../../../../assets/icons/cards.svg"
+import { ReactComponent as CardsIcon } from "../../../../assets/icons/link.svg"
 import { Card } from "../../../../components/Card"
 import { Actions } from "../shared/Actions"
 import { Description } from "../shared/Description"
