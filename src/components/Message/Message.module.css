@@ -16,6 +16,10 @@
   background-color: var(--faded-success-color);
 }
 
+.root.warning {
+  background-color: var(--faded-warning-color);
+}
+
 .root.error {
   background-color: var(--faded-danger-color);
 }
@@ -32,6 +36,10 @@
 
 .root.success .content {
   color: var(--success-color);
+}
+
+.root.warning .content {
+  color: var(--warning-color);
 }
 
 .root.error .content {

@@ -37,6 +37,11 @@ export function Messages() {
             </Message>
           </div>
           <div className={styles.message}>
+            <Message warning>
+              A warning message to draw attention and warn.
+            </Message>
+          </div>
+          <div className={styles.message}>
             <Message error>An error message when something went wrong.</Message>
           </div>
           <div className={styles.message}>
