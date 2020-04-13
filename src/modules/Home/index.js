@@ -2,6 +2,7 @@ import cs from "classnames"
 import React, { useCallback, useEffect, useRef, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { Button } from "../../components/Button"
+import { Layout } from "../../components/Layout"
 import { Typography } from "../../components/Typography"
 import { isHomeAnimationPlayed, setHomeAnimationAsPlayed } from "../../lib/app"
 import styles from "./Home.module.css"
@@ -33,8 +34,8 @@ export function Home() {
         document.body.style.overflowY = "hidden"
 
         setTimeout(() => {
-          header.style.transition = "transform 1s 1s, opacity 1s 1s"
-          footer.style.transition = "transform 1s 1s, opacity 1s 1s"
+          header.style.transition = "transform 1s 0.2s, opacity 1s 0.2s"
+          footer.style.transition = "transform 1s 0.2s, opacity 1s 0.2s"
         }, 100)
 
         if (animationPlayed) {
@@ -66,7 +67,7 @@ export function Home() {
 
     const text = `Hi, I'm Julien.`
     // eslint-disable-next-line no-sparse-arrays
-    const durations = [, , 600, , , , , , , , , , , , 800]
+    const durations = [, , 600, , , , , , , , , , , , 600]
     const defaultDuration = 100
 
     initAnimation()
@@ -97,7 +98,9 @@ export function Home() {
   }, [animationPlayed, playingAnimation, triggerPageAnimation])
 
   return (
-    <div className={cs(styles.root, { [styles.hidden]: hidden })}>
+    <Layout.MainContent
+      className={cs(styles.root, { [styles.hidden]: hidden })}
+    >
       <div className={styles.presentation}>
         <div>
           <Typography.PageTitle
@@ -112,23 +115,29 @@ export function Home() {
             </span>
           </Typography.PageTitle>
           <div className={styles.description}>
-            <Typography.Subtitle className={styles.element}>
-              I'm a <span className={styles.highlight}>software engineer</span>,
+            <Typography.Subtitle className={cs(styles.element, styles.role)}>
+              I'm a <span className={styles.highlight}>software engineer</span>
+              <span>, </span>
               <br />
-              <span className={styles.highlight}>web artisan</span> and{" "}
+              <span className={styles.highlight}>web artisan</span>
+              <span> and </span>
               <span className={cs(styles.highlight, styles.design)}>
                 design maniac
               </span>
               .
             </Typography.Subtitle>
+            <Typography.Subtitle className={styles.element}>
+              Passionated about computer science, with a particular taste for
+              the web. I can talk about this everyday.
+            </Typography.Subtitle>
           </div>
           <div className={styles.showMore}>
             <Button className={styles.button} onClick={navigateToAbout}>
-              About me
+              More about me
             </Button>
           </div>
         </div>
       </div>
-    </div>
+    </Layout.MainContent>
   )
 }
