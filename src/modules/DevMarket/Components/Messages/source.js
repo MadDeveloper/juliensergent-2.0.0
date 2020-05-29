@@ -67,8 +67,7 @@ Message.propTypes = {
     PropTypes.node,
     PropTypes.bool,
   ]),
-}
-`,
+}`,
   },
   {
     name: "Message.module.css",
@@ -144,7 +143,6 @@ Message.propTypes = {
 
 .actionIconContainer:hover svg {
   fill: #273238;
-}
-`,
+}`,
   },
 ]

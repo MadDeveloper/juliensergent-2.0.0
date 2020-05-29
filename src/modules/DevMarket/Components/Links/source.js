@@ -19,8 +19,7 @@ a:hover {
   color: #4d05e8;
   border-color: #4d05e8;
   cursor: pointer;
-}
-`,
+}`,
     language: "css",
   },
 ]

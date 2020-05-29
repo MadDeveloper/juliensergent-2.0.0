@@ -26,7 +26,7 @@ export function Cards() {
           </Card.Content>
         </Card.Layout>
       </Live>
-      <Actions onToggleCode={setShowSource} />
+      <Actions files={files} onToggleCode={setShowSource} />
       <Source files={files} hidden={!showSource} />
     </div>
   )

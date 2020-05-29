@@ -103,8 +103,7 @@ Input.propTypes = {
   rows: PropTypes.number,
   cols: PropTypes.number,
   onChange: PropTypes.func.isRequired,
-}
-`,
+}`,
   },
   {
     name: "Input.module.css",
@@ -171,8 +170,7 @@ Input.propTypes = {
 
 .input:focus {
   border-color: #6b1fff;
-}
-`,
+}`,
     language: "css",
   },
 ]

@@ -22,8 +22,7 @@ import { Subtitle } from "./Subtitle"
 import { Text } from "./Text"
 import { Title } from "./Title"
 
-export const Typography = { PageTitle, Title, Subtitle, Paragraph, Text }
-`,
+export const Typography = { PageTitle, Title, Subtitle, Paragraph, Text }`,
   },
   {
     name: "PageTitle.js",
@@ -39,8 +38,7 @@ export function PageTitle({ className = "", children }) {
 PageTitle.propTypes = {
   className: PropTypes.string,
   children: PropTypes.any,
-}
-`,
+}`,
     language: "jsx",
   },
   {
@@ -51,8 +49,7 @@ PageTitle.propTypes = {
   line-height: 1;
   color: var(--text-color-normal);
   margin: 0 0 40px;
-}
-`,
+}`,
     language: "css",
   },
   {
@@ -74,8 +71,7 @@ Title.propTypes = {
   heading: PropTypes.bool,
   className: PropTypes.string,
   children: PropTypes.any,
-}
-`,
+}`,
     language: "jsx",
   },
   {
@@ -91,8 +87,7 @@ Title.propTypes = {
 
 .root.heading {
   margin-top: 0;
-}
-`,
+}`,
     language: "css",
   },
   {
@@ -114,8 +109,7 @@ Subtitle.propTypes = {
   heading: PropTypes.bool,
   className: PropTypes.string,
   children: PropTypes.any,
-}
-`,
+}`,
     language: "jsx",
   },
   {
@@ -132,8 +126,7 @@ Subtitle.propTypes = {
 
 .root.heading {
   margin-top: 0;
-}
-`,
+}`,
     language: "css",
   },
   {
@@ -169,8 +162,7 @@ Text.propTypes = {
   small: PropTypes.bool,
   secondary: PropTypes.bool,
   className: PropTypes.string,
-}
-`,
+}`,
     language: "jsx",
   },
   {
@@ -193,8 +185,7 @@ Text.propTypes = {
 
 .root.secondary {
   color: var(--text-color-secondary);
-}
-`,
+}`,
     language: "css",
   },
 ]

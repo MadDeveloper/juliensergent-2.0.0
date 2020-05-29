@@ -49,8 +49,7 @@ Button.propTypes = {
   compact: PropTypes.bool,
   children: PropTypes.any,
   onClick: PropTypes.func,
-}
-`,
+}`,
   },
   {
     name: "Button.module.css",
@@ -83,8 +82,7 @@ Button.propTypes = {
 
 .root.compact {
   padding: 5px 10px;
-}
-`,
+}`,
     language: "css",
   },
 ]

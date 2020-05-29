@@ -27,8 +27,7 @@ export const Card = {
   Content,
   Title,
   Description,
-}
-`,
+}`,
   },
   {
     name: "Layout.js",
@@ -49,8 +48,7 @@ export function Layout({ className = "",  children, ...props }) {
 Layout.propTypes = {
   className: PropTypes.string,
   children: PropTypes.any,
-}
-`,
+}`,
   },
   {
     name: "Layout.module.css",
@@ -69,8 +67,7 @@ Layout.propTypes = {
 
 .root:active {
   transform: scale(0.96);
-}
-`,
+}`,
     language: "css",
   },
   {
@@ -92,8 +89,7 @@ export function Icon({ icon: Icon, className = "" }) {
 Icon.propTypes = {
   icon: PropTypes.object,
   className: PropTypes.string,
-}
-`,
+}`,
   },
   {
     name: "Icon.module.css",
@@ -109,8 +105,7 @@ Icon.propTypes = {
 .icon {
   width: 100px;
   height: 100px;
-}
-`,
+}`,
     language: "css",
   },
   {
@@ -128,15 +123,13 @@ export function Content({ className = "", children }) {
 Content.propTypes = {
   className: PropTypes.string,
   children: PropTypes.any,
-}
-`,
+}`,
   },
   {
     name: "Content.module.css",
     code: `.root {
   padding: 20px;
-}
-`,
+}`,
     language: "css",
   },
   {
@@ -155,15 +148,13 @@ export function Title({ className = "", children }) {
 Title.propTypes = {
   className: PropTypes.string,
   children: PropTypes.string,
-}
-`,
+}`,
   },
   {
     name: "Title.module.css",
     code: `.root {
   margin: 0 0 5px 0;
-}
-`,
+}`,
     language: "css",
   },
   {
@@ -180,15 +171,13 @@ export function Description({ className = "", children }) {
 Description.propTypes = {
   className: PropTypes.string,
   children: PropTypes.string,
-}
-`,
+}`,
   },
   {
     name: "Description.module.css",
     code: `.root {
   color: #aaabac;
-}
-`,
+}`,
     language: "css",
   },
 ]

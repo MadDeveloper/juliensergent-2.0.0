@@ -3,9 +3,10 @@ import React, { useState } from "react"
 import { ReactComponent as SourceIcon } from "../../../../../assets/icons/editor/source.svg"
 import { IconButton } from "../../../../../components/IconButton"
 import { CopyIconButton } from "../../../../../components/IconButton/CopyIconButton"
+import { sourceFilesToContent } from "../../../../../lib/code"
 import styles from "./Actions.module.css"
 
-export function Actions({ onToggleCode }) {
+export function Actions({ files = [], onToggleCode }) {
   const [showCode, setShowCode] = useState(false)
 
   function toggleCode() {
@@ -28,12 +29,16 @@ export function Actions({ onToggleCode }) {
         </IconButton>
       </div>
       <div className={styles.action}>
-        <CopyIconButton text="Copy full source" contentToCopy="" />
+        <CopyIconButton
+          text="Copy full source"
+          contentToCopy={sourceFilesToContent(files)}
+        />
       </div>
     </div>
   )
 }
 
 Actions.propTypes = {
+  files: PropTypes.arrayOf(PropTypes.object),
   onToggleCode: PropTypes.func,
 }

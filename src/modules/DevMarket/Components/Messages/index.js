@@ -51,7 +51,7 @@ export function Messages() {
           </div>
         </div>
       </Live>
-      <Actions onToggleCode={setShowSource} />
+      <Actions files={files} onToggleCode={setShowSource} />
       <Source files={files} hidden={!showSource} />
       <MoreComing>I will add more button elements with time.</MoreComing>
     </div>

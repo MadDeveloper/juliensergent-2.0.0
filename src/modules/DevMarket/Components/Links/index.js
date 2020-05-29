@@ -17,7 +17,7 @@ export function Links() {
       <Live>
         <Link to="#">Some link</Link>
       </Live>
-      <Actions onToggleCode={setShowSource} />
+      <Actions files={files} onToggleCode={setShowSource} />
       <Source files={files} hidden={!showSource} />
     </div>
   )
