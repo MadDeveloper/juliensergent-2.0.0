@@ -5,7 +5,7 @@ import { Typography } from "../../../components/Typography"
 export function Projects() {
   return (
     <section>
-      <Typography.Subtitle>Projects</Typography.Subtitle>
+      <Typography.Subtitle>Open source projects</Typography.Subtitle>
       <Message info>This section is coming later.</Message>
       <Typography.Paragraph></Typography.Paragraph>
     </section>
