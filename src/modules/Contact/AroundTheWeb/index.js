@@ -19,7 +19,7 @@ export function AroundTheWeb() {
         </ExternalLink>
         <span>, </span>
         <ExternalLink to="https://stackoverflow.com/users/6708504/julien-sergent">
-          StackOverflow
+          Stack Overflow
         </ExternalLink>
         <span> or </span>
         <ExternalLink to="https://www.linkedin.com/in/julien-sergent/">

@@ -5,6 +5,7 @@
 
 .social {
   border: none;
+  line-height: initial;
 }
 
 .social:not(:first-child) {
