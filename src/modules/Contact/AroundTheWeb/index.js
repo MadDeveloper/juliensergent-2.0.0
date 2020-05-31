@@ -17,6 +17,10 @@ export function AroundTheWeb() {
         <ExternalLink to="https://www.npmjs.com/~maddeveloper">
           npm
         </ExternalLink>
+        <span>, </span>
+        <ExternalLink to="https://stackoverflow.com/users/6708504/julien-sergent">
+          StackOverflow
+        </ExternalLink>
         <span> or </span>
         <ExternalLink to="https://www.linkedin.com/in/julien-sergent/">
           LinkedIn
