@@ -1,3 +1,13 @@
-.project {
-  margin-bottom: 20px;
+.projects {
+  display: flex;
+}
+
+.projects .project {
+  display: flex;
+  flex-basis: 50%;
+  margin: 0 20px 20px 0;
+}
+
+.projects .project:last-child {
+  margin-right: 0;
 }

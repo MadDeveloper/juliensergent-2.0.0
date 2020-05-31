@@ -1,9 +1,9 @@
 import React from "react"
 import { ReactComponent as RamdaIcon } from "../../../assets/icons/technologies/ramda.svg"
-import { Project } from "../../../components/Project"
 import { Typography } from "../../../components/Typography"
 import { useFetch } from "../../../lib/fetch"
 import styles from "./Contributions.module.css"
+import { Project } from "./Project"
 
 export function Contributions() {
   const { response: ramdaRepositoryData } = useFetch(
@@ -15,15 +15,17 @@ export function Contributions() {
 
   return (
     <section>
-      <Typography.Subtitle>Contributions</Typography.Subtitle>
-      <div className={styles.project}>
-        <Project
-          icon={RamdaIcon}
-          name="Ramda"
-          description="A practical functional library for JavaScript programmers."
-          stars={ramdaRepositoryData?.stargazers_count}
-          repositoryLink="https://github.com/ramda/ramda"
-        />
+      <Typography.Title>Contributions</Typography.Title>
+      <div className={styles.projects}>
+        <div className={styles.project}>
+          <Project
+            icon={RamdaIcon}
+            name="Ramda"
+            description="A practical functional library for JavaScript programmers."
+            stars={ramdaRepositoryData?.stargazers_count}
+            repositoryLink="https://github.com/ramda/ramda"
+          />
+        </div>
       </div>
     </section>
   )

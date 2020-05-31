@@ -1,13 +1,77 @@
 import React from "react"
-import { Message } from "../../../components/Message"
+import { Experience } from "../../../components/Experience"
+import { ExtraInfos } from "../../../components/Experience/ExtraInfos"
+import { ExternalLink } from "../../../components/ExternalLink"
 import { Typography } from "../../../components/Typography"
 
 export function Projects() {
   return (
     <section>
-      <Typography.Subtitle>Open source projects</Typography.Subtitle>
-      <Message info>This section is coming later.</Message>
-      <Typography.Paragraph></Typography.Paragraph>
+      <Typography.Title>Open source projects</Typography.Title>
+      <Experience
+        title="Trading bot"
+        description={
+          <Typography.Text>
+            Realization of a trading robot for crypto currencies.
+            <br />
+            He is able to trade on Gdax and Binance. The architecture of the
+            robot makes it capable of trading in any market. It has some
+            adaptability capabilities in the market, and a large number of
+            configurations that can change its behavior completely.
+            <br />
+            The source code of the project is not made public.
+          </Typography.Text>
+        }
+      />
+      <Experience
+        title="SnipHub"
+        extrasInfo={<ExtraInfos link="https://github.com/SnipHub/sniphub" />}
+        description={
+          <Typography.Text>
+            SnipHub is a collaborative platform for sharing snippets (reusable
+            pieces of code). Reinventing the wheel often is a burden, searching
+            the web to find an answer is often too, SnipHub was created to
+            centralize all these recurring snippets in the life of a developer.
+            <br />
+          </Typography.Text>
+        }
+      />
+      <Experience
+        title="Node.js framework"
+        extrasInfo={
+          <ExtraInfos link="https://github.com/MadDeveloper/easy.js" />
+        }
+        description={
+          <Typography.Text>
+            Realization of the framework easy.js, a framework fullstack for the
+            environment Node.js, accompanied by a cli. This framework aims to
+            provide a scalable and stable architecture for all types of backend
+            projects based on Node.js.
+          </Typography.Text>
+        }
+      />
+      <Experience
+        title="Neural network (deep learning)"
+        extrasInfo={
+          <ExtraInfos link="https://github.com/MadDeveloper/neural-network" />
+        }
+        description={
+          <Typography.Text>
+            Integral creation of a multilayer perceptron neuron network, with an
+            architecture and a trainer in order to be able to build a network of
+            any size and to train it.
+          </Typography.Text>
+        }
+      />
+      <Experience
+        title="Others"
+        description={
+          <Typography.Text>
+            Others Others kind of projects are present on my GitHub{" "}
+            <ExternalLink to="https://github.com/MadDeveloper" />
+          </Typography.Text>
+        }
+      />
     </section>
   )
 }

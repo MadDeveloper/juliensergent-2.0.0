@@ -1,8 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { ReactComponent as StarIcon } from "../../assets/icons/star.svg"
-import { ExternalLink } from "../ExternalLink"
-import { Typography } from "../Typography"
+import { ReactComponent as StarIcon } from "../../../../assets/icons/star.svg"
+import { ExternalLink } from "../../../../components/ExternalLink"
+import { Typography } from "../../../../components/Typography"
 import styles from "./Project.module.css"
 
 export function Project({
@@ -31,11 +31,9 @@ export function Project({
               </Typography.Text>
             </div>
           )}
-          {repositoryLink.length > 0 && (
-            <div className={styles.item}>
-              <ExternalLink to={repositoryLink}>View on GitHub</ExternalLink>
-            </div>
-          )}
+          <div className={styles.item}>
+            <ExternalLink to={repositoryLink}>View on GitHub</ExternalLink>
+          </div>
         </div>
       </div>
     </div>
@@ -45,7 +43,7 @@ export function Project({
 Project.propTypes = {
   icon: PropTypes.object,
   name: PropTypes.string.isRequired,
-  description: PropTypes.string,
+  description: PropTypes.string.isRequired,
   stars: PropTypes.number,
-  repositoryLink: PropTypes.string,
+  repositoryLink: PropTypes.string.isRequired,
 }
