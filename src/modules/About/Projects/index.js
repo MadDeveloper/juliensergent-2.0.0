@@ -10,6 +10,9 @@ export function Projects() {
       <Typography.Title>Open source projects</Typography.Title>
       <Experience
         title="Trading bot"
+        extrasInfo={
+          <ExtraInfos link="https://github.com/MadDeveloper/trading-bot" />
+        }
         description={
           <Typography.Text>
             Realization of a trading robot for crypto currencies.
@@ -18,8 +21,6 @@ export function Projects() {
             robot makes it capable of trading in any market. It has some
             adaptability capabilities in the market, and a large number of
             configurations that can change its behavior completely.
-            <br />
-            The source code of the project is not made public.
           </Typography.Text>
         }
       />
