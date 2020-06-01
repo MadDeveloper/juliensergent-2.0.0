@@ -5,3 +5,11 @@ export function isHomeAnimationPlayed() {
 export function setHomeAnimationAsPlayed() {
   sessionStorage.setItem("homepage.animation.played", "true")
 }
+
+export function isDevEnv() {
+  return process.env.NODE_ENV === "development"
+}
+
+export function isProdEnv() {
+  return process.env.NODE_ENV === "production"
+}

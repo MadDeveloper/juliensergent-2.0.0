@@ -5,8 +5,11 @@ import ReactDOM from "react-dom"
 import { BrowserRouter } from "react-router-dom"
 import { App } from "./App"
 import "./index.css"
+import { initializeAnalytics } from "./lib/analytics"
 import * as serviceWorker from "./serviceWorker"
 import { StoreProvider } from "./store"
+
+initializeAnalytics()
 
 ReactDOM.render(
   <BrowserRouter>

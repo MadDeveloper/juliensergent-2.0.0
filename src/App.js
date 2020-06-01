@@ -4,6 +4,7 @@ import styles from "./App.module.css"
 import { Footer } from "./components/Footer"
 import { Header } from "./components/Header"
 import { Layout } from "./components/Layout"
+import { useTrackNavigationAnalytics } from "./lib/analytics"
 import { isHomeAnimationPlayed, setHomeAnimationAsPlayed } from "./lib/app"
 import { useThemeObserver } from "./lib/theme"
 import { About } from "./modules/About"
@@ -18,6 +19,7 @@ export function App() {
   const location = useLocation()
 
   useThemeObserver()
+  useTrackNavigationAnalytics()
 
   useEffect(() => {
     if (location.pathname !== "/home" && !isHomeAnimationPlayed()) {
