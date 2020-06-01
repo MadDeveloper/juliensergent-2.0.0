@@ -10,7 +10,7 @@ export function Projects() {
       <Typography.Title>Open source projects</Typography.Title>
       <Experience
         title="Trading bot"
-        extrasInfo={
+        extraInfos={
           <ExtraInfos link="https://github.com/MadDeveloper/trading-bot" />
         }
         description={
@@ -26,7 +26,7 @@ export function Projects() {
       />
       <Experience
         title="SnipHub"
-        extrasInfo={<ExtraInfos link="https://github.com/SnipHub/sniphub" />}
+        extraInfos={<ExtraInfos link="https://github.com/SnipHub/sniphub" />}
         description={
           <Typography.Text>
             SnipHub is a collaborative platform for sharing snippets (reusable
@@ -39,7 +39,7 @@ export function Projects() {
       />
       <Experience
         title="Node.js framework"
-        extrasInfo={
+        extraInfos={
           <ExtraInfos link="https://github.com/MadDeveloper/easy.js" />
         }
         description={
@@ -53,7 +53,7 @@ export function Projects() {
       />
       <Experience
         title="Neural network (deep learning)"
-        extrasInfo={
+        extraInfos={
           <ExtraInfos link="https://github.com/MadDeveloper/neural-network" />
         }
         description={

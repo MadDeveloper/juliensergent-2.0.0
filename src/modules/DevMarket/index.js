@@ -9,7 +9,7 @@ import { Inputs } from "./Components/Inputs"
 import { Links } from "./Components/Links"
 import { Messages } from "./Components/Messages"
 import { Typography } from "./Components/Typography"
-import Home from "./Home"
+import { Home } from "./Home"
 
 export function DevMarket() {
   const location = useLocation()

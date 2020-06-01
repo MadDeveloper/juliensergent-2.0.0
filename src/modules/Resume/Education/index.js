@@ -1,23 +1,23 @@
 import React from "react"
+import { Experience } from "../../../components/Experience"
+import { ExtraInfos } from "../../../components/Experience/ExtraInfos"
 import { Layout } from "../../../components/Layout"
 import { Typography } from "../../../components/Typography"
-import { ExtraInfos } from "../ExtraInfos"
-import styles from "./Education.module.css"
 
-export default function Education() {
+export function Education() {
   return (
     <Layout.Content>
       <Typography.Title>Education</Typography.Title>
-      <article>
-        <Typography.Subtitle className={styles.diploma}>
-          Master's degree Project Leader in Software Engineering
-        </Typography.Subtitle>
-        <ExtraInfos
-          date="2016 - 2018"
-          location="Blagnac"
-          link="https://www.ipi-ecoles.com"
-        />
-        <Typography.Paragraph>
+      <Experience
+        title="Master's degree Project Leader in Software Engineering"
+        extraInfos={
+          <ExtraInfos
+            date="2016 - 2018"
+            location="Blagnac"
+            link="https://www.ipi-ecoles.com"
+          />
+        }
+        description={
           <Typography.Text>
             I was formed to manage and lead a project with the agile method
             (scrum or kanban), to create and manage a company, and some
@@ -25,18 +25,18 @@ export default function Education() {
             <br />I was graduated with a Master in project leader and agile
             methodology specialist.
           </Typography.Text>
-        </Typography.Paragraph>
-      </article>
-      <article>
-        <Typography.Subtitle className={styles.diploma}>
-          Bachelor of Science in Information Technology
-        </Typography.Subtitle>
-        <ExtraInfos
-          date="2013 - 2016"
-          location="Toulouse"
-          link="https://www.supinfo.com"
-        />
-        <Typography.Paragraph>
+        }
+      />
+      <Experience
+        title="Bachelor of Science in Information Technology"
+        extraInfos={
+          <ExtraInfos
+            date="2013 - 2016"
+            location="Toulouse"
+            link="https://www.supinfo.com"
+          />
+        }
+        description={
           <Typography.Text>
             Education was mainly around programming and network. I have learned
             a lots of languages and tools, and I have learned to prepare,
@@ -48,20 +48,18 @@ export default function Education() {
             Dijkstra, and did a lot of mathematics.
             <br />I was graduated with a bachelor of science in IT.
           </Typography.Text>
-        </Typography.Paragraph>
-      </article>
-      <article>
-        <Typography.Subtitle className={styles.diploma}>
-          High school diploma - Scientific Subjects
-        </Typography.Subtitle>
-        <ExtraInfos date="2012 - 2013" location="Cahors" />
-        <Typography.Paragraph>
+        }
+      />
+      <Experience
+        title="High school diploma - Scientific Subjects"
+        extraInfos={<ExtraInfos date="2012 - 2013" location="Cahors" />}
+        description={
           <Typography.Text>
             I graduated highschool, where I enjoyed doing science, mathematics,
             biology, with a specialization in mathematics.
           </Typography.Text>
-        </Typography.Paragraph>
-      </article>
+        }
+      />
     </Layout.Content>
   )
 }

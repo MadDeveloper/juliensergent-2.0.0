@@ -3,7 +3,7 @@ import { Message } from "../../components/Message"
 import { Typography } from "../../components/Typography"
 import { Components } from "./Components"
 
-export default function Home() {
+export function Home() {
   return (
     <Fragment>
       <Message info>More content is coming soon.</Message>

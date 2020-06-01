@@ -8,7 +8,7 @@ export function Experience({
   title = "",
   company = "",
   companyLink = "",
-  extrasInfo = null,
+  extraInfos = null,
   description = null,
 }) {
   function openCompanyWebsite() {
@@ -24,14 +24,14 @@ export function Experience({
       </Typography.Subtitle>
 
       {company.length > 0 && (
-        <div>
+        <div className={styles.company}>
           <Button onClick={openCompanyWebsite} compact>
             {company}
           </Button>
         </div>
       )}
 
-      {extrasInfo}
+      {extraInfos}
 
       {description && (
         <Typography.Paragraph>{description}</Typography.Paragraph>
@@ -44,6 +44,6 @@ Experience.propTypes = {
   title: PropTypes.string.isRequired,
   company: PropTypes.string,
   companyLink: PropTypes.string,
-  extrasInfo: PropTypes.element,
+  extraInfos: PropTypes.element,
   description: PropTypes.element,
 }
