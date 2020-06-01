@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { ReactComponent as StarIcon } from "../../../../assets/icons/star.svg"
+import { Card } from "../../../../components/Card"
 import { ExternalLink } from "../../../../components/ExternalLink"
 import { Typography } from "../../../../components/Typography"
 import styles from "./Project.module.css"
@@ -13,15 +14,11 @@ export function Project({
   repositoryLink = "",
 }) {
   return (
-    <div className={styles.root}>
-      {Icon && <Icon className={styles.icon} />}
-      <div className={styles.content}>
-        <Typography.Text className={styles.name} bold>
-          {name}
-        </Typography.Text>
-        <Typography.Paragraph heading>
-          <Typography.Text secondary>{description}</Typography.Text>
-        </Typography.Paragraph>
+    <Card.Layout className={styles.root} clickable={false}>
+      <Card.Content>
+        <Card.Icon icon={Icon} />
+        <Card.Title>{name}</Card.Title>
+        <Card.Description>{description}</Card.Description>
         <div className={styles.metadata}>
           {Number.isFinite(stars) && (
             <div className={styles.item}>
@@ -35,8 +32,8 @@ export function Project({
             <ExternalLink to={repositoryLink}>View on GitHub</ExternalLink>
           </div>
         </div>
-      </div>
-    </div>
+      </Card.Content>
+    </Card.Layout>
   )
 }
 

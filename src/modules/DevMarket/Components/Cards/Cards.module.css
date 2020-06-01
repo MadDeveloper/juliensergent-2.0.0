@@ -1,0 +1,9 @@
+.liveRootContext {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 40px;
+  width: 100%;
+  margin: 20px;
+  border-radius: var(--default-border-radius);
+}

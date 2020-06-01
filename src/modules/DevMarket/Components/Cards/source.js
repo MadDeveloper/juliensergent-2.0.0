@@ -37,9 +37,17 @@ import PropTypes from "prop-types"
 import React from "react"
 import styles from "./Layout.module.css"
 
-export function Layout({ className = "",  children, ...props }) {
+export function Layout({
+  className = "",
+  clickable = true,
+  children,
+  ...props
+}) {
   return (
-    <div className={cs(styles.root, className)} {...props}>
+    <div
+      className={cs(styles.root, className, { [styles.clickable]: clickable })}
+      {...props}
+    >
       {children}
     </div>
   )
@@ -47,6 +55,7 @@ export function Layout({ className = "",  children, ...props }) {
 
 Layout.propTypes = {
   className: PropTypes.string,
+  clickable: PropTypes.bool,
   children: PropTypes.any,
 }`,
   },
@@ -55,17 +64,17 @@ Layout.propTypes = {
     code: `.root {
   display: flex;
   flex-direction: column;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: #f1f1f1;
+  border-radius: var(--default-border-radius);
+  background-color: var(--dark-grey-color);
   transition: transform 0.3s cubic-bezier(0.16, 0.58, 0.59, 0.82);
 }
 
-.root:hover {
+.root.clickable:hover {
+  cursor: pointer;
   transform: scale(0.98);
 }
 
-.root:active {
+.root.clickable:active {
   transform: scale(0.96);
 }`,
     language: "css",
