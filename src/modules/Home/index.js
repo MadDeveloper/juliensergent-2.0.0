@@ -127,8 +127,8 @@ export function Home() {
               .
             </Typography.Subtitle>
             <Typography.Subtitle className={styles.element}>
-              Passionated about computer science, with a particular taste for
-              the web. I can talk about this everyday.
+              Passionated about computer science since childhood, with a
+              particular taste for the web. I can talk about this everyday.
             </Typography.Subtitle>
           </div>
           <div className={styles.showMore}>

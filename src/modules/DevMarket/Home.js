@@ -1,12 +1,10 @@
 import React, { Fragment } from "react"
-import { Message } from "../../components/Message"
 import { Typography } from "../../components/Typography"
 import { Components } from "./Components"
 
 export function Home() {
   return (
     <Fragment>
-      <Message info>More content is coming soon.</Message>
       <Typography.Paragraph>
         <Typography.Text>
           You will be able to found a list of open source components I created
