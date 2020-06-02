@@ -93,12 +93,39 @@
   }
 
   .presentation .name {
-    font-size: 40px;
-    justify-content: center;
+    font-size: 65px;
+    /* justify-content: center; */
   }
 
   .presentation .description {
     margin-top: 20px;
+    max-width: 500px;
+  }
+
+  .presentation .description .element {
+    font-size: 24px;
+  }
+
+  .presentation .description .element.role {
+    font-size: 30px;
+  }
+
+  .presentation .showMore {
+    margin-top: 30px;
+  }
+
+  .presentation .showMore .button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .presentation .name {
+    font-size: 40px;
+  }
+
+  .presentation .description {
+    max-width: 400px;
   }
 
   .presentation .description .element {
@@ -113,10 +140,8 @@
     margin-top: 30px;
   }
 
-  .presentation .name,
-  .presentation .description,
-  .presentation .showMore {
-    text-align: center;
+  .presentation .showMore .button {
+    font-size: 14px;
   }
 }
 
