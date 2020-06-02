@@ -39,42 +39,33 @@ export function Socials() {
       <ExternalLink
         to="https://github.com/MadDeveloper"
         className={styles.social}
+        onClick={trackGitHubLinkClicked}
       >
-        <GitHubIcon
-          title="GitHub"
-          className={styles.socialIcon}
-          onClick={trackGitHubLinkClicked}
-        />
+        <GitHubIcon title="GitHub" className={styles.socialIcon} />
       </ExternalLink>
       <ExternalLink
         to="https://twitter.com/_maddeveloper"
         className={styles.social}
+        onClick={trackTwitterLinkClicked}
       >
-        <TwitterIcon
-          title="Twitter"
-          className={styles.socialIcon}
-          onClick={trackTwitterLinkClicked}
-        />
+        <TwitterIcon title="Twitter" className={styles.socialIcon} />
       </ExternalLink>
       <ExternalLink
         to="https://stackoverflow.com/users/6708504/julien-sergent"
         className={styles.social}
+        onClick={trackStackOverflowLinkClicked}
       >
         <StackOverflowIcon
           title="Stack Overflow"
           className={styles.socialIcon}
-          onClick={trackStackOverflowLinkClicked}
         />
       </ExternalLink>
       <ExternalLink
         to="https://www.linkedin.com/in/julien-sergent"
         className={styles.social}
+        onClick={trackLinkedInLinkClicked}
       >
-        <LinkedinIcon
-          title="LinkedIn"
-          className={styles.socialIcon}
-          onClick={trackLinkedInLinkClicked}
-        />
+        <LinkedinIcon title="LinkedIn" className={styles.socialIcon} />
       </ExternalLink>
     </div>
   )

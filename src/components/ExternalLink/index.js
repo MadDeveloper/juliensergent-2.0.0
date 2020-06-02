@@ -1,13 +1,14 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-export function ExternalLink({ to = "", className = "", children }) {
+export function ExternalLink({ to = "", className = "", children, ...props }) {
   return (
     <a
       href={to}
       target="_blank"
       rel="noopener noreferrer"
       className={className}
+      {...props}
     >
       {children || to}
     </a>

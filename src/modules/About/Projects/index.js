@@ -3,8 +3,19 @@ import { Experience } from "../../../components/Experience"
 import { ExtraInfos } from "../../../components/Experience/ExtraInfos"
 import { ExternalLink } from "../../../components/ExternalLink"
 import { Typography } from "../../../components/Typography"
+import { useAnalytics } from "../../../lib/analytics"
 
 export function Projects() {
+  const analytics = useAnalytics()
+
+  function trackGitHubProfileClicked() {
+    analytics.event({
+      category: "Social",
+      action: `Social link clicked`,
+      label: "GitHub profile",
+    })
+  }
+
   return (
     <section>
       <Typography.Title>Open source projects</Typography.Title>
@@ -69,7 +80,10 @@ export function Projects() {
         description={
           <Typography.Text>
             Others Others kind of projects are present on my GitHub{" "}
-            <ExternalLink to="https://github.com/MadDeveloper" />
+            <ExternalLink
+              to="https://github.com/MadDeveloper"
+              onClick={trackGitHubProfileClicked}
+            />
           </Typography.Text>
         }
       />
