@@ -10,11 +10,9 @@ export function Abilities() {
   return (
     <Layout.Content>
       <Typography.Title>Abilities</Typography.Title>
-      <Typography.Paragraph>
-        <Message info>
-          Only skills and tools with valuable experiences are listed below.
-        </Message>
-      </Typography.Paragraph>
+      <Message info>
+        Only skills and tools with valuable experiences are listed below.
+      </Message>
       <Skills />
       <Tools />
       <Languages />
