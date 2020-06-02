@@ -11,10 +11,15 @@ export function initializeAnalytics() {
   })
 }
 
+export function useAnalytics() {
+  return ReactGA
+}
+
 export function useTrackNavigationAnalytics() {
   const location = useLocation()
+  const analytics = useAnalytics()
 
   useEffect(() => {
-    ReactGA.ga("send", "pageview", location.pathname)
-  }, [location.pathname])
+    analytics.ga("send", "pageview", location.pathname)
+  }, [analytics, location.pathname])
 }
