@@ -16,6 +16,11 @@ export function Contributions() {
   return (
     <section>
       <Typography.Title>Contributions</Typography.Title>
+      <Typography.Paragraph heading>
+        <Typography.Text>
+          Here is the list of open source projects which I contributed on.
+        </Typography.Text>
+      </Typography.Paragraph>
       <div className={styles.projects}>
         <div className={styles.project}>
           <Project

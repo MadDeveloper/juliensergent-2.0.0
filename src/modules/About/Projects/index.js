@@ -19,6 +19,11 @@ export function Projects() {
   return (
     <section>
       <Typography.Title>Open source projects</Typography.Title>
+      <Typography.Paragraph heading>
+        <Typography.Text>
+          A non-exhaustive list of some personal open source projects.
+        </Typography.Text>
+      </Typography.Paragraph>
       <Experience
         title="Trading bot"
         extraInfos={
@@ -49,7 +54,7 @@ export function Projects() {
         }
       />
       <Experience
-        title="Node.js framework"
+        title="Node.js framework | easy.js"
         extraInfos={
           <ExtraInfos link="https://github.com/MadDeveloper/easy.js" />
         }

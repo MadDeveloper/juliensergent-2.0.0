@@ -81,7 +81,7 @@ Message.propTypes = {
   padding: 9px 18px;
   font-size: 16px;
   color: #273238;
-  background-color: #f4f4f4;
+  background-color: #f7f7f7;
   border-radius: 4px;
   box-sizing: border-box;
 }
