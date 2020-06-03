@@ -10,14 +10,16 @@ export function Contact() {
     <Layout.MainContent>
       <Typography.PageTitle>How to contact me</Typography.PageTitle>
       <Typography.Paragraph heading>
-        <Typography.Text>You can use the form below:</Typography.Text>
+        <Typography.Text>
+          You can use the awesome serverless form below
+        </Typography.Text>
       </Typography.Paragraph>
       <ContactForm />
       <Typography.Paragraph>
         <Typography.Text>
-          Or you can contact me directly at{" "}
+          Or you can contact me directly at sergent.julien@icloud.com &mdash;{" "}
           <ExternalLink to="mailto:sergent.julien@icloud.com">
-            sergent.julien@icloud.com
+            new email
           </ExternalLink>
           .
         </Typography.Text>

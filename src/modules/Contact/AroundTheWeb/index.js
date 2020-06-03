@@ -25,7 +25,8 @@ export function AroundTheWeb() {
         <ExternalLink to="https://www.linkedin.com/in/julien-sergent/">
           LinkedIn
         </ExternalLink>
-        .
+        . <br />
+        (tell me if one is missing)
       </Typography.Text>
     </section>
   )
