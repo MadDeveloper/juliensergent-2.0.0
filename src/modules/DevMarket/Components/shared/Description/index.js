@@ -5,7 +5,7 @@ import { Typography } from "../../../../../components/Typography"
 export function Description({ children }) {
   return (
     <Typography.Paragraph heading>
-      <Typography.Text secondary>{children}</Typography.Text>
+      <Typography.Text>{children}</Typography.Text>
     </Typography.Paragraph>
   )
 }

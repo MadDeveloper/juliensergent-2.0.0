@@ -13,7 +13,10 @@ export function Links() {
   return (
     <div>
       <Name>Links</Name>
-      <Description>Basis of the navigation, a good UI/UX is vital.</Description>
+      <Description>
+        Basis of the navigation, a good UI/UX is vital. How nice to have nice
+        links, I hover it, then click on it, just for watching animations!
+      </Description>
       <Live>
         <Link to="#">Some link</Link>
       </Live>

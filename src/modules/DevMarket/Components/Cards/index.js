@@ -15,7 +15,12 @@ export function Cards() {
   return (
     <div>
       <Name>Cards</Name>
-      <Description>Now used in many ways and almost every website.</Description>
+      <Description>
+        Now used in many ways and on almost every website. With buttons and
+        inputs, cards are the first thing I look before choosing a UI framework.
+        That's amazing how a well designed card can leads to a different feeling
+        of the data showed.
+      </Description>
       <Live>
         <div className={styles.liveRootContext}>
           <Card.Layout style={{ width: 350 }}>

@@ -16,7 +16,9 @@ export function Buttons() {
     <div>
       <Name>Buttons</Name>
       <Description>
-        For me, buttons are very important and a part of good design.
+        I think buttons are really important. A design without really great
+        buttons, is not a good design. Let you some time to think to yours
+        buttons design.
       </Description>
       <Live>
         <UIButton className={styles.button}>Button</UIButton>

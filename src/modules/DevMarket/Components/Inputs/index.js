@@ -19,8 +19,10 @@ export function Inputs() {
     <div>
       <Name>Inputs</Name>
       <Description>
-        Inputs are used almost an each website, and their UX and UI are often
-        miserable.
+        Inputs are used almost on each website, and their UX and UI are often
+        miserable. Like buttons, you can't have a good design without really
+        great inputs. An input is simple to design, so writing experience and
+        animations should be perfect.
       </Description>
       <Live>
         <div className={styles.rootLive}>

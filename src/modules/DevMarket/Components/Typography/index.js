@@ -17,7 +17,8 @@ export function Typography() {
       <Name>Typography</Name>
       <Description>
         Typography is the foundation of everything. Created a long time ago,
-        typography has an important role.
+        typography has an important role. The selection of your typographies for
+        you app is really important.
       </Description>
       <Live>
         <div className={styles.rootLive}>

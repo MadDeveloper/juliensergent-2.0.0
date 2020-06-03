@@ -17,7 +17,9 @@ export function Messages() {
     <div>
       <Name>Messages</Name>
       <Description>
-        Having a feedback message after an action leads to a good UX.
+        Having a feedback message after an action leads to a good UX. There is
+        nothing more frustrating than not knowing what happened after an action.
+        Let your users know what's happening and what happened.
       </Description>
       <Live>
         <div className={styles.rootLive}>
