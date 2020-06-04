@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Experience } from "../../../components/Experience"
 import { ExtraInfos } from "../../../components/Experience/ExtraInfos"
 import { ExternalLink } from "../../../components/ExternalLink"
@@ -30,27 +30,69 @@ export function Projects() {
           <ExtraInfos link="https://github.com/MadDeveloper/trading-bot" />
         }
         description={
-          <Typography.Text>
-            Realization of a trading robot for crypto currencies.
-            <br />
-            He is able to trade on Gdax and Binance. The architecture of the
-            robot makes it capable of trading in any market. It has some
-            adaptability capabilities in the market, and a large number of
-            configurations that can change its behavior completely.
-          </Typography.Text>
+          <Fragment>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Realisation of a trading robot for crypto currencies.
+              </Typography.Text>
+            </Typography.Paragraph>
+
+            <Typography.Paragraph>
+              <Typography.Text>
+                The bot is able to trade on GDAX and Binance platforms. The
+                architecture of the latter makes it capable of trading in any
+                market. It has some adaptability capabilities, and a large
+                number of configurations that can change its behavior
+                completely.
+              </Typography.Text>
+            </Typography.Paragraph>
+
+            <Typography.Paragraph>
+              <Typography.Text>
+                The bot was deployed on an Amazon EC2 container, generating in
+                real time a chart combining currency values and robot purchases
+                / sales, accessible via a public URL.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                The bot was developed in TypeScript, combined with Chart.js to
+                generate graphs in real time. All internal algorithms and
+                mathematics come from my brain.
+              </Typography.Text>
+            </Typography.Paragraph>
+          </Fragment>
         }
       />
       <Experience
         title="SnipHub"
         extraInfos={<ExtraInfos link="https://github.com/SnipHub/sniphub" />}
         description={
-          <Typography.Text>
-            SnipHub is a collaborative platform for sharing snippets (reusable
-            pieces of code). Reinventing the wheel often is a burden, searching
-            the web to find an answer is often too, SnipHub was created to
-            centralize all these recurring snippets in the life of a developer.
-            <br />
-          </Typography.Text>
+          <Fragment>
+            <Typography.Paragraph>
+              <Typography.Text>
+                SnipHub is a collaborative platform for sharing snippets
+                (reusable pieces of code).
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                I created this platform because I was exhausted at each project
+                to find back all snippets code I had developed in the past and I
+                wanted to reuse. Reinventing the wheel often is a burden,
+                searching the web to find an answer is often too. SnipHub was
+                created to centralize all these recurring snippets in the life
+                of a developer.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                The platform was developed in JavaScript, with the Angular
+                framework. I used Firebase as backend, I didn't want to bother
+                with that.
+              </Typography.Text>
+            </Typography.Paragraph>
+          </Fragment>
         }
       />
       <Experience
@@ -59,12 +101,35 @@ export function Projects() {
           <ExtraInfos link="https://github.com/MadDeveloper/easy.js" />
         }
         description={
-          <Typography.Text>
-            Realization of the framework easy.js, a framework fullstack for the
-            environment Node.js, accompanied by a cli. This framework aims to
-            provide a scalable and stable architecture for all types of backend
-            projects based on Node.js.
-          </Typography.Text>
+          <Fragment>
+            <Typography.Paragraph>
+              <Typography.Text>
+                It was the period when Symfony was the framework of the moment
+                (which I used, of course), but Node.js was starting to make its
+                way into the tech world. So I decided to wear the Symfony
+                philosophy (yeah I know, it's ambitious!) to the JavaScript
+                (Node.js) community. easy.js was born. I worked on it for two
+                years, I made two versions. The V2 had a own dedicated CLI in a
+                separate package, in order to create new project, generate
+                bundle, or new database model.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                The project started to grew up, and it was hard to maintain it
+                (at this same moment, JavaScript world started to evolve
+                fastly). So I decided to stop the development of the framework.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                The framework was developed in JavaScript, and should be started
+                with Node.js. The Bookshelf library was used as ORM. A custom
+                router was developed, as well as all the HTTP logic (request,
+                response) and all authentication/authorization logic.
+              </Typography.Text>
+            </Typography.Paragraph>
+          </Fragment>
         }
       />
       <Experience
@@ -73,22 +138,39 @@ export function Projects() {
           <ExtraInfos link="https://github.com/MadDeveloper/neural-network" />
         }
         description={
-          <Typography.Text>
-            Integral creation of a multilayer perceptron neuron network, with an
-            architecture and a trainer in order to be able to build a network of
-            any size and to train it.
-          </Typography.Text>
+          <Fragment>
+            <Typography.Paragraph>
+              <Typography.Text>
+                As an AI enthusiast, I read and learned a lot on neural
+                networks. As mathematics is also a domain that I love, I wanted
+                to create my own neural networks, from scratch. I started to
+                develop a neuron, then I create an architect in charge of
+                connect all neurons together. The last piece of the puzzle was
+                the network trainer, responsible for train a neural network for
+                a dedicated task. The project is operational and can be used for
+                production.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                The project was entirely developed in JavaScript.
+              </Typography.Text>
+            </Typography.Paragraph>
+          </Fragment>
         }
       />
       <Experience
         title="Others"
         description={
           <Typography.Text>
-            Others Others kind of projects are present on my GitHub{" "}
+            I developed some other open source projects. You can find them on my{" "}
             <ExternalLink
               to="https://github.com/MadDeveloper"
               onClick={trackGitHubProfileClicked}
-            />
+            >
+              GitHub
+            </ExternalLink>
+            .
           </Typography.Text>
         }
       />
