@@ -11,12 +11,21 @@ export function Tools() {
           {
             name: "Visual Studio Code",
             path: "vscode",
-            content: <span>Favorite text editor, daily usage.</span>,
+            content: (
+              <span>
+                Favorite text editor, daily usage. My traveling companion.
+              </span>
+            ),
           },
           {
             name: "npm",
             path: "npm",
-            content: <span>My loved package manager</span>,
+            content: (
+              <span>
+                My loved package manager. Ask him anything, he can does a lot of
+                stuff!
+              </span>
+            ),
           },
           {
             name: "Prettier",
@@ -44,6 +53,11 @@ export function Tools() {
             content: <span>Everyday professional usage.</span>,
           },
           {
+            name: "GitLab CI",
+            path: "gitlab",
+            content: <span>A GitLab companion, he sometimes scolds me.</span>,
+          },
+          {
             name: "Amazon Web Services",
             path: "aws",
             content: (
@@ -59,7 +73,7 @@ export function Tools() {
             content: (
               <span>
                 A newcomer, and I really like the tool. Now using it for every
-                personals projects.
+                personal projects.
               </span>
             ),
           },
@@ -68,7 +82,7 @@ export function Tools() {
             path: "heroku",
             content: (
               <span>
-                Some experiences with. I like to use it for personal projects
+                Some experiences with. I like to use it for personal projects.
               </span>
             ),
           },
@@ -84,12 +98,14 @@ export function Tools() {
           {
             name: "CircleCI",
             path: "circleci",
-            content: <span>Past profesionnals usage.</span>,
+            content: <span>Profesionnals usage. He often annoyed me.</span>,
           },
           {
             name: "WebPack",
             path: "webpack",
-            content: <span>Daily usage.</span>,
+            content: (
+              <span>Daily usage. I like the small packages it produces.</span>
+            ),
           },
         ]}
       />

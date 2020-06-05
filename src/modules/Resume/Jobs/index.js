@@ -86,7 +86,7 @@ export function Jobs() {
             <Typography.Paragraph>
               <Typography.Text>
                 Technologies: JavaScript, TypeScript, Node.js, React, Angular,
-                RxJS, GraphQL, API REST, Amazon Web Services (Route 53, EC2,
+                RxJS, GraphQL, REST API, Amazon Web Services (Route 53, EC2,
                 ECR), Docker, PostgreSQL, Git, GitHub.
               </Typography.Text>
             </Typography.Paragraph>
@@ -134,7 +134,7 @@ export function Jobs() {
             </Typography.Paragraph>
             <Typography.Paragraph>
               <Typography.Text>
-                Technologies: JavaScript, Node.js, React, API REST, Amazon Web
+                Technologies: JavaScript, Node.js, React, REST API, Amazon Web
                 Services (S3, Lambda), ElasticSearch, Git, GitHub.
               </Typography.Text>
             </Typography.Paragraph>
@@ -244,7 +244,7 @@ export function Jobs() {
             </Typography.Paragraph>
             <Typography.Paragraph>
               <Typography.Text>
-                Technologies: JavaScript, PHP, API REST.
+                Technologies: JavaScript, PHP, REST API.
               </Typography.Text>
             </Typography.Paragraph>
           </Fragment>

@@ -12,13 +12,21 @@ export function Skills() {
             name: "JavaScript",
             path: "javascript",
             content: (
-              <span>Highly skilled, daily usage. Preferred language.</span>
+              <span>
+                Highly skilled, daily usage. Preferred language. Can almost do
+                anything with it, even coffee.
+              </span>
             ),
           },
           {
             name: "Node.js",
             path: "node",
-            content: <span>Who can't love Node.js? Favorite revolution.</span>,
+            content: (
+              <span>
+                Who can't love Node.js? My favorite revolution. Only missing
+                asset to JavaScript.
+              </span>
+            ),
           },
           {
             name: "React",
@@ -33,14 +41,19 @@ export function Skills() {
           {
             name: "TypeScript",
             path: "typescript",
-            content: <span>I can not do without it.</span>,
+            content: (
+              <span>
+                Typed superset of JavaScript, and typed superset of my code. I
+                can not do without it.
+              </span>
+            ),
           },
           {
             name: "RxJS",
             path: "rxjs",
             content: (
               <span>
-                Some experiences with I loved the philosophy behind reactive
+                Some experiences with. I loved the philosophy behind reactive
                 programming.
               </span>
             ),
