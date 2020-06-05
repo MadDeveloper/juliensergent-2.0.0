@@ -46,19 +46,20 @@
   transform: scale(0);
 }
 
-.presentation .description .element {
+.presentation .description .role {
+  font-size: 36px;
   font-weight: 700;
 }
-
-.presentation .description .element.role {
-  font-size: 36px;
+.presentation .description .complement {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.presentation .description .element .highlight {
+.presentation .description .highlight {
   color: var(--link-color);
 }
 
-.presentation .description .element .design {
+.presentation .description .design {
   display: inline-block;
   background: rgb(39, 50, 56);
   background: linear-gradient(90deg, #4d05e8, #6b1fff, #2abb9b, #36d7b7);
@@ -102,12 +103,12 @@
     max-width: 500px;
   }
 
-  .presentation .description .element {
-    font-size: 24px;
+  .presentation .description .role {
+    font-size: 30px;
   }
 
-  .presentation .description .element.role {
-    font-size: 30px;
+  .presentation .description .complement {
+    font-size: 18px;
   }
 
   .presentation .showMore {
@@ -128,12 +129,12 @@
     max-width: 400px;
   }
 
-  .presentation .description .element {
-    font-size: 16px;
+  .presentation .description .role {
+    font-size: 20px;
   }
 
-  .presentation .description .element.role {
-    font-size: 20px;
+  .presentation .description .complement {
+    font-size: 16px;
   }
 
   .presentation .showMore {

@@ -115,7 +115,7 @@ export function Home() {
             </span>
           </Typography.PageTitle>
           <div className={styles.description}>
-            <Typography.Subtitle className={cs(styles.element, styles.role)}>
+            <Typography.Subtitle className={styles.role}>
               I'm a <span className={styles.highlight}>software engineer</span>
               <span>, </span>
               <br />
@@ -126,11 +126,10 @@ export function Home() {
               </span>
               .
             </Typography.Subtitle>
-            <Typography.Subtitle className={styles.element}>
+            <Typography.Subtitle className={styles.complement}>
               Passionated about computer science since childhood, with a
-              particular taste for the web.
-              <br />I can talk about this everyday.
-              <br />I talk about this everyday.
+              particular taste for the web. I can talk about this everyday. I
+              talk about this everyday.
             </Typography.Subtitle>
           </div>
           <div className={styles.showMore}>
