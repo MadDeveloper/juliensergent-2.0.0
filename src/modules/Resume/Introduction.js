@@ -44,6 +44,12 @@ export function Introduction() {
           },
         ]}
       />
+      <Typography.Paragraph>
+        <Typography.Text>
+          As a human, I obviously do not master all the technologies, but as an
+          enthusiast, I am constantly looking for knowledge!
+        </Typography.Text>
+      </Typography.Paragraph>
     </Layout.Content>
   )
 }
