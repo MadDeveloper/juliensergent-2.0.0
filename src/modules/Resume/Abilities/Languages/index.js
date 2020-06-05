@@ -28,7 +28,7 @@ export function Languages() {
             </div>
             <div>
               <Typography.Text secondary>
-                Daily use, professional experiences.
+                Daily usage, professional experiences.
               </Typography.Text>
             </div>
           </div>

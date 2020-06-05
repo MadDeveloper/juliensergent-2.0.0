@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Experience } from "../../../components/Experience"
 import { ExtraInfos } from "../../../components/Experience/ExtraInfos"
 import { Layout } from "../../../components/Layout"
@@ -9,26 +9,46 @@ export function Jobs() {
     <Layout.Content>
       <Typography.Title>Jobs</Typography.Title>
       <Experience
-        title="Software engineer"
+        title="JavaScript software engineer"
         company="Carlipa"
         companyLink="https://carlipa.com"
         extraInfos={
           <ExtraInfos
             date="sep. 2018 - today"
-            location="Toulouse"
+            location="Toulouse, France"
             link="https://carlipa.com"
           />
         }
         description={
-          <Typography.Text>
-            Development of applications integrated to the Carlipa's system.
-            Application are built with the React library and others tools like
-            Redux and Material-UI. Intensive usage of JavaScript.
-          </Typography.Text>
+          <Fragment>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Integration in a small tech team, with a fullstack role.
+                Maintenance and evolution of the Carlipa Online web app, which
+                is the main product sold by the company. In parallel, I develop
+                client custom application, which can be any kind of application
+                deployed in store (interactive table, kiosk, wall of screens,
+                ...). I also develop the Carlipa Online as mobile app.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Collaborating with an international team: France, Italy, Hong
+                Kong.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Technologies: JavaScript, Node.js, React, React Native, Redux,
+                Material UI, Electron, GraphQL, Gitlab CI, Docker, MongoDB, Git,
+                GitLab.
+              </Typography.Text>
+            </Typography.Paragraph>
+          </Fragment>
         }
       />
       {/* <Typography.Paragraph>
-          <Typography.Text bold>Technical environment</Typography.Text>
+          <Typography.Text bold>Technologies</Typography.Text>
         </Typography.Paragraph>
         <TechnologyList
           list={[
@@ -42,22 +62,35 @@ export function Jobs() {
         /> */}
 
       <Experience
-        title="Software engineer"
+        title="JavaScript software engineer"
         company="Liberty Rider"
         companyLink="https://liberty-rider.com"
         extraInfos={
           <ExtraInfos
             date="oct. 2017 - jul. 2018"
-            location="Toulouse"
+            location="Toulouse, France"
             link="https://liberty-rider.com"
           />
         }
         description={
-          <Typography.Text>
-            Participating to the development of the new accident detection
-            version. The build of the version requires the reconstruction of new
-            APIs as well as to adapt some visuals.
-          </Typography.Text>
+          <Fragment>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Participating to the migration of the entire system, running
+                with Firebase, to the new system, running on a entirely custom
+                stack. This new stack is accompagnied by a new API, using
+                GraphQL. Agile methodology (here, scrum) is used as the running
+                framework. Discover of the startup company context.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Technologies: JavaScript, TypeScript, Node.js, React, Angular,
+                RxJS, GraphQL, API REST, Amazon Web Services (Route 53, EC2,
+                ECR), Docker, PostgreSQL, Git, GitHub.
+              </Typography.Text>
+            </Typography.Paragraph>
+          </Fragment>
         }
       />
       {/* <Typography.Paragraph>
@@ -85,17 +118,27 @@ export function Jobs() {
         extraInfos={
           <ExtraInfos
             date="mar. 2017 - sep. 2017"
-            location="Blagnac"
+            location="Blagnac, France"
             link="https://services.airbus.com"
           />
         }
         description={
-          <Typography.Text>
-            Developer on the project Services by Airbus.
-            <br />
-            My mission is to work with a team of consultants, discuss and
-            propose the appropriate solutions for the wanted functionalities.
-          </Typography.Text>
+          <Fragment>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Developer and consultat on the new project started by Airbus:
+                Services By Airbus. Integration in a team of experienced
+                consultants from Capgemini, in an agile methodology (scrum)
+                context leaded by a scrum master.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Technologies: JavaScript, Node.js, React, API REST, Amazon Web
+                Services (S3, Lambda), ElasticSearch, Git, GitHub.
+              </Typography.Text>
+            </Typography.Paragraph>
+          </Fragment>
         }
       />
       {/* <Typography.Paragraph>
@@ -116,16 +159,25 @@ export function Jobs() {
         extraInfos={
           <ExtraInfos
             date="nov. 2016 - feb. 2017"
-            location="Toulouse"
+            location="Toulouse, France"
             link="https://mycfmportal.com"
           />
         }
         description={
-          <Typography.Text>
-            My mission was to maintain and add new features to MyCFM web portal,
-            collaborate with team around the world (India, U.S., France) and
-            provide solutions to customer requests.
-          </Typography.Text>
+          <Fragment>
+            <Typography.Paragraph>
+              <Typography.Text>
+                My mission was to maintain and evolve MyCFM web portal,
+                collaborate with a team around the world (India, USA, France)
+                and provide solutions to customer requests.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Technologies: JavaScript, Backbase, Java, Git, GitHub, Jenkins.
+              </Typography.Text>
+            </Typography.Paragraph>
+          </Fragment>
         }
       />
       {/* <Typography.Paragraph>
@@ -137,13 +189,26 @@ export function Jobs() {
         title="Angular developer"
         company="Twinipix"
         extraInfos={
-          <ExtraInfos date="jul. 2016 - sep. 2016" location="Toulouse" />
+          <ExtraInfos
+            date="jul. 2016 - sep. 2016"
+            location="Toulouse, France"
+          />
         }
         description={
-          <Typography.Text>
-            Development of a webapp with TypeScript, Angular, Firebase, and
-            Facebook SDK.
-          </Typography.Text>
+          <Fragment>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Development of a Facebook application, to make match two persons
+                as twins after a quiz. Ability to share your results on your
+                Facebook profile or by message.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Technologies: TypeScript, Angular, Firebase, Facebook SDK.
+              </Typography.Text>
+            </Typography.Paragraph>
+          </Fragment>
         }
       />
       {/* <Typography.Paragraph>
@@ -162,14 +227,27 @@ export function Jobs() {
         title="Co-founder"
         company="Prep'App"
         extraInfos={
-          <ExtraInfos date="nov. 2014 - jun. 2016" location="Toulouse" />
+          <ExtraInfos
+            date="nov. 2014 - jun. 2016"
+            location="Toulouse, France"
+          />
         }
         description={
-          <Typography.Text>
-            Co-founder of the societe Prep'App. I have to create the showcase,
-            and develop our custom tool in order to be able to administrate all
-            the database for mobile applications.
-          </Typography.Text>
+          <Fragment>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Co-founder of the startup Prep'App. I was in charge to create
+                the showcase, and develop the backend in order to be able to
+                administrate all the database for applications. We were a team
+                of five founders.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Technologies: JavaScript, PHP, API REST.
+              </Typography.Text>
+            </Typography.Paragraph>
+          </Fragment>
         }
       />
       {/* <Typography.Paragraph>

@@ -49,7 +49,7 @@ export function Projects() {
 
             <Typography.Paragraph>
               <Typography.Text>
-                The bot was deployed on an Amazon EC2 container, generating in
+                The bot was deployed on an Amazon ECR container, generating in
                 real time a chart combining currency values and robot purchases
                 / sales, accessible via a public URL.
               </Typography.Text>
