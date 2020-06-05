@@ -25,6 +25,41 @@ export function Projects() {
         </Typography.Text>
       </Typography.Paragraph>
       <Experience
+        title="My personal website"
+        extraInfos={
+          <ExtraInfos link="https://github.com/MadDeveloper/juliensergent-2.0.0" />
+        }
+        description={
+          <Fragment>
+            <Typography.Paragraph>
+              <Typography.Text>
+                Realisation of a new version of my personal website. This new
+                website will allow me to share my experiences and philosophy
+                through articles. I can also express myself freely about my
+                opinions and passions. Last but not least, I can express freely
+                my design mania.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                I only used React and my passion to realise it. Netlify is used
+                as backend.
+              </Typography.Text>
+            </Typography.Paragraph>
+            <Typography.Paragraph>
+              <Typography.Text>
+                You can find the source of the first version of my personal
+                website{" "}
+                <ExternalLink to="https://github.com/MadDeveloper/juliensergent">
+                  here
+                </ExternalLink>
+                .
+              </Typography.Text>
+            </Typography.Paragraph>
+          </Fragment>
+        }
+      />
+      <Experience
         title="Trading bot"
         extraInfos={
           <ExtraInfos link="https://github.com/MadDeveloper/trading-bot" />
@@ -36,7 +71,6 @@ export function Projects() {
                 Realisation of a trading robot for crypto currencies.
               </Typography.Text>
             </Typography.Paragraph>
-
             <Typography.Paragraph>
               <Typography.Text>
                 The bot is able to trade on GDAX and Binance platforms. The
@@ -46,7 +80,6 @@ export function Projects() {
                 completely.
               </Typography.Text>
             </Typography.Paragraph>
-
             <Typography.Paragraph>
               <Typography.Text>
                 The bot was deployed on an Amazon ECR container, generating in
