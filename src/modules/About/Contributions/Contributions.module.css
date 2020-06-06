@@ -11,3 +11,14 @@
 .projects .project:last-child {
   margin-right: 0;
 }
+
+@media (max-width: 767px) {
+  .projects {
+    flex-direction: column;
+  }
+
+  .projects .project {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+}
