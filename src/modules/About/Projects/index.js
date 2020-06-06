@@ -25,7 +25,7 @@ export function Projects() {
         </Typography.Text>
       </Typography.Paragraph>
       <Experience
-        title="My personal website"
+        title="Personal website"
         extraInfos={
           <ExtraInfos link="https://github.com/MadDeveloper/juliensergent-2.0.0" />
         }
