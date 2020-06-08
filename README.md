@@ -2,4 +2,8 @@
 
 # Personal website
 
-This is my personal website, in construction for now.
+This is my personal website, where I host my blog, a developer market, and some stuff about me.
+
+You can visit it at [juliensergent.com](https://juliensergent.com).
+
+Feel free to fork it for your needs!
