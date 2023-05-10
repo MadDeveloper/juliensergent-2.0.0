@@ -16,8 +16,8 @@ export function Project({
   return (
     <Card.Layout className={styles.root} clickable={false}>
       <Card.Content>
-        <Card.Icon icon={Icon} />
-        <Card.Title>{name}</Card.Title>
+        {Icon && <Card.Icon icon={Icon} />}
+        <Card.Title className={styles.name}>{name}</Card.Title>
         <Card.Description>{description}</Card.Description>
         <div className={styles.metadata}>
           {Number.isFinite(stars) && (
