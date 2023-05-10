@@ -23,6 +23,11 @@
   fill: var(--text-color-secondary);
 }
 
+.item .companyUrl {
+  display: flex;
+  align-items: center;
+}
+
 .item .companyUrl .icon {
   fill: var(--link-color);
 }

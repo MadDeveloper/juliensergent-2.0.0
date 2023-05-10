@@ -4,7 +4,7 @@ export const initialState = {
   theme: null,
 }
 
-export default (state, action) => {
+export default function reducer(state, action) {
   switch (action.type) {
     case SET_THEME:
       return {

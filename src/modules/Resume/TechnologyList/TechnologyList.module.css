@@ -1,27 +1,31 @@
 .root {
+  --gap: 20px;
+  --item-margin: calc(var(--gap) / 2);
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: var(--gap);
+  box-sizing: border-box;
 }
-
 .root.compact {
+  justify-content: flex-start;
+}
+.root.root.inlined {
   justify-content: flex-start;
 }
 
 .item {
   display: flex;
-  flex-basis: calc(50% - 20px);
-  margin-right: 20px;
-  box-sizing: border-box;
+  flex-basis: calc(50% - var(--item-margin));
+  gap: 20px;
 }
-
 .root.compact .item {
-  flex-basis: calc(33.3333% - 20px);
+  flex-basis: calc(33.3333% - var(--item-margin));
   align-items: center;
 }
-
-.item:not(:last-child) {
-  margin-bottom: 20px;
+.root.inlined .item {
+  flex-basis: auto;
 }
 
 @media (max-width: 575px) {

@@ -3,6 +3,7 @@ import { Experience } from "../../../components/Experience"
 import { ExtraInfos } from "../../../components/Experience/ExtraInfos"
 import { Layout } from "../../../components/Layout"
 import { Typography } from "../../../components/Typography"
+import { TechnologyList } from "../TechnologyList"
 
 export function Jobs() {
   return (
@@ -10,13 +11,13 @@ export function Jobs() {
       <Typography.Title>Jobs</Typography.Title>
       <Experience
         title="JavaScript software engineer"
-        company="Carlipa"
-        companyLink="https://carlipa.com"
+        company="M-Cube Digital"
+        companyLink="https://mcubedigital.com"
         extraInfos={
           <ExtraInfos
             date="sep. 2018 - today"
             location="Toulouse, France"
-            link="https://carlipa.com"
+            link="https://mcubedigital.com"
           />
         }
         description={
@@ -24,43 +25,43 @@ export function Jobs() {
             <Typography.Paragraph>
               <Typography.Text>
                 Integration in a small tech team, with a fullstack role.
-                Maintenance and evolution of the Carlipa Online web app, which
-                is the main product sold by the company. In parallel, I develop
-                client custom application, which can be any kind of application
+                Maintenance and evolution of the DXPOne web app, which is the
+                main product sold by the company. In parallel, I develop client
+                custom application, which can be any kind of application
                 deployed in store (interactive table, kiosk, wall of screens,
-                ...). I also develop the Carlipa Online as mobile app.
+                ...). I also develop the DXPOne platform as mobile app.
               </Typography.Text>
             </Typography.Paragraph>
             <Typography.Paragraph>
               <Typography.Text>
-                Collaborating with an international team: France, Italy, Hong
-                Kong.
+                Collaborating with an international team: France, Belgium,
+                Italy, Hong Kong.
               </Typography.Text>
             </Typography.Paragraph>
             <Typography.Paragraph>
-              <Typography.Text>
-                Technologies: JavaScript, Node.js, React, React Native, Redux,
-                Material UI, Electron, GraphQL, Gitlab CI, Docker, MongoDB, Git,
-                GitLab.
-              </Typography.Text>
+              <Typography.Text bold>Technologies</Typography.Text>
+              <TechnologyList
+                inlined
+                small
+                list={[
+                  { name: "TypeScript", path: "typescript" },
+                  { name: "JavaScript", path: "javascript" },
+                  { name: "Node.js", path: "node" },
+                  { name: "React", path: "react" },
+                  { name: "React Native", path: "react" },
+                  { name: "MongoDB", path: "mongodb" },
+                  { name: "GraphQL", path: "graphql" },
+                  { name: "Docker", path: "docker" },
+                  { name: "Electron", path: "electron" },
+                  { name: "Material UI", path: "mui" },
+                  { name: "GitLab", path: "gitlab" },
+                  { name: "Git", path: "git" },
+                ]}
+              />
             </Typography.Paragraph>
           </Fragment>
         }
       />
-      {/* <Typography.Paragraph>
-          <Typography.Text bold>Technologies</Typography.Text>
-        </Typography.Paragraph>
-        <TechnologyList
-          list={[
-            { name: "JavaScript", path: "javascript" },
-            { name: "Node.js", path: "node" },
-            { name: "React", path: "react" },
-            { name: "React Native", path: "react" },
-            { name: "MongoDB", path: "mongodb" },
-            { name: "Docker", path: "docker" }
-          ]}
-        /> */}
-
       <Experience
         title="JavaScript software engineer"
         company="Liberty Rider"
@@ -84,33 +85,27 @@ export function Jobs() {
               </Typography.Text>
             </Typography.Paragraph>
             <Typography.Paragraph>
-              <Typography.Text>
-                Technologies: JavaScript, TypeScript, Node.js, React, Angular,
-                RxJS, GraphQL, REST API, Amazon Web Services (Route 53, EC2,
-                ECR), Docker, PostgreSQL, Git, GitHub.
-              </Typography.Text>
+              <Typography.Text bold>Technologies</Typography.Text>
+              <TechnologyList
+                inlined
+                small
+                list={[
+                  { name: "TypeScript", path: "typescript" },
+                  { name: "JavaScript", path: "javascript" },
+                  { name: "Node.js", path: "node" },
+                  { name: "React", path: "react" },
+                  { name: "Angular", path: "angular" },
+                  { name: "RxJS", path: "rxjs" },
+                  { name: "Amazon Web Services", path: "aws" },
+                  { name: "Docker", path: "docker" },
+                  { name: "GitHub", path: "github" },
+                  { name: "Git", path: "git" },
+                ]}
+              />
             </Typography.Paragraph>
           </Fragment>
         }
       />
-      {/* <Typography.Paragraph>
-          <Typography.Text bold>Technical environment</Typography.Text>
-        </Typography.Paragraph>
-        <TechnologyList
-          list={[
-            { name: "JavaScript", path: "javascript" },
-            { name: "Node.js", path: "node" },
-            { name: "TypeScript", path: "typescript" },
-            { name: "Angular", path: "angular" },
-            { name: "GraphQL", path: "graphql" },
-            { name: "Amazon", path: "aws" },
-            { name: "Firebase", path: "firebase" },
-            { name: "PostgreSQL", path: "postgresql" },
-            { name: "RxJS", path: "rxjs" },
-            { name: "Docker", path: "docker" }
-          ]}
-        /> */}
-
       <Experience
         title="React developer"
         company="Capgemini"
@@ -133,25 +128,24 @@ export function Jobs() {
               </Typography.Text>
             </Typography.Paragraph>
             <Typography.Paragraph>
-              <Typography.Text>
-                Technologies: JavaScript, Node.js, React, REST API, Amazon Web
-                Services (S3, Lambda), ElasticSearch, Git, GitHub.
-              </Typography.Text>
+              <Typography.Text bold>Technologies</Typography.Text>
+              <TechnologyList
+                inlined
+                small
+                list={[
+                  { name: "JavaScript", path: "javascript" },
+                  { name: "Node.js", path: "node" },
+                  { name: "React", path: "react" },
+                  { name: "Amazon Web Services", path: "aws" },
+                  { name: "ElasticSearch", path: "elasticsearch" },
+                  { name: "GitHub", path: "github" },
+                  { name: "Git", path: "git" },
+                ]}
+              />
             </Typography.Paragraph>
           </Fragment>
         }
       />
-      {/* <Typography.Paragraph>
-          <Typography.Text bold>Technical environment</Typography.Text>
-        </Typography.Paragraph>
-        <TechnologyList
-          list={[
-            { name: "React", path: "react" },
-            { name: "Elastic Search", path: "elasticsearch" },
-            { name: "Amazon Web Services", path: "aws" }
-          ]}
-        /> */}
-
       <Experience
         title="JavaScript developer"
         company="Capgemini"
@@ -173,18 +167,20 @@ export function Jobs() {
               </Typography.Text>
             </Typography.Paragraph>
             <Typography.Paragraph>
-              <Typography.Text>
-                Technologies: JavaScript, Backbase, Java, Git, GitHub, Jenkins.
-              </Typography.Text>
+              <Typography.Text bold>Technologies</Typography.Text>
+              <TechnologyList
+                inlined
+                small
+                list={[
+                  { name: "JavaScript", path: "javascript" },
+                  { name: "GitHub", path: "github" },
+                  { name: "Git", path: "git" },
+                ]}
+              />
             </Typography.Paragraph>
           </Fragment>
         }
       />
-      {/* <Typography.Paragraph>
-          <Typography.Text bold>Technical environment</Typography.Text>
-        </Typography.Paragraph>
-        <TechnologyList list={[{ name: "JavaScript", path: "javascript" }]} /> */}
-
       <Experience
         title="Angular developer"
         company="Twinipix"
@@ -204,25 +200,22 @@ export function Jobs() {
               </Typography.Text>
             </Typography.Paragraph>
             <Typography.Paragraph>
-              <Typography.Text>
-                Technologies: TypeScript, Angular, Firebase, Facebook SDK.
-              </Typography.Text>
+              <Typography.Text bold>Technologies</Typography.Text>
+              <TechnologyList
+                inlined
+                small
+                list={[
+                  { name: "TypeScript", path: "typescript" },
+                  { name: "Angular", path: "angular" },
+                  { name: "Firebase", path: "firebase" },
+                  { name: "Facebook SDK", path: "facebook" },
+                  { name: "Git", path: "git" },
+                ]}
+              />
             </Typography.Paragraph>
           </Fragment>
         }
       />
-      {/* <Typography.Paragraph>
-          <Typography.Text bold>Technical environment</Typography.Text>
-        </Typography.Paragraph>
-        <TechnologyList
-          list={[
-            { name: "Angular", path: "angular" },
-            { name: "TypeScript", path: "typescript" },
-            { name: "Firebase", path: "firebase" },
-            { name: "Facebook API", path: "facebook" }
-          ]}
-        /> */}
-
       <Experience
         title="Co-founder"
         company="Prep'App"
@@ -243,23 +236,20 @@ export function Jobs() {
               </Typography.Text>
             </Typography.Paragraph>
             <Typography.Paragraph>
-              <Typography.Text>
-                Technologies: JavaScript, PHP, REST API.
-              </Typography.Text>
+              <Typography.Text bold>Technologies</Typography.Text>
+              <TechnologyList
+                inlined
+                small
+                list={[
+                  { name: "JavaScript", path: "javascript" },
+                  { name: "PHP", path: "php" },
+                  { name: "Git", path: "git" },
+                ]}
+              />
             </Typography.Paragraph>
           </Fragment>
         }
       />
-      {/* <Typography.Paragraph>
-          <Typography.Text bold>Technical environment</Typography.Text>
-        </Typography.Paragraph>
-        <TechnologyList
-          list={[
-            { name: "PHP", path: "php" },
-            { name: "JavaScript", path: "javascript" },
-            { name: "MySQL", path: "mysql" }
-          ]}
-        /> */}
     </Layout.Content>
   )
 }

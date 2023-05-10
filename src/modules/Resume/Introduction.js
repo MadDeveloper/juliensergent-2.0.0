@@ -13,11 +13,15 @@ export function Introduction() {
         <div className={styles.photo}></div>
       </div>
       <Typography.Subtitle>
-        JavaScript Software Engineer &mdash; Skills quick look
+        Skills quick look &mdash; Software Engineer
       </Typography.Subtitle>
       <TechnologyList
         compact
         list={[
+          {
+            name: "TypeScript",
+            path: "typescript",
+          },
           {
             name: "JavaScript",
             path: "javascript",
@@ -47,7 +51,7 @@ export function Introduction() {
       <Typography.Paragraph>
         <Typography.Text>
           As a human, I obviously do not master all the technologies, but as an
-          enthusiast, I am constantly looking for knowledge!
+          enthusiast, I am constantly looking for knowledge.
         </Typography.Text>
       </Typography.Paragraph>
     </Layout.Content>

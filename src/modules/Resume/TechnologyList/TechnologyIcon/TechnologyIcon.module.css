@@ -1,10 +1,14 @@
 .root {
+  --size: 50px;
+
   display: inline-block;
-  min-width: 50px;
-  width: 50px;
-  max-width: 50px;
-  min-height: 50px;
-  height: 50px;
-  max-height: 50px;
-  margin-right: 20px;
+  min-width: var(--size);
+  width: var(--size);
+  max-width: var(--size);
+  min-height: var(--size);
+  height: var(--size);
+  max-height: var(--size);
+}
+.root.small {
+  --size: 35px;
 }

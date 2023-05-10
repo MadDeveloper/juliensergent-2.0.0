@@ -9,14 +9,19 @@ export function Skills() {
       <TechnologyList
         list={[
           {
-            name: "JavaScript",
-            path: "javascript",
+            name: "TypeScript",
+            path: "typescript",
             content: (
               <span>
                 Highly skilled, daily usage. Preferred language. Can almost do
                 anything with it, even coffee.
               </span>
             ),
+          },
+          {
+            name: "JavaScript",
+            path: "javascript",
+            content: <span>The birth of Christ, and of me.</span>,
           },
           {
             name: "Node.js",
@@ -37,16 +42,6 @@ export function Skills() {
             name: "React Native",
             path: "react",
             content: <span>React best friend, mine too.</span>,
-          },
-          {
-            name: "TypeScript",
-            path: "typescript",
-            content: (
-              <span>
-                Typed superset of JavaScript, and typed superset of my code. I
-                can not do without it.
-              </span>
-            ),
           },
           {
             name: "RxJS",

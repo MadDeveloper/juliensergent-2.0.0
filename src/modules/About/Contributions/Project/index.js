@@ -29,7 +29,7 @@ export function Project({
             </div>
           )}
           <div className={styles.item}>
-            <ExternalLink to={repositoryLink}>View on GitHub</ExternalLink>
+            <ExternalLink to={repositoryLink}>View it on GitHub</ExternalLink>
           </div>
         </div>
       </Card.Content>
