@@ -11,7 +11,7 @@ import { Messages } from "./Components/Messages"
 import { Typography } from "./Components/Typography"
 import { Home } from "./Home"
 
-export function DevMarket() {
+export default function DevMarket() {
   const location = useLocation()
 
   return (

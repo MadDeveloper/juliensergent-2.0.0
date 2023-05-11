@@ -10,6 +10,7 @@ export function Experience({
   companyLink = "",
   extraInfos = null,
   description = null,
+  className,
 }) {
   function openCompanyWebsite() {
     if (companyLink.length > 0) {
@@ -18,7 +19,7 @@ export function Experience({
   }
 
   return (
-    <article>
+    <article className={className}>
       <Typography.Subtitle className={styles.title}>
         {title}
       </Typography.Subtitle>
@@ -46,4 +47,5 @@ Experience.propTypes = {
   companyLink: PropTypes.string,
   extraInfos: PropTypes.element,
   description: PropTypes.element,
+  className: PropTypes.string,
 }

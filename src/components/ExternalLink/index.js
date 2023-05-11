@@ -1,15 +1,27 @@
+import cs from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
+import { ReactComponent as ExternalLinkIcon } from "../../assets/icons/external-link.svg"
+import styles from "./ExternalLink.module.css"
 
-export function ExternalLink({ to = "", className = "", children, ...props }) {
+export function ExternalLink({
+  to = "",
+  className = "",
+  showIcon = true,
+  children,
+  ...props
+}) {
   return (
     <a
+      {...props}
       href={to}
       target="_blank"
       rel="noopener noreferrer"
-      className={className}
-      {...props}
+      className={cs(styles.root, className)}
     >
+      {showIcon && (
+        <ExternalLinkIcon title={props.title || to} className={styles.icon} />
+      )}
       {children || to}
     </a>
   )
@@ -18,5 +30,6 @@ export function ExternalLink({ to = "", className = "", children, ...props }) {
 ExternalLink.propTypes = {
   to: PropTypes.string.isRequired,
   className: PropTypes.string,
+  showIcon: PropTypes.bool,
   children: PropTypes.any,
 }

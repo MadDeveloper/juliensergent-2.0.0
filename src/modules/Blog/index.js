@@ -3,7 +3,7 @@ import { Layout } from "../../components/Layout"
 import { Message } from "../../components/Message"
 import { Typography } from "../../components/Typography"
 
-export function Blog() {
+export default function Blog() {
   return (
     <Layout.MainContent>
       <Typography.PageTitle heading>Let's read a bit</Typography.PageTitle>

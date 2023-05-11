@@ -3,7 +3,7 @@ import { Layout } from "../../components/Layout"
 import { Typography } from "../../components/Typography"
 import styles from "./NotFound.module.css"
 
-export function NotFound() {
+export default function NotFound() {
   return (
     <Layout.MainContent>
       <Typography.PageTitle className={styles.pageTitle}>

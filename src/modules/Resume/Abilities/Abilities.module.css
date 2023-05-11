@@ -1,9 +1,5 @@
-.experiences {
+.sections {
   display: flex;
   flex-direction: column;
   gap: var(--section-spacing);
-}
-
-.diploma {
-  margin-bottom: 0;
 }

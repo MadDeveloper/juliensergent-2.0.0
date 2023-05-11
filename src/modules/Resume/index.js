@@ -7,12 +7,14 @@ import { Introduction } from "./Introduction"
 import { Jobs } from "./Jobs"
 import styles from "./Resume.module.css"
 
-export function Resume() {
+export default function Resume() {
   return (
     <section className={styles.root}>
       <article>
         <Layout.Content headerSpacing>
-          <Typography.PageTitle>Here is my background</Typography.PageTitle>
+          <Typography.PageTitle>
+            Senior Software Engineer &mdash; Web Fullstack
+          </Typography.PageTitle>
         </Layout.Content>
         <Introduction />
       </article>

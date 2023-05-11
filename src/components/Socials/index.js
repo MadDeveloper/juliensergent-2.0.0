@@ -39,6 +39,7 @@ export function Socials() {
       <ExternalLink
         to="https://github.com/MadDeveloper"
         className={styles.social}
+        showIcon={false}
         onClick={trackGitHubLinkClicked}
       >
         <GitHubIcon title="GitHub" className={styles.socialIcon} />
@@ -46,6 +47,7 @@ export function Socials() {
       <ExternalLink
         to="https://twitter.com/_maddeveloper"
         className={styles.social}
+        showIcon={false}
         onClick={trackTwitterLinkClicked}
       >
         <TwitterIcon title="Twitter" className={styles.socialIcon} />
@@ -53,6 +55,7 @@ export function Socials() {
       <ExternalLink
         to="https://stackoverflow.com/users/6708504/julien-sergent"
         className={styles.social}
+        showIcon={false}
         onClick={trackStackOverflowLinkClicked}
       >
         <StackOverflowIcon
@@ -63,6 +66,7 @@ export function Socials() {
       <ExternalLink
         to="https://www.linkedin.com/in/julien-sergent"
         className={styles.social}
+        showIcon={false}
         onClick={trackLinkedInLinkClicked}
       >
         <LinkedinIcon title="LinkedIn" className={styles.socialIcon} />

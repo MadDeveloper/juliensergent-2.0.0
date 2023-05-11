@@ -7,7 +7,7 @@ import { Typography } from "../../components/Typography"
 import { isHomeAnimationPlayed, setHomeAnimationAsPlayed } from "../../lib/app"
 import styles from "./Home.module.css"
 
-export function Home() {
+export default function Home() {
   const navigation = useNavigate()
   const [animationPlayed, setAnimationPlayed] = useState(
     isHomeAnimationPlayed()

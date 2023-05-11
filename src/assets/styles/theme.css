@@ -5,7 +5,7 @@
   --primary-color: #6b1fff;
   --faded-primary-color: rgb(238, 233, 255);
   --active-primary-color: #4d05e8;
-  --inactive-color: #aaabac;
+  --inactive-color: #708091;
   --text-color-normal: #273238;
   --text-color-secondary: var(--inactive-color);
   --title-color: var(--text-color-normal);
@@ -58,6 +58,8 @@
   --scrollbar-editor-thumb-hover-background: #5c7284;
 
   /* Misc */
+  --spacing-unit: 10px;
+  --section-spacing: calc(var(--spacing-unit) * 4);
   --default-border-radius: 4px;
   --header-content-spacing: 40px;
   --main-content-padding: 20px;

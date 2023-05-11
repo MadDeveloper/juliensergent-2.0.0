@@ -5,7 +5,7 @@ import { Typography } from "../../components/Typography"
 import { AroundTheWeb } from "./AroundTheWeb"
 import { ContactForm } from "./ContactForm"
 
-export function Contact() {
+export default function Contact() {
   return (
     <Layout.MainContent>
       <Typography.PageTitle>How to contact me</Typography.PageTitle>

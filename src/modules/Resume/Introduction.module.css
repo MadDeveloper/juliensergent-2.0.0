@@ -16,6 +16,17 @@
   box-shadow: 0 0 30px hsl(0, 0%, 90%);
 }
 
+.csm {
+  display: flex;
+  align-items: center;
+  margin: calc(var(--spacing-unit) * 3) 0;
+  gap: calc(var(--spacing-unit) * 2);
+}
+
+.csm img {
+  width: 100px;
+}
+
 @media (max-width: 575px) {
   .root {
     flex-direction: column-reverse;

@@ -51,6 +51,11 @@ export function Menu() {
         </MenuItem>
       </div>
       <div className={styles.item}>
+        <MenuItem to="/resume" active={isActive("/resume")}>
+          Resume
+        </MenuItem>
+      </div>
+      <div className={styles.item}>
         <MenuItem to="/contact" active={isActive("/contact")}>
           Contact
         </MenuItem>

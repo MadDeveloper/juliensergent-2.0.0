@@ -6,7 +6,7 @@ import { Typography } from "../../components/Typography"
 import { Contributions } from "./Contributions"
 import { Projects } from "./Projects"
 
-export function About() {
+export default function About() {
   return (
     <Layout.MainContent>
       <Typography.PageTitle>Hi, I'm Julien.</Typography.PageTitle>

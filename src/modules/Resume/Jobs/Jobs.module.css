@@ -1,3 +1,9 @@
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-spacing);
+}
+
 .technicalEnvironment {
   display: flex;
   align-items: center;

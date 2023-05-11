@@ -1,7 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { ReactComponent as CalendarIcon } from "../../../assets/icons/calendar.svg"
-import { ReactComponent as ExternalLinkIcon } from "../../../assets/icons/external-link.svg"
 import { ReactComponent as PinIcon } from "../../../assets/icons/pin.svg"
 import { useAnalytics } from "../../../lib/analytics"
 import { ExternalLink } from "../../ExternalLink"
@@ -40,7 +39,6 @@ export function ExtraInfos({ date = "", location = "", link = "" }) {
             className={styles.companyUrl}
             onClick={trackExperienceExternalLinkOpened}
           >
-            <ExternalLinkIcon title={link} className={styles.icon} />
             {link}
           </ExternalLink>
         </div>

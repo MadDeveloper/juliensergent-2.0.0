@@ -1,0 +1,10 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.icon {
+  width: 17px;
+  fill: currentColor;
+}

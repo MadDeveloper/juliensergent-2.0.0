@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { Suspense, lazy, useEffect } from "react"
 import { Route, Routes, useLocation } from "react-router-dom"
 import styles from "./App.module.css"
 import { Footer } from "./components/Footer"
@@ -7,13 +7,14 @@ import { Layout } from "./components/Layout"
 import { useTrackNavigationAnalytics } from "./lib/analytics"
 import { isHomeAnimationPlayed, setHomeAnimationAsPlayed } from "./lib/app"
 import { useThemeObserver } from "./lib/theme"
-import { About } from "./modules/About"
-import { Blog } from "./modules/Blog"
-import { Contact } from "./modules/Contact"
-import { DevMarket } from "./modules/DevMarket"
-import { Home } from "./modules/Home"
-import { NotFound } from "./modules/NotFound"
-import { Resume } from "./modules/Resume"
+
+const About = lazy(() => import("./modules/About"))
+const Blog = lazy(() => import("./modules/Blog"))
+const Contact = lazy(() => import("./modules/Contact"))
+const DevMarket = lazy(() => import("./modules/DevMarket"))
+const Home = lazy(() => import("./modules/Home"))
+const NotFound = lazy(() => import("./modules/NotFound"))
+const Resume = lazy(() => import("./modules/Resume"))
 
 export function App() {
   const location = useLocation()
@@ -36,13 +37,62 @@ export function App() {
       </Layout.Main>
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/devmarket/*" element={<DevMarket />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
+        <Route
+          path="/"
+          element={
+            <Suspense>
+              <Home />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/blog"
+          element={
+            <Suspense>
+              <Blog />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/devmarket/*"
+          element={
+            <Suspense>
+              <DevMarket />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Suspense>
+              <About />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/resume"
+          element={
+            <Suspense>
+              <Resume />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <Suspense>
+              <Contact />
+            </Suspense>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <Suspense>
+              <NotFound />
+            </Suspense>
+          }
+        />
       </Routes>
 
       <Layout.Main>
