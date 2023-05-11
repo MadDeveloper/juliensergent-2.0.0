@@ -17,11 +17,11 @@ export default function Contact() {
       <ContactForm />
       <Typography.Paragraph>
         <Typography.Text>
-          Or you can contact me directly at sergent.julien@icloud.com &mdash;{" "}
+          Or you can contact me directly at sergent.julien@icloud.com
           <ExternalLink to="mailto:sergent.julien@icloud.com">
             new email
-          </ExternalLink>
-          .
+          </ExternalLink>{" "}
+          or try something new I don't know existance.
         </Typography.Text>
       </Typography.Paragraph>
       <AroundTheWeb />

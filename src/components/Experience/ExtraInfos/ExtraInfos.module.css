@@ -22,16 +22,3 @@
   margin-right: 7px;
   fill: var(--text-color-secondary);
 }
-
-.item .companyUrl {
-  display: flex;
-  align-items: center;
-}
-
-.item .companyUrl .icon {
-  fill: var(--link-color);
-}
-
-.item .companyUrl:hover .icon {
-  fill: var(--active-link-color);
-}

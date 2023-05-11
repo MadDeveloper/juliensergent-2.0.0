@@ -1,15 +1,12 @@
 a {
-  position: relative;
   color: var(--link-color);
   text-decoration: none;
-  border-bottom: 2px solid transparent;
-  line-height: 1.5;
+  line-height: inherit;
   font-family: inherit;
   transition: border-color 0.3s, color 0.3s;
 }
 
 a:hover {
   color: var(--active-link-color);
-  border-color: var(--active-link-color);
-  cursor: pointer;
+  text-decoration: underline;
 }

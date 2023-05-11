@@ -34,11 +34,7 @@ export function ExtraInfos({ date = "", location = "", link = "" }) {
       )}
       {link.length > 0 && (
         <div className={styles.item}>
-          <ExternalLink
-            to={link}
-            className={styles.companyUrl}
-            onClick={trackExperienceExternalLinkOpened}
-          >
+          <ExternalLink to={link} onClick={trackExperienceExternalLinkOpened}>
             {link}
           </ExternalLink>
         </div>
