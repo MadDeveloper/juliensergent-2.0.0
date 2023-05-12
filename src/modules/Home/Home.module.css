@@ -6,7 +6,6 @@
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  /* background-color: #f7fbff; */
 }
 
 .presentation {
@@ -62,12 +61,12 @@
 .presentation .description .design {
   display: inline-block;
   background: rgb(39, 50, 56);
-  background: linear-gradient(90deg, #4d05e8, #6b1fff, #2abb9b, #36d7b7);
+  background: linear-gradient(90deg, #36d7b7, #2abb9b, #6b1fff, #4d05e8);
   background-size: 800% 800%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: backgroundAnimation 15s ease infinite alternate-reverse;
+  animation: backgroundAnimation 10s linear infinite alternate-reverse;
 }
 
 .presentation .showMore {

@@ -1,6 +1,8 @@
 .icon {
-  display: inline;
+  display: inline-block;
   height: 16px;
+  width: 16px;
   fill: currentColor;
+  margin-right: calc(var(--spacing-unit) / 2);
   transform: translateY(2px);
 }

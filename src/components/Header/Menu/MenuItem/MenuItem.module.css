@@ -1,3 +1,6 @@
+.root {
+  border-radius: 200rem;
+}
 .root:hover,
 .root.active {
   background-color: var(--faded-link-color);

@@ -35,11 +35,11 @@ export function Menu() {
       ) : (
         <MenuIcon className={styles.openIcon} onClick={open} />
       )}
-      <div className={styles.item}>
+      {/* <div className={styles.item}>
         <MenuItem to="/blog" active={isActive("/blog")}>
           Blog
         </MenuItem>
-      </div>
+      </div> */}
       <div className={styles.item}>
         <MenuItem to="/devmarket" active={isActive("/devmarket")}>
           Dev. market

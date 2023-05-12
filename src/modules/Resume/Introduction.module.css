@@ -4,16 +4,27 @@
 }
 
 .photo {
+  --size: 300px;
+
   background-image: url(../../assets/images/julien.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 200px;
-  min-width: 200px;
-  height: 200px;
-  min-height: 200px;
+  width: var(--size);
+  min-width: var(--size);
+  height: var(--size);
+  min-height: var(--size);
   border-radius: 50%;
   margin-left: 50px;
-  box-shadow: 0 0 30px hsl(0, 0%, 90%);
+  box-shadow: #6b1fff90 5px 5px, #6b1fff70 10px 10px, #6b1fff50 15px 15px,
+    #6b1fff30 20px 20px, #6b1fff10 25px 25px;
+  transition: box-shadow 0.4s;
+}
+.photo:hover {
+  cursor: grab;
+  box-shadow: none;
+}
+.photo:active {
+  cursor: grabbing;
 }
 
 .csm {
