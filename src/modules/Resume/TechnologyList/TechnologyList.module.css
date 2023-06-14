@@ -1,28 +1,19 @@
 .root {
-  --gap: 20px;
-  --item-margin: calc(var(--gap) / 2);
+  --gap: 30px;
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: var(--gap);
   box-sizing: border-box;
 }
-.root.compact {
-  justify-content: flex-start;
-}
-.root.root.inlined {
-  justify-content: flex-start;
+.root.inlined {
+  --gap: 20px;
 }
 
 .item {
   display: flex;
-  flex-basis: calc(50% - var(--item-margin));
-  gap: 20px;
-}
-.root.compact .item {
-  flex-basis: calc(33.3333% - var(--item-margin));
-  align-items: center;
+  flex-basis: 33.3333%;
+  gap: var(--gap);
 }
 .root.inlined .item {
   flex-basis: auto;
@@ -32,9 +23,14 @@
   .root {
     flex-direction: column;
   }
+  .root.inlined {
+    flex-direction: row;
+  }
 
   .item {
     flex-basis: 100%;
-    margin-right: 0;
+  }
+  .root.inlined .item {
+    flex-basis: auto;
   }
 }

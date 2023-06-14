@@ -16,35 +16,49 @@ export function Introduction() {
       </div>
       <Typography.Subtitle>Skills quick look</Typography.Subtitle>
       <TechnologyList
-        compact
         list={[
           {
             name: "TypeScript",
             path: "typescript",
+            content: <span>Can almost do anything with it, even coffee.</span>,
           },
           {
             name: "JavaScript",
             path: "javascript",
+            content: <span>The birth of Christ, and of me.</span>,
           },
           {
             name: "Node.js",
             path: "node",
+            content: <span>The birth of Christ, and of me.</span>,
           },
           {
             name: "React",
             path: "react",
+            content: <span>The best UI library. I love it, really.</span>,
           },
           {
             name: "React Native",
             path: "react",
+            content: <span>React best friend, mine too.</span>,
           },
           {
             name: "MongoDB",
             path: "mongodb",
+            content: (
+              <span>
+                Daily usage. Match perfectly with JavaScript, and my opinion.
+              </span>
+            ),
           },
           {
             name: "GraphQL",
             path: "graphql",
+            content: (
+              <span>
+                When I discovered it, I just stopped developing REST API.
+              </span>
+            ),
           },
         ]}
       />
