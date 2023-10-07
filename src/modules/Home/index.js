@@ -127,7 +127,7 @@ export default function Home() {
               .
             </Typography.Subtitle>
             <Typography.Subtitle className={styles.complement}>
-              Passionated about computer science since childhood, with a
+              Passionate about computer science since childhood, with a
               particular taste for the web. I can talk about this everyday. I
               talk about this everyday.
             </Typography.Subtitle>
